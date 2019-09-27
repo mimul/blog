@@ -160,5 +160,17 @@
     "slug": "performance",
     "description": "성능",
     "image": "performance.png"
+  },
+  {
+    "title": "Burn out",
+    "slug": "burnout",
+    "description": "Burn out",
+    "image": "burnout.png"
+  },
+  {
+    "title": "Life",
+    "slug": "life",
+    "description": "삶, 처세",
+    "image": "life.png"
   }
 ]
