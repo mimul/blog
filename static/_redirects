@@ -1,7 +1,5 @@
-http://mimul.netlify.com/* https://www.mimul.com/:splat 301!
-https://mimul.netlify.com/* https://www.mimul.com/:splat 301!
+http://xenodochial-kepler-1d4f37.netlify.com/* http://www.mimul.com/:splat 301!
 http://mimul.com/* https://www.mimul.com/:splat 301!
-https://mimul.com/* https://www.mimul.com/:splat 301!
 /blog/categories/* /topics/:splat 301!
 /blog/tags/* /topics/:splat 301!
 /tags/* /topics/:splat 301!
