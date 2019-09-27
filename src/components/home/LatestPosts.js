@@ -1,5 +1,5 @@
 import React from "react";
-import { graphql, StaticQuery } from "gatsby";
+import { Link, graphql, StaticQuery } from "gatsby";
 import BlogRollItem from "../BlogRollItem";
 import BlogCard from "../blog/BlogCard";
 
@@ -23,6 +23,17 @@ function LatestPosts() {
                   })}
                 </div>
                 <BlogCard post={lastUpdatedPost} tag={`Recently Updated`}></BlogCard>
+              </div>
+              <div>
+                <div className="cta-wrapper has-text-centered">
+                  <Link
+                    to="/blog"
+                    className="button k-button k-primary raised has-gradient is-bold"
+                  >
+                    <span className="text">View More Blogs</span>
+                    <span className="front-gradient"></span>
+                  </Link>
+                </div>
               </div>
             </div>
           </section>

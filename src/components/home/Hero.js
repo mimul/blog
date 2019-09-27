@@ -68,11 +68,6 @@ export default function Hero() {
                             width: 20
                           },
                           {
-                            src: "/img/site/particles/microsoft-azure-3.png",
-                            height: 20,
-                            width: 20
-                          },
-                          {
                             src: "/img/site/particles/vue-9.png",
                             height: 20,
                             width: 20
