@@ -58,6 +58,13 @@
     "tags": ["programming"]
   },
   {
+    "title": "Best Paper Awards in Computer Science (since 1996)",
+    "url": "https://jeffhuang.com/best_paper_awards.html",
+    "description": "1996년 이후 Computer Science 분야에서 Best Paper상 받은 논문들 정리.",
+    "date": "2014-12-23T12:09:16.000Z",
+    "tags": ["paper"]
+  },
+  {
     "title": "The Product Management Triangle",
     "url": "https://productlogic.org/2014/06/22/the-product-management-triangle/",
     "description": "Product managers, among other things, specialize in building bridges between the very general (e.g, a vision for changing the world), and the very specific (e.g., functional requirements for a single button). Ironically, the discipline of product management itself is missing this bridge. We lack a clear framework for connecting the high order duties of product management with the day-to-day realities of execution.  I’ve invented the graphical model of the product management triangle to be this bridge and provide a foundation for deeper exploration into product management topics.",
