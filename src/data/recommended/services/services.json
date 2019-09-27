@@ -1,0 +1,20 @@
+[
+  {
+    "title": "멋진 무료 RDB(일부 NoSQL 포함) GUI 도구 TeamSQL",
+    "url": "https://teamsql.io/",
+    "description": "지원 DB: Oracle, MySQL, SQL Server, PostgreSQL, Redis, Redshift, Aurora, MariaDB, Citusdata, 지원예정: Elastic, Cassandra, SQLite, mongoDB",
+    "image": "",
+    "date": "2019-05-08T18:30:28.263Z",
+    "isAffiliate": true,
+    "tags": ["sql"]
+  },
+  {
+    "title": "Canva",
+    "url": "https://www.canva.com",
+    "description": "Photoshop 또는 Ilustrator 등의 디자인 도구의 대안으로 간단한 조작으로 배너나 아이콘 등을 만들 수 있음.",
+    "image": "",
+    "date": "2019-01-08T08:14:56.000Z",
+    "isAffiliate": true,
+    "tags": ["canva"]
+  }
+]

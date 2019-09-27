@@ -1,0 +1,117 @@
+[
+  {
+    "title": "Operating a Large, Distributed System in a Reliable Way: Practices I Learned",
+    "url": "https://blog.pragmaticengineer.com/operating-a-high-scale-distributed-system/",
+    "description": "Uber의 결제 시스템을 만들기면소 얻은 대규모 분산 시스템 운영 노하우에 대해: 모니터링 방법, 인시던트 관리 프로세스, 장애의 사후 분석 및 개선, SLO, SLA 등을 정리함.",
+    "date": "2019-07-20T21:30:56.000Z",
+    "tags": ["devops", "uber", "payment"]
+  },
+  {
+    "title": "Why software projects take longer than you think – a statistical model",
+    "url": "https://erikbern.com/2019/04/15/why-software-projects-take-longer-than-you-think-a-statistical-model.html",
+    "description": "Anyone who built software for a while knows that estimating how long something is going to take is hard. It’s hard to come up with an unbiased estimate of how long something will take, when fundamentally the work in itself is about solving something. One pet theory I’ve had for a really long time, is that some of this is really just a statistical artifact.",
+    "date": "2019-04-16T16:22:28.263Z",
+    "image": "/img/log_normal.png",
+    "tags": ["project", "management"]
+  },
+  {
+    "title": "Full Cycle Developers at Netflix — Operate What You Build",
+    "url": "https://medium.com/netflix-techblog/full-cycle-developers-at-netflix-a08c31f83249",
+    "description": "Fast forward to 2018. Netflix has grown to 125M global members enjoying 140M+ hours of viewing per day. We’ve invested significantly in improving the development and operations story for our engineering teams. Along the way we’ve experimented with many approaches to building and operating our services. We’d like to share one approach, including its pros and cons, that is relatively common within Netflix. We hope that sharing our experiences inspires others to debate the alternatives and learn from our journey.",
+    "date": "2018-05-20T08:22:28.263Z",
+    "image": "/img/netflix_devops.png",
+    "tags": ["devops", "netflix"]
+  },
+  {
+    "title": "Full-stack single page application with Vue.js and Flask",
+    "url": "https://codeburst.io/full-stack-single-page-application-with-vue-js-and-flask-b1e036315532",
+    "description": "Python, Flask와 VueJs를 가지고 웹 서비스 구현 내용 정리",
+    "date": "2017-10-19T12:13:01.000Z",
+    "tags": ["python", "vue"]
+  },
+  {
+    "title": "Programming Is Not Math",
+    "url": "http://www.sarahmei.com/blog/2014/07/15/programming-is-not-math/",
+    "description": "1. You need to know math to be a good programmer. 2. You need to learn math to get the skills you need for programming. 3. Plenty of programming is still math!",
+    "date": "2016-07-14T10:13:21.000Z",
+    "tags": ["programming", "math"]
+  },
+  {
+    "title": "Linux Performance Analysis in 60,000 Milliseconds",
+    "url": "https://medium.com/netflix-techblog/linux-performance-analysis-in-60-000-milliseconds-accc10403c55",
+    "description": "Netflix의 수석 성능 설계자인 Brendan Gregg씨의, Linux 서버에 로그인하고 60초동안 체크하는 명령어들과 그 내용 정리.",
+    "date": "2015-12-02T14:00:24.000Z",
+    "tags": ["performance"]
+  },
+  {
+    "title": "Reading postmortems",
+    "url": "https://danluu.com/postmortem-lessons/",
+    "description": "장애의 사후 분석을 읽고 얻은 교훈: 오류 처리, 설정, 하드웨어, 휴먼메러, 모니터리/경고 무시 등의 장애의 패턴을 소개함.",
+    "date": "2015-09-01T15:21:19.000Z",
+    "tags": ["failure"]
+  },
+  {
+    "title": "Why Learning to Code is So Damn Hard",
+    "url": "https://www.thinkful.com/blog/why-learning-to-code-is-so-damn-hard/",
+    "description": "프로그래밍 학습이 왜 어려운지, 이를 극복할 수 있는 방법은 어떤것들이 있는지 정리한 글.",
+    "date": "2015-02-08T19:22:28.000Z",
+    "tags": ["programming"]
+  },
+  {
+    "title": "The Product Management Triangle",
+    "url": "https://productlogic.org/2014/06/22/the-product-management-triangle/",
+    "description": "Product managers, among other things, specialize in building bridges between the very general (e.g, a vision for changing the world), and the very specific (e.g., functional requirements for a single button). Ironically, the discipline of product management itself is missing this bridge. We lack a clear framework for connecting the high order duties of product management with the day-to-day realities of execution.  I’ve invented the graphical model of the product management triangle to be this bridge and provide a foundation for deeper exploration into product management topics.",
+    "date": "2014-06-28T10:09:44.000Z",
+    "tags": ["product", "management"]
+  },
+  {
+    "title": "10 Articles Every Programmer Must Read",
+    "url": "https://javarevisited.blogspot.com/2014/05/10-articles-every-programmer-must-read.html",
+    "description": "1. You need to know math to be a good programmer. 2. You need to learn math to get the skills you need for programming. 3. Plenty of programming is still math!",
+    "date": "2014-05-20T11:30:33.000Z",
+    "tags": ["programming"]
+  },
+  {
+    "title": "Don’t learn to code. Learn to think",
+    "url": "https://www.ybrikman.com/writing/2014/05/19/dont-learn-to-code-learn-to-think/",
+    "description": "코딩을 배우기보단, 생각하는법을 배워라: 컴퓨터 과학은 생각하는 새로운 방법입니다. 그것의 개념은 기술로 가득찬 세상의 모든 사람들에게 유용함을 제공함에 있습니다. 프로그래밍은 생각의 새로운 방법을 적용하는, 컴퓨터 과학을 배우는데 필수적인 부분입니다. 하지만 그 자체가 프로그래밍의 일반적인 목적에 가까운 것은 아닙니다.",
+    "date": "2014-05-20T10:09:44.000Z",
+    "tags": ["programming"]
+  },
+  {
+    "title": "Why Python is Slow: Looking Under the Hood",
+    "url": "https://jakevdp.github.io/blog/2014/05/09/why-python-is-slow/",
+    "description": "Python is slow. And one big reason for that, as we've seen, is the type indirection under the hood which makes Python quick, easy, and fun for the developer. And as we've seen, Python itself offers tools that can be used to hack into the Python objects themselves.",
+    "date": "2014-05-15T12:21:09.263Z",
+    "tags": ["python"]
+  },
+  {
+    "title": "Why programming is difficult",
+    "url": "https://joearms.github.io/#2014-02-07%20Why%20programming%20is%20difficult",
+    "description": "프로그래밍은 왜 어려울까요? 다른사람이 짠 프로그램을 유지보수하고, 배울 시간이 허락하지 않고, 컨텍스트 스위칭 등 좋지 않은 환경 등을 기술함",
+    "date": "2014-02-09T19:22:05.000Z",
+    "image": "/img/prog_difficult.png",
+    "tags": ["programming"]
+  },
+  {
+    "title": "How Spotify builds products",
+    "url": "https://blog.crisp.se/2013/01/13/henrikkniberg/how-spotify-builds-products",
+    "description": "Our core philosophy is: We create innovative products while managing risk by prototyping early and cheaply. We don’t launch on date, we launch on quality. We ensure that our products go from being great at launch to becoming amazing, by relentlessly tweaking after launch.",
+    "date": "2013-01-29T19:22:28.000Z",
+    "tags": ["product", "spotify"]
+  },
+  {
+    "title": "10 Technical Papers Every Programmer Should Read (At Least Twice)",
+    "url": "http://blog.fogus.me/2011/09/08/10-technical-papers-every-programmer-should-read-at-least-twice/",
+    "description": "모든 프로그래머들이 두번이상 읽어야할 기술 논문들.",
+    "date": "2011-09-09T15:34:21.000Z",
+    "tags": ["paper"]
+  },
+  {
+    "title": "How Complex Systems Fail",
+    "url": "http://web.mit.edu/2.75/resources/random/How%20Complex%20Systems%20Fail.pdf",
+    "description": "복잡한 시스템이 어떻게해서 문제를 일으키는지에 대한 글. 시스템이 아닌 일반적인 업무에도 적용해도 될 듯.",
+    "date": "2010-01-29T11:11:58.000Z",
+    "tags": ["failure"]
+  }
+]

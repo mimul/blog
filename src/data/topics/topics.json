@@ -1,0 +1,164 @@
+[
+  {
+    "title": "programming",
+    "slug": "programming",
+    "description": "Programming",
+    "image": "programming-icon.png"
+  },
+  {
+    "title": "Android",
+    "slug": "android",
+    "description": "",
+    "image": "android.svg"
+  },
+  {
+    "title": "Angular",
+    "slug": "angular",
+    "description": "",
+    "image": "angular-icon-1.svg"
+  },
+  {
+    "title": "NodeJs",
+    "slug": "nodejs",
+    "description": "Node Js",
+    "image": "nodejs.png"
+  },
+  {
+    "title": "Python",
+    "slug": "python",
+    "description": "Python",
+    "image": "python.png"
+  },
+  {
+    "title": "Java",
+    "slug": "java",
+    "description": "Java",
+    "image": "java.png"
+  },
+  {
+    "title": "C & C++",
+    "slug": "c-plusplus",
+    "description": "C & C++",
+    "image": "c.png"
+  },
+  {
+    "title": "Devops",
+    "slug": "devops",
+    "description": "Devops",
+    "image": "devops.png"
+  },
+  {
+    "title": "Product Developement",
+    "slug": "product",
+    "description": "Product Developement",
+    "image": "new-product-development.png"
+  },
+  {
+    "title": "Flutter",
+    "slug": "flutter",
+    "description": "",
+    "image": "flutter.svg"
+  },
+  {
+    "title": "Gatsby",
+    "slug": "gatsby",
+    "description": "One of my favorite language.",
+    "image": "gatsby.svg"
+  },
+  {
+    "title": "GitHub",
+    "slug": "github",
+    "description": "",
+    "image": "github-1.svg"
+  },
+  {
+    "title": "Project Management",
+    "slug": "project",
+    "description": "Project Management",
+    "image": "project.jpg"
+  },
+  {
+    "title": "JavaScript",
+    "slug": "javascript",
+    "description": "",
+    "image": "javascript.svg"
+  },
+  {
+    "title": "Failure",
+    "slug": "failure",
+    "description": "Risk & Failure",
+    "image": "risk_failure.jpg"
+  },
+  {
+    "title": "Papers",
+    "slug": "paper",
+    "description": "Papers",
+    "image": "paper.jpg"
+  },
+  {
+    "title": "MySQL",
+    "slug": "mysql",
+    "description": "MySQL & MariaDB",
+    "image": "mysql.png"
+  },
+  {
+    "title": "Postgresql",
+    "slug": "postgresql",
+    "description": "Postgresql",
+    "image": "postgresql.png"
+  },
+  {
+    "title": "Redis",
+    "slug": "redis",
+    "description": "Redis",
+    "image": "redis.jpg"
+  },
+  {
+    "title": "Mongodb",
+    "slug": "mongodb",
+    "description": "MongoDB",
+    "image": "mongodb.png"
+  },
+  {
+    "title": "SQL",
+    "slug": "sql",
+    "description": "SQL",
+    "image": "sql.jpg"
+  },
+  {
+    "title": "Front End",
+    "slug": "front-end",
+    "description": "Front End",
+    "image": "front-end-development.png"
+  },
+  {
+    "title": "Back End",
+    "slug": "back-end",
+    "description": "Back End",
+    "image": "back-end-development.jpg"
+  },
+  {
+    "title": "Architecture",
+    "slug": "architecture",
+    "description": "Architecture",
+    "image": "architecture.png"
+  },
+  {
+    "title": "Leadership",
+    "slug": "leadership",
+    "description": "",
+    "image": ""
+  },
+  {
+    "title": "API",
+    "slug": "api",
+    "description": "",
+    "image": "api.png"
+  },
+  {
+    "title": "Performance",
+    "slug": "performance",
+    "description": "성능",
+    "image": "performance.png"
+  }
+]
