@@ -78,9 +78,10 @@ const Navbar = class extends React.Component {
                 </span>
                 <span>Blog</span>
               </Link>
-              {/*<Link to="/recommended" className="navbar-item">
-                <FaHeart color="red" /> <span> &nbsp;Recommended</span>
+              <Link to="/recommended/stories" className="navbar-item">
+                <FaHeart color="red" /> <span> &nbsp;Articles</span>
               </Link>
+              {/*
               <Link to="/topics" className="navbar-item">
                 <FaBullhorn color="turquoise" /><span> &nbsp;Topics</span>
               </Link>*/}
