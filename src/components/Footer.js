@@ -21,6 +21,7 @@ function Footer() {
       <div className="container">
         <p className="k-copyright">© 2019 | Mimul. All Rights Reserved</p>
       </div>
+      <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     </footer>
   );
 }

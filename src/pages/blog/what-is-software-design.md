@@ -6,7 +6,7 @@ author: "미물"
 authorURL: "https://mimul.com"
 date: "2008-01-18T20:12:12.000Z"
 lastModificationTime: "2008-01-18T20:35:12.000Z"
-image: "/img/blog/software_developement.jpg"
+image: "/img/topics/software_developement.jpg"
 commentId: "what-is-software-design-2008-01-18"
 tags:
   - Software Design

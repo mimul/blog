@@ -184,5 +184,11 @@
     "slug": "spring",
     "description": "Spring Framework",
     "image": "spring-java.png"
+  },
+  {
+    "title": "Software",
+    "slug": "software",
+    "description": "Software",
+    "image": "software_developement.jpg"
   }
 ]
