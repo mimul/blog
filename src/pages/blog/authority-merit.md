@@ -1,7 +1,7 @@
 ---
 templateKey: "blog-post"
 title: "권위와 가치"
-description: "README가 뭐에 쓰는 물건이꼬."
+description: "Square의 CEO인 Jack Dorsey가 재미난 글  정리."
 author: "미물"
 authorURL: "https://mimul.com"
 date: "2014-05-08T02:22:31.000Z"

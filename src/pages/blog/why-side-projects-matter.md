@@ -1,7 +1,7 @@
 ---
 templateKey: "blog-post"
 title: "사이드 프로젝트의 효용성 그리고 중요성"
-description: "Why side projects matter?"
+description: "사이드 프로젝트를 하면서 얻은 효용성, 중요성 정리."
 author: "미물"
 authorURL: "https://mimul.com"
 date: "2014-04-18T16:30:19.000Z"

@@ -1,7 +1,7 @@
 ---
 templateKey: "blog-post"
 title: "CTO는 무엇을 해야하나?"
-description: "What does a CTO do?"
+description: "CTO가 해야할 역할에 대해 잘 기술한 hat does a CTO do?란 아티클을 번역."
 author: "미물"
 authorURL: "https://mimul.com"
 date: "2018-01-18T19:21:00.000Z"

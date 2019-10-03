@@ -1,7 +1,7 @@
 ---
 templateKey: "blog-post"
 title: "Make에 대해 알아야할 7가지"
-description: "코딩 가이드에 참고할만한 좋은 아티클(15 Best Practices of Variable & Method Naming)에 있어 정리함."
+description: "Make에 대해 알아야할 7가지 정리함."
 author: "미물"
 authorURL: "https://mimul.com"
 date: "2014-10-27T18:12:44.000Z"
