@@ -91,7 +91,7 @@ const Navbar = class extends React.Component {
               <OutboundLink
                 className="navbar-item is-hidden-desktop-only"
                 href="https://github.com/mimul"
-                target=""
+                target="_blank"
               >
                 <span className="icon" style={{ color: "#333" }}>
                   <FaGithub></FaGithub>
@@ -100,7 +100,7 @@ const Navbar = class extends React.Component {
               <OutboundLink
                 className="navbar-item is-hidden-desktop-only"
                 href="https://twitter.com/mimul"
-                target=""
+                target="_blank"
               >
                 <span className="icon" style={{ color: "#55acee" }}>
                   <FaTwitter></FaTwitter>
