@@ -116,6 +116,7 @@ export default React.memo(
       <Helmet>
         {/* Schema.org tags */}
         <script type="application/ld+json">{JSON.stringify(schema)}</script>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
       </Helmet>
     );
   }

@@ -136,16 +136,6 @@ export const BlogPostTemplate = ({
         <div className="container is-fluid">
           <div className="columns is-centered">
             <div className="column is-2 pr-4 mb-4">
-              <div>
-              <AdSense.Google
-                client='ca-pub-1357079034135808'
-                slot='2371224277'
-                style={{ display: 'block' }}
-                format='auto'
-                layout="in-article"
-                responsive='true'
-              />
-              </div>
               <div className="sticky has-text-centered">
                 <div className="text-muted">Share this</div>
 
@@ -215,6 +205,14 @@ export const BlogPostTemplate = ({
                     Improve this page on GitHub
                   </OutboundLink>
                 </p>
+              </div>
+              <div class="container mt-5">
+              <AdSense.Google
+                client='ca-pub-1357079034135808'
+                slot='2371224277'
+                format="rectangle"
+                responsive='true'
+              />
               </div>
               <div className="container mt-5">
                 <div className="media">
