@@ -210,7 +210,8 @@ export const BlogPostTemplate = ({
               <AdSense.Google
                 client='ca-pub-1357079034135808'
                 slot='2371224277'
-                format="rectangle"
+                style={{ display: 'block' }}
+                format='auto'
                 responsive='true'
               />
               </div>
