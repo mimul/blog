@@ -32,15 +32,41 @@
     "url": "https://erikbern.com/2019/04/15/why-software-projects-take-longer-than-you-think-a-statistical-model.html",
     "description": "Anyone who built software for a while knows that estimating how long something is going to take is hard. It’s hard to come up with an unbiased estimate of how long something will take, when fundamentally the work in itself is about solving something. One pet theory I’ve had for a really long time, is that some of this is really just a statistical artifact.",
     "date": "2019-04-16T16:22:28.263Z",
-    "image": "/img/log_normal.png",
     "tags": ["project", "management"]
+  },
+  {
+    "title": "Great developers are raised, not hired",
+    "url": "https://sizovs.net/2019/04/10/the-best-developers-are-raised-not-hired/",
+    "description": "위대한 개발자는 고용하는 것이 아니라 키우는 것이다.",
+    "date": "2019-04-11T15:10:21.000Z",
+    "tags": ["programmer"]
+  },
+  {
+    "title": "How to Design Software Good",
+    "url": "https://www.haiku-os.org/docs/HIG/index.xml",
+    "description": "좋은 소프트웨어를 설계하려면?",
+    "date": "2019-01-01T22:09:27.000Z",
+    "tags": ["software"]
+  },
+  {
+    "title": "Makefiles, Best Practices",
+    "url": "https://danyspin97.org/blog/makefiles-best-practices/",
+    "description": "Makefile 모범 사례.",
+    "date": "2018-11-30T05:00:42.000Z",
+    "tags": ["makefile"]
+  },
+  {
+    "title": "Systems, not Programs",
+    "url": "https://shalabh.com/programmable-systems/systems-not-programs.html",
+    "description": "프로그램이 아닌 시스템에서 생각하자.",
+    "date": "2018-10-22T09:15:54.000Z",
+    "tags": ["programming"]
   },
   {
     "title": "Full Cycle Developers at Netflix — Operate What You Build",
     "url": "https://medium.com/netflix-techblog/full-cycle-developers-at-netflix-a08c31f83249",
     "description": "Fast forward to 2018. Netflix has grown to 125M global members enjoying 140M+ hours of viewing per day. We’ve invested significantly in improving the development and operations story for our engineering teams. Along the way we’ve experimented with many approaches to building and operating our services. We’d like to share one approach, including its pros and cons, that is relatively common within Netflix. We hope that sharing our experiences inspires others to debate the alternatives and learn from our journey.",
     "date": "2018-05-20T08:22:28.263Z",
-    "image": "/img/netflix_devops.png",
     "tags": ["devops", "netflix"]
   },
   {
@@ -49,6 +75,13 @@
     "description": "Python, Flask와 VueJs를 가지고 웹 서비스 구현 내용 정리",
     "date": "2017-10-19T12:13:01.000Z",
     "tags": ["python", "vue"]
+  },
+  {
+    "title": "To www or not to www – Should you use www or not in your domain?",
+    "url": "https://bjornjohansen.no/www-or-not",
+    "description": "도메인에 www를 넣어야 하는 것인지 넣지 않아야 하는 것인가?",
+    "date": "2017-01-21T15:17:41.000Z",
+    "tags": ["architecture"]
   },
   {
     "title": "Programming Is Not Math",
@@ -140,5 +173,12 @@
     "description": "복잡한 시스템이 어떻게해서 문제를 일으키는지에 대한 글. 시스템이 아닌 일반적인 업무에도 적용해도 될 듯.",
     "date": "2010-01-29T11:11:58.000Z",
     "tags": ["failure"]
+  },
+  {
+    "title": "What every programmer should know about memory, Part 1",
+    "url": "https://lwn.net/Articles/250967/",
+    "description": "모든 프로그래머가 알아야 메모리에 대한 지식.",
+    "date": "2008-01-12T12:30:54.000Z",
+    "tags": ["programming"]
   }
 ]

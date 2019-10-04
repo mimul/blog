@@ -190,5 +190,17 @@
     "slug": "software",
     "description": "Software",
     "image": "software_developement.jpg"
+  },
+  {
+    "title": "Programmer",
+    "slug": "programmer",
+    "description": "coder, programmer, engineer",
+    "image": "coder-programmer-engineer.webp"
+  },
+  {
+    "title": "Makefile",
+    "slug": "makefile",
+    "description": "make, makefile",
+    "image": "makefile.png"
   }
 ]

@@ -6,7 +6,7 @@ author: "미물"
 authorURL: "https://mimul.com"
 date: "2014-10-27T18:12:44.000Z"
 lastModificationTime: "2014-10-27T18:12:44.000Z"
-image: "/img/blog/makefile.png"
+image: "/img/topics/makefile.png"
 commentId: "7-things-you-should-know-about-make-2014-10-27"
 tags:
   - Makefile
