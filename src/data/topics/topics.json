@@ -208,5 +208,11 @@
     "slug": "git",
     "description": "git, github, gitlab",
     "image": "git.png"
+  },
+  {
+    "title": "Philosophy",
+    "slug": "philosophy",
+    "description": "Philosophy",
+    "image": "philosophy.png"
   }
 ]
