@@ -202,5 +202,11 @@
     "slug": "makefile",
     "description": "make, makefile",
     "image": "makefile.png"
+  },
+  {
+    "title": "Git",
+    "slug": "git",
+    "description": "git, github, gitlab",
+    "image": "git.png"
   }
 ]
