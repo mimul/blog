@@ -25,7 +25,21 @@
     "url": "https://www.vrk.dev/2019/07/11/why-is-modern-web-development-so-complicated-a-long-yet-hasty-explanation-part-1/",
     "description": "현대 Web 개발은 왜 이렇게 복잡한 것일까? 파트 1",
     "date": "2019-07-12T16:37:47.000Z",
-    "tags": ["software"]
+    "tags": ["web"]
+  },
+  {
+    "title": "Go Code Review Comments",
+    "url": "https://github.com/golang/go/wiki/CodeReviewComments",
+    "description": "Go를 좀 더 잘 쓰기 위한 힌트를 정리해 놓은 Go Code Review Comments.",
+    "date": "2019-06-25T08:58:22.000Z",
+    "tags": ["go"]
+  },
+  {
+    "title": "High Performance Go Workshop",
+    "url": "https://dave.cheney.net/high-performance-go-workshop/gopherchina-2019.html",
+    "description": "고성능 Go프로그램을 작성하기 위한 방법 소개(성능을 진단하고 해결하는데 필요한 도구 제공).",
+    "date": "2019-04-28T13:02:43.000Z",
+    "tags": ["go"]
   },
   {
     "title": "Why software projects take longer than you think – a statistical model",

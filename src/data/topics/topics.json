@@ -214,5 +214,17 @@
     "slug": "philosophy",
     "description": "Philosophy",
     "image": "philosophy.png"
+  },
+  {
+    "title": "Go",
+    "slug": "go",
+    "description": "Go Language",
+    "image": "go-lang.png"
+  },
+  {
+    "title": "Web Development",
+    "slug": "web",
+    "description": "Web Development",
+    "image": "web-development.jpg"
   }
 ]
