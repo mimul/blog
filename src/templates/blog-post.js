@@ -190,7 +190,7 @@ export const BlogPostTemplate = ({
             </div>
             <div className="column is-8">
               <PostContent content={content} className={`content post-body`} />
-              <TopicsBar topics={tags} />
+              {/*<TopicsBar topics={tags} />
               <div id="typo" className="bd-typo">
                 <p className="has-text-grey">
                   This page is{" "}
@@ -205,18 +205,17 @@ export const BlogPostTemplate = ({
                     Improve this page on GitHub
                   </OutboundLink>
                 </p>
-              </div>
+              </div>*/}
               <div class="container mt-5">
-              <AdSense.Google
-                client='ca-pub-1357079034135808'
-                slot='2371224277'
-                style={{ display: 'block' }}
-                format='auto'
-                responsive='true'
-                layoutKey='-gw-1+2a-9x+5c'
-              />
+                <AdSense.Google
+                  client='ca-pub-1357079034135808'
+                  slot='5864854981'
+                  style={{ display: 'block' }}
+                  format='auto'
+                  responsive='true'
+                />
               </div>
-              <div className="container mt-5">
+              {/*}<div className="container mt-5">
                 <div className="media">
                   <figure className="media-left">
                     <p className="image is-96x96">
@@ -248,7 +247,7 @@ export const BlogPostTemplate = ({
                     </div>
                   </div>
                 </div>
-              </div>
+              </div>*/}
             </div>
           </div>
         </div>
