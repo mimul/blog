@@ -190,8 +190,8 @@ export const BlogPostTemplate = ({
             </div>
             <div className="column is-8">
               <PostContent content={content} className={`content post-body`} />
-              {/*<TopicsBar topics={tags} />
-              <div id="typo" className="bd-typo">
+              <TopicsBar topics={tags} />
+              {/*<div id="typo" className="bd-typo">
                 <p className="has-text-grey">
                   This page is{" "}
                   <strong className="has-text-grey">open source</strong>.
