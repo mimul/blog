@@ -44,7 +44,7 @@ RDBMS는 내부에 파일 캐시와 같은 도구를 갖추고 있다. 따라서
 | OS           | Centos 5.7 x86_64                   |
 | RAM          | DDR3 PC3-10600 (1,333MHz) 2GB x 2   |
 | HDD          | SATA2 500GB (7200.ES)               |
-| RDBMS        | MySQL 5.5.7                        |
+| RDBMS        | MySQL 5.5.7                         |
 
 - MySQL 설정 패턴
 | Label                   | Specification                       |
