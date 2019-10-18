@@ -1,5 +1,12 @@
 [
   {
+    "title": "The Naming Convention Project: Java, Python, PHP, VueJS, C#, Git",
+    "url": "https://namingconvention.org",
+    "description": "프로그래밍에서 네이밍 규칙 가이드 라인을 제시하는 오픈 소스 프로젝트 NamingConvention: Java, Python, PHP, VueJS, C#, Git 작성중",
+    "date": "2019-10-16T12:11:55.000Z",
+    "tags": ["convention", "programming"]
+  },
+  {
     "title": "Software Architecture is Overrated, Clear and Simple Design is Underrated",
     "url": "https://blog.pragmaticengineer.com/software-architecture-is-overrated/",
     "description": "소프트웨어 아키텍처는 과대평가되고, 명확하고 심플한 디자인은 과소 평가되고 있다.",
