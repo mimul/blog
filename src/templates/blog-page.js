@@ -23,9 +23,9 @@ export default class BlogIndexPage extends React.Component {
         <div className="section">
           <div className="container">
             <div className="columns">
-              <div className="column is-9">
+              <div className="column">
                 <h4 className="title is-4 spanborder has-text-weight-bold">
-                  <span>All Stories</span>
+                  <span>All Posts</span>
                 </h4>
                 <BlogRoll posts={posts} />
                 <Pagination
@@ -33,9 +33,9 @@ export default class BlogIndexPage extends React.Component {
                   nextPagePath={nextPagePath}
                 ></Pagination>
               </div>
-              <div className="column">
-                {/* {% include sidebar-featured.html %}     */}
-              </div>
+              {/*<div className="column">
+                 {% include sidebar-featured.html %}
+              </div>*/}
             </div>
           </div>
         </div>

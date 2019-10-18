@@ -20,7 +20,7 @@ export default class RecommendedIndexPage extends React.Component {
         <div className="container">
           <SEO
             title="Recommended"
-            description="Developer stories, videos, and services which Mimul recommends."
+            description="Developer articles, and services which Mimul recommends."
             slug="\recommended"
           />
           <div className="section">
@@ -50,7 +50,7 @@ export default class RecommendedIndexPage extends React.Component {
                         className="button k-button k-primary raised has-gradient is-bold"
                       >
                         <span className="text">
-                          View All {data.recommendedStories.totalCount} Stories
+                          View All {data.recommendedStories.totalCount} Articles
                         </span>
                         <span className="front-gradient"></span>
                       </Link>
@@ -76,7 +76,7 @@ export default class RecommendedIndexPage extends React.Component {
                       </h2>
                     </Link>
                     <p className="excerpt">
-                      Similar to Developer Stories, here I am listing videos
+                      Similar to Developer Articles, here I am listing videos
                       which worth sharing.
                     </p>
                     <div className="cta-wrapper has-text-centered">
