@@ -1,5 +1,12 @@
 [
   {
+    "title": "개발자를 위한 무료로 제공하고 있는 서비스 목록 정리.",
+    "url": "https://free-for.dev",
+    "description": "서비스 운영 및 개발에 필요한 도구중에 무료로 제공되는 것들을 분류별로 정리함.",
+    "date": "2019-10-17T13:30:00.000Z",
+    "tags": ["free", "open source"]
+  },
+  {
     "title": "The Naming Convention Project: Java, Python, PHP, VueJS, C#, Git",
     "url": "https://namingconvention.org",
     "description": "프로그래밍에서 네이밍 규칙 가이드 라인을 제시하는 오픈 소스 프로젝트 NamingConvention: Java, Python, PHP, VueJS, C#, Git 작성중",

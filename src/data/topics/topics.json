@@ -238,5 +238,11 @@
     "slug": "security",
     "description": "Security",
     "image": "security.jpg"
+  },
+  {
+    "title": "Free Service",
+    "slug": "free",
+    "description": "Free Service",
+    "image": "man-free-sign-1.png"
   }
 ]

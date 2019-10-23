@@ -28,7 +28,7 @@ tags:
 # -n 19: 프로세스 실행 우선 순위를 가장 낮게
 ```
 
-**2) less, more 차이**
+**2) less, more 활용하도록 노력한다.**
 
 vi 대신 내용 보기는 less나 more, cat을 잘 활용하자.
 
@@ -49,20 +49,43 @@ LimitFSIZE, LimitNOFILE, LimitNPROC, Restart 옵션을 주어 데몬의 지속�
 
 **5) 커맨드에 패스워드를 입력하지 않기**
 
-보안 차원에서 이습관은 중요하다.
+보안 차원에서 이 습관은 중요하다.
 
 다음부터는 실행하는 커맨드와 설명, 주목할 값들을 기술합니다. 참고로 보안을 이유로 개발서버에서 진행을 했고 OS는 CentOS7을 사용합니다.
 
 #### 1. root 계정의 로그인 실패 정보 확인
 
+아래는 계정별 로그인 실패 건수를 확인하고 로그인 실패가 1000단위가 넘어갈 경우 주기적으로 ssh 포트 변경, root 계정의 패스워드를 변경해 준다.
+
 ```bash
-$ su -
-마지막 로그인: 목 10월 10 10:39:35 KST 2019 일시 pts/0
-마지막 로그인 실패: 금 10월 11 11:03:32 KST 2019 x.x.x.x에서 시작 일시 ssh:notty
-마지막 로그인 후 57 번의 로그인 시도가 실패하였습니다.
+$ perl -ne 'print "$1\n" if(/Failed password for (\w.+) from/)' /var/log/secure | sort | uniq -c | sort -rn |head -10
+248 root
+ 43 invalid user 123456
+ 25 invalid user admin
+  6 invalid user test
+  3 invalid user user
+  2 invalid user 123
+  1 invalid user oracle
+  1 invalid user com
+  1 invalid user ubuntu
+  1 invalid user password
 ```
 
-로그인 시도 싫패가 1000단위가 넘어갈 경우 주기적으로 ssh 포트 변경, root 계정의 패스워드를 변경해 준다.
+아래는 IP별로 로그인 실패 시도 건수이고 건수가 IP는 블럭킹해준다.
+
+```
+$ perl -ne 'print "$1\n" if(/Failed password\D+((\d+\.){3}\d+)/)' /var/log/secure | sort | uniq -c | sort -rn |head -10
+98 197.248.10.108
+34 115.238.236.74
+21 51.38.57.78
+14 195.154.112.70
+3 92.222.216.71
+2 203.115.15.210
+1 5.39.79.48
+1 203.110.179.26
+1 195.154.113.173
+1 94.191.108.176
+```
 
 #### 2. 서버 가동 시간 확인 (uptime)
 
