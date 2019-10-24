@@ -26,7 +26,7 @@ export default class Timeline extends Component {
                 <p className="heading has-text-info	has-text-weight-bold">
                   January 2016
                 </p>
-                <p>Bodiesandsouls - CTO</p>
+                <p>Bodies & Souls - CTO</p>
               </div>
             </div>
             <header className="timeline-header">

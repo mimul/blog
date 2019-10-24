@@ -28,6 +28,13 @@
     "tags": ["software"]
   },
   {
+    "title": "50+ Data Structure and Algorithms Interview Questions for Programmers",
+    "url": "https://hackernoon.com/50-data-structure-and-algorithms-interview-questions-for-programmers-b4b1ac61f5b0",
+    "description": "프로그래머 채용 면접에서 묻는 데이터 구조 및 알고리즘에 관한 50개 이상의 질문 그리고 해답들.",
+    "date": "2019-08-05T11:11:19.000Z",
+    "tags": ["algorithm", "data structure"]
+  },
+  {
     "title": "Operating a Large, Distributed System in a Reliable Way: Practices I Learned",
     "url": "https://blog.pragmaticengineer.com/operating-a-high-scale-distributed-system/",
     "description": "Uber의 결제 시스템을 만들기면소 얻은 대규모 분산 시스템 운영 노하우에 대해: 모니터링 방법, 인시던트 관리 프로세스, 장애의 사후 분석 및 개선, SLO, SLA 등을 정리함.",

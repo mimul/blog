@@ -244,5 +244,11 @@
     "slug": "free",
     "description": "Free Service",
     "image": "man-free-sign-1.png"
+  },
+  {
+    "title": "Data Structure and Algorithms",
+    "slug": "algorithm",
+    "description": "Data Structure and Algorithms",
+    "image": "data_algorithm.png"
   }
 ]
