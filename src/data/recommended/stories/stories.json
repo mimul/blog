@@ -98,6 +98,13 @@
     "tags": ["programming"]
   },
   {
+    "title": "Learn how to design large-scale systems",
+    "url": "https://github.com/donnemartin/system-design-primer",
+    "description": "시스템 설계 면접에 대비하고자 정리한 건데, 대규모 시스템 설계에 도움이 될만한 인사이트가 많음. 성능, 확장, 지연, 처리량, 가용성, 일관성, DNS, CDN, LB, DB, NoSQL, Cache, 비동기, 보안 등.",
+    "date": "2018-06-20T05:01:09.000Z",
+    "tags": ["architecture"]
+  },
+  {
     "title": "Full Cycle Developers at Netflix — Operate What You Build",
     "url": "https://medium.com/netflix-techblog/full-cycle-developers-at-netflix-a08c31f83249",
     "description": "Fast forward to 2018. Netflix has grown to 125M global members enjoying 140M+ hours of viewing per day. We’ve invested significantly in improving the development and operations story for our engineering teams. Along the way we’ve experimented with many approaches to building and operating our services. We’d like to share one approach, including its pros and cons, that is relatively common within Netflix. We hope that sharing our experiences inspires others to debate the alternatives and learn from our journey.",
