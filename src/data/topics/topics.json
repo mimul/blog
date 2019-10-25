@@ -250,5 +250,11 @@
     "slug": "algorithm",
     "description": "Data Structure and Algorithms",
     "image": "data_algorithm.png"
+  },
+  {
+    "title": "Database",
+    "slug": "database",
+    "description": "Database",
+    "image": "database.png"
   }
 ]

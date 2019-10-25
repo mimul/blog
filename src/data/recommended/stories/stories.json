@@ -114,9 +114,16 @@
   {
     "title": "Full-stack single page application with Vue.js and Flask",
     "url": "https://codeburst.io/full-stack-single-page-application-with-vue-js-and-flask-b1e036315532",
-    "description": "Python, Flask와 VueJs를 가지고 웹 서비스 구현 내용 정리",
+    "description": "Python, Flask와 VueJs를 가지고 웹 서비스 구현 내용 정리.",
     "date": "2017-10-19T12:13:01.000Z",
     "tags": ["python", "vue"]
+  },
+  {
+    "title": "How does a relational database work",
+    "url": "http://coding-geek.com/how-databases-work/",
+    "description": "관계형 데이터베이스의 구조. 인덱스, 쿼리 최적화 프로세스, 트랜잭션 및 버퍼 풀 관리 등 정리.",
+    "date": "2017-03-15T03:14:29.000Z",
+    "tags": ["database"]
   },
   {
     "title": "To www or not to www – Should you use www or not in your domain?",
