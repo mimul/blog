@@ -112,42 +112,49 @@ load averages에 이어 1분, 5분, 15분 단위로 숫자가 표시된다. CPU 
 
 #### 4. 메모리 확인(free)
 
+CentOs7에서 메모리 용량을 확인하는 free 명령으로 얻을 수 있는 버퍼 및 캐시 영역에는 스왑 영역도 포함되어 있으며, 단순히 메모리 사용 용량 = 메모리 전체 - free - buff/cache 식으로 계산하면 메모리 사용 용량을 과소 평가하게 된다. 최신의 linux 커널은 이러한 부분을 고려하여 메모리 정보를 표시하고 있다.
+
 ```bash
 # free
               total        used        free      shared  buff/cache   available
-Mem:        7747768     4006240      771148      420980     2970380     3002980
-Swap:       2097148      299928     1797220
+Mem:        7747768     4060148      219100      402732     3468520     2964992
+Swap:       2097148      347400     1749748
 
 # cat /proc/meminfo |grep 'MemTotal\|MemFree\|Buffers\|Cached'
 MemTotal:        7747768 kB
-MemFree:          772636 kB
-Buffers:          426016 kB
-Cached:          2035120 kB
-SwapCached:        45320 kB
+MemFree:          217628 kB
+Buffers:          434212 kB
+Cached:          2604220 kB
+SwapCached:        42892 kB
 ```
-
-- 메모리 사용량 : 4513996 = MemTotal – MemFree  – Buffers – Cached
-- 메모리 사용률 : 58% = 4513996 / 7747768(MemTotal)
-- 메모리 FREE : 3233772 = MemFree + Buffers + Cached
 
 메모리 정보 확인 스크립트.
 
 ```bash
-# cat memory_usage.sh
+# cat memory-usage-free.sh
 #!/bin/bash
+export LANG=C, LC_ALL=C
 
-MEMINFO=`cat /proc/meminfo | grep 'MemTotal\|MemFree\|Buffers\|Cached'`
-MEMTOTAL=`echo $MEMINFO | awk '{print $2}'`
-MEMUSED=`echo $MEMINFO | awk '{print ($2-$5-$8-$11)}'`
-MEMFREE=`echo $MEMINFO | awk '{print ($5+$8+$11)}'`
+free | awk '
+    BEGIN{
+        total=0; used=0; available=0; rate=0;
+    }
 
-## 메모리 사용률
-MEMUSEDRATE=`echo $MEMUSED $MEMTOTAL | awk '{printf "%.1f\n", $1/$2*100}'`
+    /^Mem:/{
+        total = $2;
+        available = $7;
+    }
 
-echo "MEMTOTAL=$MEMTOTAL / MEMUSED=$MEMUSED / MEMFREE=$MEMFREE / MEMUSEDRATE=${MEMUSEDRATE}%"
+    END {
+        used = total - available;
+        rate= 100 * used / total;
+        printf("total(KB)\tused(KB)\tavailable(KB)\tused-rate(%)\n");
+        printf("%d \t %d \t %d \t %.1f\n", total, used, available, rate);
+    }';
 
-# ./memory_usage.sh
-MEMTOTAL=7747768 / MEMUSED=4506044 / MEMFREE=3241724 / MEMUSEDRATE=58.2%
+# ./memory-usage-free.sh
+total(KB)	used(KB)	available(KB)	used-rate(%)
+7747768 	4783068 	2964700 	    61.7
 ```
 
 #### 5. 파일 시스템 확인(df)
