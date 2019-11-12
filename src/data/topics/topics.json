@@ -256,5 +256,17 @@
     "slug": "database",
     "description": "Database",
     "image": "database.png"
+  },
+  {
+    "title": "Project Based Learning",
+    "slug": "learning",
+    "description": "Project Based Learning",
+    "image": "sketchnote-final-1.png"
+  },
+  {
+    "title": "Company Culture",
+    "slug": "culture",
+    "description": "Company Culture",
+    "image": "company_culture.png"
   }
 ]

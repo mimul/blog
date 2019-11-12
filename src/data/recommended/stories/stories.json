@@ -1,5 +1,12 @@
 [
   {
+    "title": "조직문화에 도움될만한 아티클 모음.",
+    "url": "https://www.holloway.com/s/syllabus-company-culture",
+    "description": "조직 구조, 리더십, 포용/충돌관리,  협업, 투명성, 커뮤니케이션, 피트백 등 다영한 분야에 대한 아티클 모음.",
+    "date": "2019-11-07T13:12:44.000Z",
+    "tags": ["culture"]
+  },
+  {
     "title": "개발자를 위한 무료로 제공하고 있는 서비스 목록 정리.",
     "url": "https://free-for.dev",
     "description": "서비스 운영 및 개발에 필요한 도구중에 무료로 제공되는 것들을 분류별로 정리함.",
@@ -82,6 +89,13 @@
     "description": "좋은 소프트웨어를 설계하려면?",
     "date": "2019-01-01T22:09:27.000Z",
     "tags": ["software"]
+  },
+  {
+    "title": "프로젝트기반 학습을 위한 튜토리얼",
+    "url": "https://github.com/tuvtran/project-based-learning",
+    "description": "언어별로 큐레이션된 프로젝트를 진행하면서 학습할 수 있는 튜토리얼 모음집.",
+    "date": "2018-12-30T06:16:43.000Z",
+    "tags": ["learning"]
   },
   {
     "title": "Makefiles, Best Practices",
