@@ -268,5 +268,11 @@
     "slug": "culture",
     "description": "Company Culture",
     "image": "company_culture.png"
+  },
+  {
+    "title": "Teamwork",
+    "slug": "teamwork",
+    "description": "Teamwork",
+    "image": "teamwork.jpg"
   }
 ]
