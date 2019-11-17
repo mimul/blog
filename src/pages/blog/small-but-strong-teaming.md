@@ -7,7 +7,7 @@ authorURL: "https://mimul.com"
 date: "2009-12-25T17:12:26.000Z"
 lastModificationTime: "2009-12-25T17:12:26.000Z"
 image: "/img/topics/teamwork.jpg"
-commentId: "about-mogilefs-2009-12-25"
+commentId: "teamwork-2009-12-25"
 tags:
   - Teamwork
   - Culture
