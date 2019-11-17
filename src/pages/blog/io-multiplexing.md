@@ -7,7 +7,7 @@ authorURL: "https://mimul.com"
 date: "2011-06-05T23:17:14.000Z"
 lastModificationTime: "2011-06-05T23:17:14.000Z"
 image: "/img/topics/devops.png"
-commentId: "io-multiplexing-2012-04-02"
+commentId: "io-multiplexing-2011-06-05"
 tags:
   - Multiplexing
   - Linux

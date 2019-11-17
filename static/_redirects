@@ -24,4 +24,13 @@ http://mimul.com/* https://www.mimul.com/:splat 301!
 /pebble/default/2015/11/11/1447231720346.html /blog/why-null-is-bad/ 301!
 /pebble/default/2012/08/07/1344315512542.html /blog/web-api-design-from-apigee/ 301!
 /pebble/default/2014/12/26/1419569926542.html /blog/7-things-you-should-know-about-make/ 301!
+/pebble/default/2014/10/04/1412396596338.html /blog/dont-be-scared-of-functional-programming/ 301!
+/pebble/default/2012/05/12/1336793032150.html /blog/io-scheduler/ 301!
+/pebble/default/2014/03/13/1394701210786.html /blog/90-entrepreneurship-lessons-fab/ 301!
+/pebble/default/2014/04/16/1397645377481.html /blog/why-your-previous-developer-was-terrible/ 301!
+/pebble/default/2014/04/23/1398212595197.html /blog/why-side-projects-matter/ 301!
+/pebble/default/2014/03/17/1395028081476.html /blog/the-trello-tech-stack/ 301!
+/pebble/default/2014/01/22/1390385134074.html /blog/integration-jenkins-gitlab-nexus-ldap/ 301!
+/pebble/default/2014/02/14/1392355258185.html /blog/why-dont-software-development-methodologies-work/ 301!
+/pebble/default/2014/01/14/1389688365061.html /blog/can-do-vs-cant-do-culture/ 301!
 /pebble/default/* /blog 301!
