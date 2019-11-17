@@ -32,7 +32,7 @@ export const IndexPageTemplate = ({
                     <span role="img" aria-label="inbox">
                       📬
                     </span>{" "}
-                    Recommended Articles{" "}
+                    Articles{" "}
                   </div>
                   {/*<div className="subtitle has-numbers">
                     <span className="tag">{totalStories}</span> Developer stories,{" "}

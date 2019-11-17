@@ -4,4 +4,7 @@ http://mimul.com/* https://www.mimul.com/:splat 301!
 /blog/categories/* /topics/:splat 301!
 /blog/tags/* /topics/:splat 301!
 /tags/* /topics/:splat 301!
+/pebble/default/2018/01/05/1515145860439.html /blog/cognitive-biases-in-programming/ 301!
+/pebble/default/2014/02/04/1391490935022.html /blog/good-tech-lead-bad-tech-lead/ 301!
+/pebble/default/2014/03/28/1395996159469.html /blog/why-i-still-program/ 301!
 /pebble/default/* /blog 301!
