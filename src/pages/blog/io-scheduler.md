@@ -60,7 +60,7 @@ I/O Scheduler는 Request Queue를 적절히 조작하여 seek time을 최소화�
 - 많은 프로세스들이 세세한 I/O를 많이 발생시킬 때 사용하면 좋다.
 - Fedora Core 커널 패키지의 기본이다.
 
-![cfq](/img/blog/cfq.png)
+![cfq](/img/blog/cfg.png)
 
 #### 설정 방법
 
@@ -85,10 +85,14 @@ initrd / initrd-2.6.18-8.el5.img
 **1. 테스트 서버 환경**
 
 - H/W 정보
-CPU : Intel Xeon Quad-Core X3440(2.53GHz)
-Memory : DDR3 PC3-10600 (1,333MHz) 2GB x 2
-OS : Centos 5.7 x86_64
-DISK : SATA2 500GB (7200.ES) - PC급
+
+| Label        | Specification                       |
+| ------------ | ----------------------------------- |
+| CPU          | Intel Xeon Quad-Core X3440(2.53GHz) |
+| OS           | Centos 5.7 x86_64                   |
+| RAM          | DDR3 PC3-10600 (1,333MHz) 2GB x 2   |
+| HDD          | SATA2 500GB (7200.ES)               |
+| RDBMS        | MySQL 5.5.7                         |
 
 - I/O Scheduler
 cfq와 deadline을 번갈하 셋팅하고 리붓해서 테스트 진행.

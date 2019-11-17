@@ -38,6 +38,7 @@ RDBMS는 내부에 파일 캐시와 같은 도구를 갖추고 있다. 따라서
 **1) 테스트 환경**
 
 - 서버 자원
+
 | Label        | Specification                       |
 | ------------ | ----------------------------------- |
 | CPU          | Intel Xeon Quad-Core X3440(2.53GHz) |
@@ -47,6 +48,7 @@ RDBMS는 내부에 파일 캐시와 같은 도구를 갖추고 있다. 따라서
 | RDBMS        | MySQL 5.5.7                         |
 
 - MySQL 설정 패턴
+
 | Label                   | Specification                       |
 | ----------------------- | ----------------------------------- |
 | innodb_buffer_pool_size | 16MB, 32MB, 64MB, 128MB, 256MB      |
@@ -54,6 +56,7 @@ RDBMS는 내부에 파일 캐시와 같은 도구를 갖추고 있다. 따라서
 | Write Data Scale        | 500M                                |
 
 - 테스트 테이블
+
 ```
 CREATE TABLE user(
   id bigint(20) NOT NULL AUTO_INCREMENT,

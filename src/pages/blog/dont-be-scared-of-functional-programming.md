@@ -9,6 +9,7 @@ lastModificationTime: "2014-07-05T15:55:06.000Z"
 image: "/img/blog/fp-preview.png"
 commentId: "dont-be-scared-of-functional-programming-2014-07-05"
 tags:
+  - JavaScript
   - Functional Programming
   - Programming
 ---
