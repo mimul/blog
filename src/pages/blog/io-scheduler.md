@@ -133,7 +133,7 @@ export LD_PRELOAD="/usr/local/lib/libtcmalloc.so"
 
 현재 설치한 서버의 디폴트 I/O Scheduler는 cfq와 DB 서버에서 많이 설정해 사용하고 있는 deadline을 비교하여 Insert를 BMT한 결과 deadline 조금 앞선 결과를 보여주었다.
 
-기존 서버가 죽어서 BMT 이미지를 찾고 있습니다. 조금만 기다려 주세요.
+![deadline cfq bmt](/img/blog/deadline_cfq_bmt.png)
 
 근데 위 BMT는 스토리지가 어떻게 구성되었는지 등의 환경에 따라 성능치가 다르게 나올 수 있다는 점은 알아두었으면 한다.
 

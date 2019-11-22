@@ -33,4 +33,6 @@ http://mimul.com/* https://www.mimul.com/:splat 301!
 /pebble/default/2014/01/22/1390385134074.html /blog/integration-jenkins-gitlab-nexus-ldap/ 301!
 /pebble/default/2014/02/14/1392355258185.html /blog/why-dont-software-development-methodologies-work/ 301!
 /pebble/default/2014/01/14/1389688365061.html /blog/can-do-vs-cant-do-culture/ 301!
+/pebble/default/2013/02/18/1361189648941.html /blog/avoid-password-security-issues-with-sha1-salt/ 301!
+/pebble/default/2012/04/03/1333431077222.html /blog/spam-filtering-using-bayes-theorem-and-mahout/ 301!
 /pebble/default/* /blog 301!
