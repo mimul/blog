@@ -274,5 +274,11 @@
     "slug": "teamwork",
     "description": "Teamwork",
     "image": "teamwork.jpg"
+  },
+  {
+    "title": "Container Architecture",
+    "slug": "container",
+    "description": "Container Architecture",
+    "image": "containers.png"
   }
 ]

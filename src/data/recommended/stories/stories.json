@@ -140,6 +140,13 @@
     "tags": ["database"]
   },
   {
+    "title": "Design patterns for container-based distributed systems",
+    "url": "https://www.usenix.org/system/files/conference/hotcloud16/hotcloud16_burns.pdf",
+    "description": "Google의 Brendan Burns, David Oppenheimer가 쓴 컨테이너 기반 분산 시스템을 위한 디자인 패턴 논문:싱글 컨테이너 관리 패턴, 싱글 노드 멀티 컨테이너 패턴(Sidecar, Ambassador, Adapter), 멀티 노드 패턴(Leader election, Work queue, Scatter/gather).",
+    "date": "2017-02-11T13:24:01.000Z",
+    "tags": ["container"]
+  },
+  {
     "title": "To www or not to www – Should you use www or not in your domain?",
     "url": "https://bjornjohansen.no/www-or-not",
     "description": "도메인에 www를 넣어야 하는 것인지 넣지 않아야 하는 것인가?",
