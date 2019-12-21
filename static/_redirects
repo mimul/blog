@@ -36,4 +36,5 @@ http://mimul.com/* https://www.mimul.com/:splat 301!
 /pebble/default/2013/02/18/1361189648941.html /blog/avoid-password-security-issues-with-sha1-salt/ 301!
 /pebble/default/2012/04/03/1333431077222.html /blog/spam-filtering-using-bayes-theorem-and-mahout/ 301!
 /pebble/default/2014/05/10/1399694750288.html /blog/why-readme-is-uppercase/ 301!
+/pebble/default/2013/04/11/1365675641729.html /blog/apache_event_mpm_vs_nginx_performance/ 301!
 /pebble/default/* /blog 301!

@@ -15,7 +15,7 @@ tags:
 
 MogileFS는 Hadoop DFS(큰 사이즈에 적합)와 달리, 소규모 용량에 적합하게 설계 되어 있습니다. 그래서 멀티미디어(이미지 혹은 소규모 동영상 파일) 파일 서비스에 유용할 거 같아서 전체 구조와 프로세스, 설치하면서 아키텍처의 이해도를 높이는데 목표를 두고 포스팅을 하겠습니다.
 
-### MogileFS Overview
+#### MogileFS Overview
 
 **1) 개요**
 
@@ -112,7 +112,7 @@ MogileFS는 Hadoop DFS(큰 사이즈에 적합)와 달리, 소규모 용량에 �
 - fid
   * 파일의 내부적인 수치적 표현. 모든 파일은 유니크한 fid를 가진다. 파일이 덮어쓰기 되면 새로운 fid를 받는다.
 
-### MogileFS 설치
+#### MogileFS 설치
 
 **1) MogileFS Architecture**
 
@@ -357,11 +357,11 @@ mysql> select * from host;
   * host id에서 host 정보를 취득 (host 테이블) - http://192.168.1.2:7500을 결정
   * http://192.168.1.2:7500/dev1/0/000/000/0000000008.fid, http://192.168.1.2:7500/dev2/0/000/000/0000000008.fid URL로도 조회 가능.
 
-### MogileFS users(레퍼런스 사이트)
+#### MogileFS users(레퍼런스 사이트)
 
 - 주로 이미지, 음악, 비디오 ,사용자가 올린 파일들을 저장하는 저장소로 활용함. MogileFS는 주로 작은 파일 저장소로 각광받고 있음.
 - 사용 사이트들 : last.fm, SixApart, TypePad, Vox, YellowBot, Wikispaces, Footnote, KWICK! Community, livejournal, hatena, SugarSync
 
-### 참조 사이트
+#### 참조 사이트
 
 - [MogileFS](https://github.com/mogilefs/)
