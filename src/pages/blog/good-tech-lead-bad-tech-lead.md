@@ -5,7 +5,7 @@ description: 'Good Tech Lead, Bad Tech Lead'
 author: '미물'
 authorURL: 'https://mimul.com'
 date: '2014-02-04T22:27:10.000Z'
-lastModificationTime: '2014-02-04T22:27:10.000Z'
+lastModificationTime: '2019-12-26T11:01:09.000Z'
 image: /img/good_leader.png
 commentId: 'good-leader-2014-02-04'
 tags:
