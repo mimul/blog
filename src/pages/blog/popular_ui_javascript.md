@@ -132,7 +132,7 @@ tags:
 - Star 수 : 27,738
 - [clipboard.js 링크](https://github.com/zenorocha/clipboard.js/)
 
-![clipboard.js](/img/blog/js_clipboard.png)
+![clipboard.js](/img/blog/js_clipboard.jpg)
 
 #### 파일 업로드 - uppy
 
@@ -153,6 +153,8 @@ tags:
 - 브라우저 : Chrome, Safari, Firefox, Opera, IE, Edge.
 - Star 수 : 2,680
 - [hashids.js 링크](https://github.com/niieani/hashids.js)
+
+![hashids.js](/img/blog/js_hashids.png)
 
 **2. crypto-js**
 
@@ -257,6 +259,9 @@ tags:
 - 브라우저 지원 : Edge, Chrome, Firefox, Safari, Opera.
 - Star 수 : 7,036
 - [deck.gl 링크](https://github.com/uber/deck.gl)
+
+![deck.gl](/img/blog/js_deckgl.png)
+
 
 **4. Zircle UI**
 

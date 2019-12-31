@@ -126,11 +126,32 @@
     "tags": ["devops", "netflix"]
   },
   {
+    "title": "Every Programmer Should Know",
+    "url": "https://github.com/mtdvio/every-programmer-should-know",
+    "description": "모든 프로그래머가 알아야할 것들을 정리한 사이트 소개. 알고리즘, 아키텍처, 데이터 구조, 분산 시스템, 보안, SEO, 엔지니어링 철학, 코딩 모범 사례, Career에 도움주는 사이트, 개발에 필요한 논문, 서비스들, 라이션스 관련 등에 대해 정리함.",
+    "date": "2017-12-20T15:22:11.000Z",
+    "tags": ["programming"]
+  },
+  {
     "title": "Full-stack single page application with Vue.js and Flask",
     "url": "https://codeburst.io/full-stack-single-page-application-with-vue-js-and-flask-b1e036315532",
     "description": "Python, Flask와 VueJs를 가지고 웹 서비스 구현 내용 정리.",
     "date": "2017-10-19T12:13:01.000Z",
     "tags": ["python", "vue"]
+  },
+  {
+    "title": "Best websites a programmer should visit",
+    "url": "https://github.com/sdmg15/Best-websites-a-programmer-should-visit",
+    "description": "프로그래머가 방문하면 좋은 사이트들 소개. Hacker News, Reddit, Slashdot 등에서 소개한 사이트, 잡지, 코딩 가이드, 코딩 스타일, 툴, 인터뷰 준비, 언어별 도움되는 사이트, 좋은 아티클, 언어별 튜토리얼 사이트, 개발자 블로그 등에 대해 정리되어 있음.",
+    "date": "2017-07-17T09:49:38.000Z",
+    "tags": ["programming"]
+  },
+  {
+    "title": "Papers We Love",
+    "url": "https://github.com/papers-we-love/papers-we-love/",
+    "description": "프로그래머들이 봐야할 Computer Science의 모든 분야를 망라한 논문들을 정리한 사이트.",
+    "date": "2017-05-23T18:30:30.000Z",
+    "tags": ["paper"]
   },
   {
     "title": "How does a relational database work",
