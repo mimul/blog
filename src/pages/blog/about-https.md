@@ -1,6 +1,6 @@
 ---
 templateKey: "blog-post"
-title: "HTTPS 어디까지 알아봐야 하나?"
+title: "HTTPS에 대해 알아야 할 것들"
 description: "HTTPS의 현재, 장점, 프로토콜, 취약점, SSL Cipher Suites, 변화, 과제, 설정 모범 사례 등 전반적인 내용을 정리함."
 author: "미물"
 authorURL: "https://mimul.com"
@@ -23,7 +23,7 @@ tags:
 
 | 순위 | 인증서 발급사|
 | ---- | ---- |
-|1위  | Let 's Encrypt(4,720만건)|
+|1위  | Let's Encrypt(4,720만건)|
 |2위  | DigiCert(2,890만건)|
 |3위  | Comodo(1,380만건)|
 |4위  | Google(1,010만건)|
@@ -102,15 +102,15 @@ TLS는 끊어진 session을 재연결하는 TLS Session resumption이라는 기�
 
 #### SSL 프로토콜 종류
 
-| 버전 | 안전 | 개요 |
-| ---- | ---- | ---- |
+|  버전  |  안전  |  개요  |
+| :---: | :---: | :--- |
 | SSL1.0 | 안전 ✕ | 첫 번째 SSL로 설계했지만, 설계 검토의 시점에서 프로토콜의 취약점이 발견 되었기 때문에 파기됨.|
 | [SSL2.0](https://tools.ietf.org/html/rfc6176) | 안전 ✕ | SSL1.0 문제를 해결하고 설계후 1994년에 SSL2.0로 넷스케이프가 공개. [DROWN 공격](https://drownattack.com/) 문제로 사용 중지됨. |
 | [SSL3.0](https://tools.ietf.org/html/rfc7568) | 안전 ✕ | SSL2.0 문제를 해결하고 1995년 SSL3.0로 공개. POODLE 공격 문제로 사용 중지됨.  |
 | [TLS1.0](https://tools.ietf.org/html/rfc2246) | △ | SSL3.0과 TLS1.0의 양자 사이에는 정확한 호환성은 아니지만 거의 같음. 1999년에 공개. [BEAST 공격](https://bug665814.bmoattachments.org/attachment.cgi?id=540839) 문제가 있음. |
 | [TLS1.1](https://tools.ietf.org/html/rfc4346) | ◯ | TLS 1.0에서의발견된 새로운 공격기법(BEAST 공격 및 CBC 모드의 오류를 사용한 공격)에 대한 대응. 2006년에 공개. [PCIDSSv3.2](https://blog.pcisecuritystandards.org/are-you-ready-for-30-june-2018-sayin-goodbye-to-ssl-early-tls) |
 | [TLS1.2](https://tools.ietf.org/html/rfc5246) | ◎ | 해시 알고리즘 SHA-256이 추가되었고, 블록 암호에 대한 기존의 CBC 모드뿐만 아니라, GCM CCM을 같은 인증된 암호화가 가능해 짐. 2008년에 공개. 현재 가장 많이 사용되는 버전임.|
-| [TLS1.3](https://tlswg.github.io/tls13-spec/) | 개발중 | 인터넷 환경의 변화와 TLS1.2까지의 암호화 강도 부족을 개선하기 위해 만들들기 시작했고 2018년 8월에 [RFC 8446] (https://datatracker.ietf.org/doc/rfc8446/)으로 스펙이 결정됨.|
+| [TLS1.3](https://tlswg.github.io/tls13-spec/) | 개발중 | 인터넷 환경의 변화와 TLS1.2까지의 암호화 강도 부족을 개선하기 위해 만들들기 시작했고 2018년 8월에 [RFC8446](https://datatracker.ietf.org/doc/rfc8446/)으로 스펙이 결정됨.|
 
 [SSL and TLS Deployment Best Practices](https://github.com/ssllabs/research/wiki/SSL-and-TLS-Deployment-Best-Practices)의 2.2 Use Secure Protocols에 봐도, 아래의 SSL 취약점들을 살펴보아도, 아래의 TLS의 변화를 살펴보아도 이젠 TLS 1.2 이상을 사용해야 하는 시기가 곧 도래하고 있다.
 
@@ -200,7 +200,7 @@ TLS는 끊어진 session을 재연결하는 TLS Session resumption이라는 기�
 - 대책 : SSLv2 비활성화.
 - 상세 정보 : [DROWN](https://drownattack.com/).
 
-**SWEET32 - [CVE-2016-2183](https://nvd.nist.gov/vuln/detail/CVE-2016-2183)**
+**11. SWEET32 - [CVE-2016-2183](https://nvd.nist.gov/vuln/detail/CVE-2016-2183)**
 
 > 3DES 암호 알고리즘에는 약 40억의 블록 birthday bound를 가지고 있기 때문에, 장시간 계속되는 암호화된 세션에 대해서 생일 공격 "Sweet32" 공격을 함으로써, 원격의 공격자가 평문 데이터를 취득하기 쉽게 되는 취약성이 있다.
 
