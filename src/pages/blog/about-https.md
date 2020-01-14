@@ -19,10 +19,10 @@ tags:
 
 좀 지난 자료지만, [Measuring HTTPS Adoption on the Web](https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/46197.pdf) 논문을 통해 Google과 Mozilla가 Chrome과 Firefox의 HTTPS 이용 상황을 공개하고 있는데, 2017년 1월 기간 HTTPS 채용 비율 40%이고 Alaxa 100 도메인에서는 88%가 되며 전반적으로 HTTPS화가 진행되고 있다.
 
-최근에는 [Let's Encrypt](https://letsencrypt.org/)로 인해 HTTPS를 적용하는 사이트가 많이 증가하는 추세이다. [Let's Encrypt Stats](https://letsencrypt.org/stats/)에 의하면 사용중인 도메인이 1억 8천 100만 정도이다. 어느 인증서가 많이 사용되는지 [통계](https://www.leebutterman.com/2019/08/05/analyzing-hundreds-of-millions-of-ssl-connections.html)를 보면 Let's Encrypt가 4,720만건으로 1위다.
+최근에는 [Let's Encrypt](https://letsencrypt.org/)로 인해 HTTPS를 적용하는 사이트가 많이 증가하는 추세이다. [Let's Encrypt Stats](https://letsencrypt.org/stats/)(2020년 1월 기준)에 의하면 사용중인 도메인이 1억 8천 100만 정도이다. 어느 인증서가 많이 사용되는지 [통계](https://www.leebutterman.com/2019/08/05/analyzing-hundreds-of-millions-of-ssl-connections.html)(2019년 8월 기준)를 보면 Let's Encrypt가 4,720만건으로 1위다.
 
 | 순위 | 인증서 발급사|
-| ---- | ---- |
+| :----: | :---- |
 |1위  | Let's Encrypt(4,720만건)|
 |2위  | DigiCert(2,890만건)|
 |3위  | Comodo(1,380만건)|
@@ -112,7 +112,7 @@ TLS는 끊어진 session을 재연결하는 TLS Session resumption이라는 기�
 | [TLS1.2](https://tools.ietf.org/html/rfc5246) | ◎ | 해시 알고리즘 SHA-256이 추가되었고, 블록 암호에 대한 기존의 CBC 모드뿐만 아니라, GCM CCM을 같은 인증된 암호화가 가능해 짐. 2008년에 공개. 현재 가장 많이 사용되는 버전임.|
 | [TLS1.3](https://tlswg.github.io/tls13-spec/) | 개발중 | 인터넷 환경의 변화와 TLS1.2까지의 암호화 강도 부족을 개선하기 위해 만들들기 시작했고 2018년 8월에 [RFC8446](https://datatracker.ietf.org/doc/rfc8446/)으로 스펙이 결정됨.|
 
-[SSL and TLS Deployment Best Practices](https://github.com/ssllabs/research/wiki/SSL-and-TLS-Deployment-Best-Practices)의 2.2 Use Secure Protocols에 봐도, 아래의 SSL 취약점들을 살펴보아도, 아래의 TLS의 변화를 살펴보아도 이젠 TLS 1.2 이상을 사용해야 하는 시기가 곧 도래하고 있다.
+[SSL and TLS Deployment Best Practices](https://github.com/ssllabs/research/wiki/SSL-and-TLS-Deployment-Best-Practices)의 2.2 Use Secure Protocols과, SSL 취약점, 브라우저 벤더들의 TLS 지원 버전 상향 등 고려하면 TLS 1.2 이상을 사용해야 하는 시기가 도래했다.
 
 #### SSL의 취약점들
 
@@ -213,7 +213,7 @@ TLS는 끊어진 session을 재연결하는 TLS Session resumption이라는 기�
 Cipher Suites에 사용할 암호화 방법 확인은 아래의 커맨드로 확인이 가능하다. 현재 설정하고 있는 정보가 문제가 있는지 확인하기 위해 이 커맨드 확인이 필요하다. 그리고 그 결과값을 해석하는 방법도 이해할 필요가 있다.
 
 ```bash
-❯ openssl ciphers -v 'HIGH:!ADH:!MD5;'
+❯ openssl ciphers -v 'HIGH:!aNULL:!eNULL:!EXPORT:!ADH:!DES:!MD5:!PSK:!RC4;'
 
 ECDHE-RSA-AES256-GCM-SHA384 TLSv1.2 Kx=ECDH     Au=RSA  Enc=AESGCM(256) Mac=AEAD
 ECDHE-ECDSA-AES256-GCM-SHA384 TLSv1.2 Kx=ECDH     Au=ECDSA Enc=AESGCM(256) Mac=AEAD
@@ -266,15 +266,15 @@ CAMELLIA128-SHA         SSLv3 Kx=RSA      Au=RSA  Enc=Camellia(128) Mac=SHA1
 | Enc | 암호화 통신에 사용되는 암호화 알고리즘 | DES, AES, RC4 |
 | Mac | 메시지 인증 코드 | MD5, SHA-1, SHA-2, SHA-3 |
 
-[SSL and TLS Deployment Best Practices](https://github.com/ssllabs/research/wiki/SSL-and-TLS-Deployment-Best-Practices)의 2.3 Use Secure Cipher Suites나 SSL 취약점을 참고하여 ADH, MD5, SHA1, RC4, 3DES는 보안 취약점이 있어서 될 수 있으면 제외하는게 바람직하다.
+[SSL and TLS Deployment Best Practices](https://github.com/ssllabs/research/wiki/SSL-and-TLS-Deployment-Best-Practices)의 2.3 Use Secure Cipher Suites와 SSL 취약점을 참고하여 ADH, NULL, MD5, SHA1, RC4, 3DES는 보안 취약점이 있어서 될 수 있으면 제외(비활성화)하는게 바람직하다.
 
 #### TLS의 변화 - 버전 1.1이하 지원 중단
 
 **1. 브라우저별 지원 중단 일정 및 정보**
 
 |브라우저| 일정 | 관련 근거|
-| ---- | ---- | ---- |
-|Chrome | 2020년 3월 (Chrome 81) | [Chrome UI for Deprecating Legacy TLS Versions](https://security.googleblog.com/2019/10/chrome-ui-for-deprecating-legacy-tls.html)|
+| :----: | ---- | :---- |
+|Chrome | 2020년 3월(Chrome 81) | [Chrome UI for Deprecating Legacy TLS Versions](https://security.googleblog.com/2019/10/chrome-ui-for-deprecating-legacy-tls.html)|
 |Safari | 2020년 3월 | [Deprecation of Legacy TLS 1.0 and 1.1 Versions](https://webkit.org/blog/8462/deprecation-of-legacy-tls-1-0-and-1-1-versions/)|
 |Firefox | 2020년 3월 | [Removing Old Versions of TLS](https://blog.mozilla.org/security/2018/10/15/removing-old-versions-of-tls/)|
 |IE | 2020년 상반기 | [Modernizing TLS connections in Microsoft Edge and Internet Explorer 11](https://blogs.windows.com/msedgedev/2018/10/15/modernizing-tls-edge-ie11/)|
@@ -293,10 +293,10 @@ CAMELLIA128-SHA         SSLv3 Kx=RSA      Au=RSA  Enc=Camellia(128) Mac=SHA1
 **3. 웹 서버의 TLS 1.2 최소 요구 사양**
 
 |구분 | 웹 서비스 제공자 | 필요 버전 |
-| ---- | :----: | ---- |
-|OpenSSL 기반 | Apache, Webtob, Nginx, Lighttpd 등 | OpenSSL 1.0.1 이상 |
-|JAVA 기반 | Tomcat, Resin, WebLogic 등 | JAVA 1.6(6u121) 이상 |
-|윈도우 서버 | IIS(Internet Information Services) | WinServer 2008 R2, IIS 7.5 이상 |
+| :----: | :---- | ---- |
+|OpenSSL기반 | Apache, Webtob, Nginx, Lighttpd 등 | OpenSSL 1.0.1 이상 |
+|JAVA기반 | Tomcat, Resin, WebLogic 등 | JAVA 1.6(6u121) 이상 |
+|윈도우서버 | IIS(Internet Information Services) | WinServer 2008 R2, IIS 7.5 이상 |
 
 **4. SSL 프로토콜 설정**
 
@@ -323,7 +323,7 @@ HTTP/2는 요청과 응답을 병렬로 수행 파이프 라인을 통해 하나
 현재 각각의 OS나 브라우저 벤더가 각자의 정책에 따라 신중하게 인증 기관을 심사하고 루트 인증서 등록을 허용하고 있다. 트러스트 앵커에 등록된 인증 기관이 외부로부터 침입을 받거나 업무상의 실수로 잘못된 서버 인증서를 발급하거나 하면 문제가 심각하게 발생한다. 실제로 다양하게 발생하고 있고, 모든 인증 기간을 동일한 수준으로 신뢰 수준으로 보장하는데 한계가 있다.
 
 | 구분  |Windows | macOS | Linux | Android |
-| --- | --- | --- | --- | --- |
+| :---: | :---: | :---: | :---: | :---: |
 |IE/Edge | OS의 rootCA | - | - | - |
 |Safari | - | OS의 rootCA | - | - |
 |Chrome | OS의 rootCA | OS의 rootCA | Mozilla의 rootCA 또는 ca-bundle | Mozilla의 rootCA |
@@ -333,15 +333,18 @@ HTTP/2는 요청과 응답을 병렬로 수행 파이프 라인을 통해 하나
 #### SSL 관련 설정 모범 사례 요약
 
 - 최신 버전의 openssl [CVE-2014-0160/CVE-2014-0224]
+- 암호화할 때에는 적어도 128bit 이상의 cipher를 사용하는 것이 좋음. 3DES 비활성화.
 - SSL 프로토콜 1.1이상 사용. 브라우저들의 정책(보안 이슈 대응) 변화에 따라 버전 1.1이하 지원이 중단되므로 1.2 이상 사용해야 함.
-- ADH, MD5, SHA1, RC4, 3DES 등을 제외한 Secure Cipher Suites를 사용하는 것을 권장함.
+- 그외 안전하지 않은 cipher는 비활성화. ADH(Anonymous Diffie-Hellman), NULL, MD5, SHA1, RC4 등을 비활성화.
+- PFS(perfect forward secrecy)에 해당하는 cipher를 먼저 정의. 비밀 키(private key)가 누출에서도 PFS를 통해 암호화된 패킷 복호화 할 수 없도록하는 특징이 있음.
 - Block cipher mode는 GCM 사용을 권장.
 
 위 내용을 참고하여 [Mozilla SSL Configuration Generator](https://ssl-config.mozilla.org/)와 [NGINX Config](https://www.digitalocean.com/community/tools/nginx)에서 웹 서버별로 설정값을 생성할 수도 있다.
-그리고 유명 사이트의 브라우저별로 지원하는 정보를 살펴보는 것도 도움이 된다. 아래 내용은 [Netcraft toolbar site report](https://toolbar.netcraft.com/site_report)에서 참고했다.
+
+유명 사이트의 브라우저별로 지원하는 정보를 살펴보는 것도 도움이 된다. 아래 내용은 [Netcraft toolbar site report](https://toolbar.netcraft.com/site_report)에서 참고했다.
 
 | 사이트 | Chrome | FireFox | Safari | Opera |
-| ---- | ---- |----| ---- | ---- |
+| :----: | :----: |:----:| :----: | :----: |
 |google.com| ECDHE-ECDSA-AES128-GCM-SHA256 | ECDHE-ECDSA-AES128-GCM-SHA256 | ECDHE-ECDSA-AES128-GCM-SHA256 |ECDHE-ECDSA-AES128-GCM-SHA256|
 |facebook.com| ECDHE-ECDSA-AES128-GCM-SHA256 | ECDHE-ECDSA-AES128-GCM-SHA256 | ECDHE-ECDSA-AES128-GCM-SHA256 | ECDHE-ECDSA-AES128-GCM-SHA256 |
 |apple.com|ECDHE-RSA-AES128-GCM-SHA256|ECDHE-RSA-AES128-GCM-SHA256|ECDHE-RSA-AES128-GCM-SHA256|ECDHE-RSA-AES128-GCM-SHA256|
@@ -349,4 +352,4 @@ HTTP/2는 요청과 응답을 병렬로 수행 파이프 라인을 통해 하나
 |naver.com|ECDHE-RSA-AES128-GCM-SHA256|ECDHE-RSA-AES128-GCM-SHA256|ECDHE-RSA-AES128-GCM-SHA256|ECDHE-RSA-AES128-GCM-SHA256|
 
 - 브라우저별로 대부분 Cipher Suites는 ECDHE-ECDSA-AES128-GCM-SHA256나 ECDHE-RSA-AES128-GCM-SHA256를 지원하고 있는 경우가 많음.
-- 지원 SSL 프로토콜은 TLSv1.2
+- SSL 프로토콜은 TLSv1.2
