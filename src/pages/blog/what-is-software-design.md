@@ -5,7 +5,7 @@ description: "Jack W. Reeves가 작성한 What Is Software Design?에서 소프�
 author: "미물"
 authorURL: "https://mimul.com"
 date: "2008-01-18T20:12:12.000Z"
-lastModificationTime: "2008-01-18T20:35:12.000Z"
+lastModificationTime: "2020-01-18T21:23:58.000Z"
 image: "/img/topics/software_developement.jpg"
 commentId: "what-is-software-design-2008-01-18"
 tags:

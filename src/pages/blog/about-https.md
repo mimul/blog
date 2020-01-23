@@ -15,7 +15,7 @@ tags:
 ---
 인터넷 사이트의 안전을 위해 HTTPS를 적용하는 사이트들이 많아지고 관심이 늘어가고 있습니다. SSL 인증서를 구매해서 서버에 설치하면 끝나는것이 아니라, 좀 더 HTTPS 프로토콜과 작동방식으로 이해하면 어떻게 우리 사이트에 신뢰성을 주는지, 그리고 제대로 알고 적절한 설정을 하여야만 문제 발생을 없애고 신뢰성을 높일 수 있어 리서치하고 조사한 내용을 공유합니다.
 
-#### HTTPS 현황
+## HTTPS 현황
 
 좀 지난 자료지만, [Measuring HTTPS Adoption on the Web](https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/46197.pdf) 논문을 통해 Google과 Mozilla가 Chrome과 Firefox의 HTTPS 이용 상황을 공개하고 있는데, 2017년 1월 기간 HTTPS 채용 비율 40%이고 Alaxa 100 도메인에서는 88%가 되며 전반적으로 HTTPS화가 진행되고 있다.
 
@@ -38,7 +38,7 @@ tags:
 
 그리고 [2017년 10월 중순에 출시된 Chrome 62](https://www.chromium.org/Home/chromium-security/marking-http-as-non-secure)부터 HTTP 연결 페이지에 양식 등 사용자가 데이터를 입력하면 다음과 같이 주소창에 "보호되지 않은 통신(Not Secure)"라는 경고가 표시되기 시작했고, Mozilla에서도 [Secure Contexts Everywhere](https://blog.mozilla.org/security/2018/01/15/secure-contexts-everywhere/)라는 글에서 Firefox의 새로운 기능 구현은 기본적으로 HTTPS를 필요로한다고 결정했다.
 
-#### HTTPS로 가야 하는 이유
+## HTTPS로 가야 하는 이유
 
 **1. Identity(인증)**
 
@@ -60,13 +60,13 @@ https://a.com을 접속하면 브라우저는 a.com에서 인증서를 수신하
 
 Google은 HTTPS 페이지를 [우선적으로 색인을 생성](https://webmasters.googleblog.com/2015/12/indexing-https-pages-by-default.html), SEO 헤택 등.
 
-#### HTTP와 HTTPS의 차이
+## HTTP와 HTTPS의 차이
 
 HTTP의 경우는 TCP 핸드셰이크 후에 HTTP 요청/응답으로 서로 어플리케이션 데이터를 주고 받습니다. 이때 통신은 평문으로 이루어지고, 중간자 HTTP 데이터를 보거나 변조가 가능하다. 반면, HTTPS는 HTTP over TLS를 말하며, TCP 핸드세이크 후에 TLS 핸드셰이크를 진행하고 그후부터는 암호화 통신이 시작되며 HTTP 요청/응답을 통해 어플리케이션 데이터를 주고 받는다.
 
 ![HTTP vs HTTPS](/img/blog/ssl_http_https.png)
 
-#### TLS 핸드셰이크 프로토콜
+## TLS 핸드셰이크 프로토콜
 
 HTTPS는 HTTP over TLS를 말한다. 그래서 TLS의 핸드셰이크 프로토콜을 이해하는게 필요하다.
 
@@ -94,13 +94,13 @@ TLS 통신을 실현하는 데 필요한 매개 변수를 클라이언트와 서
 
 이 후에는 HTTP 요청과 HTTP 응답을 통해 애플리케이션의 데이터를 지속적으로 암호화하여 송수신한다.
 
-#### TLS 핸드 셰이크 resumption
+## TLS 핸드 셰이크 resumption
 
 TLS는 끊어진 session을 재연결하는 TLS Session resumption이라는 기능이 있다. 이 기능은 일단 연결이 완료된 TLS Session 정보의 ID에 대해 캐시 연결시 캐시된 정보를 이용하여 세션을 다시 연결이 아닌 마지막 연결을 복구하는 기능이다. TLS Session resumption를 이용했을 때의 프로토콜의 동작은 TLS1.2 RFC인 [RFC5246의 Section 7.3](https://tools.ietf.org/html/rfc5246)에 기술되어 있다.
 
 ![TLS 핸드 셰이크 resumption](/img/blog/ssl_tls_resumption.png)
 
-#### SSL 프로토콜 종류
+## SSL 프로토콜 종류
 
 |  버전  |  안전  |  개요  |
 | :---: | :---: | :--- |
@@ -114,7 +114,7 @@ TLS는 끊어진 session을 재연결하는 TLS Session resumption이라는 기�
 
 [SSL and TLS Deployment Best Practices](https://github.com/ssllabs/research/wiki/SSL-and-TLS-Deployment-Best-Practices)의 2.2 Use Secure Protocols과, SSL 취약점, 브라우저 벤더들의 TLS 지원 버전 상향 등 고려하면 TLS 1.2 이상을 사용해야 하는 시기가 도래했다.
 
-#### SSL의 취약점들
+## SSL의 취약점들
 
 **1. BEAST - [CVE-2011-3389](https://nvd.nist.gov/vuln/detail/CVE-2011-3389)**
 
@@ -208,7 +208,7 @@ TLS는 끊어진 session을 재연결하는 TLS Session resumption이라는 기�
 - 대책 : 3DES 등 64bits 블록 암호 사용 제외.
 - 상세 정보 : [Sweet32: Birthday attacks on 64-bit block ciphers in TLS and OpenVPN](https://sweet32.info/).
 
-#### SSL Cipher Suites
+## SSL Cipher Suites
 
 Cipher Suites에 사용할 암호화 방법 확인은 아래의 커맨드로 확인이 가능하다. 현재 설정하고 있는 정보가 문제가 있는지 확인하기 위해 이 커맨드 확인이 필요하다. 그리고 그 결과값을 해석하는 방법도 이해할 필요가 있다.
 
@@ -268,7 +268,7 @@ CAMELLIA128-SHA         SSLv3 Kx=RSA      Au=RSA  Enc=Camellia(128) Mac=SHA1
 
 [SSL and TLS Deployment Best Practices](https://github.com/ssllabs/research/wiki/SSL-and-TLS-Deployment-Best-Practices)의 2.3 Use Secure Cipher Suites와 SSL 취약점을 참고하여 ADH, NULL, MD5, SHA1, RC4, 3DES는 보안 취약점이 있어서 될 수 있으면 제외(비활성화)하는게 바람직하다.
 
-#### TLS의 변화 - 버전 1.1이하 지원 중단
+## TLS의 변화 - 버전 1.1이하 지원 중단
 
 **1. 브라우저별 지원 중단 일정 및 정보**
 
@@ -310,7 +310,7 @@ SSLProtocol all -SSLv2 -SSLv3 -TLSv1
 ssl_protocols TLSv1.1 TLSv1.2;
 ```
 
-#### HTTPS와 관련된 과제들
+## HTTPS와 관련된 과제들
 
 **HTTP/2 사양이 HTTPS 및 HTTP 모두 지원**
 
@@ -330,7 +330,7 @@ HTTP/2는 요청과 응답을 병렬로 수행 파이프 라인을 통해 하나
 |Firefox | Mozilla의 rootCA | Mozilla의 rootCA | Mozilla의 rootCA | Mozilla의 rootCA |
 |Node.js | Mozilla의 rootCA | Mozilla의 rootCA | Mozilla의 rootCA | - |
 
-#### SSL 관련 설정 모범 사례 요약
+## SSL 관련 설정 모범 사례 요약
 
 - 최신 버전의 openssl [CVE-2014-0160/CVE-2014-0224]
 - 암호화할 때에는 적어도 128bit 이상의 cipher를 사용하는 것이 좋음. 3DES 비활성화.

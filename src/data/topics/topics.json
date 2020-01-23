@@ -286,5 +286,11 @@
     "slug": "ssl",
     "description": "SSL TLS HTTPS",
     "image": "ssl.jpg"
+  },
+  {
+    "title": "Algorithm",
+    "slug": "algorithm",
+    "description": "Algorithm",
+    "image": "algorithm.png"
   }
 ]
