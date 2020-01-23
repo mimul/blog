@@ -1,6 +1,6 @@
 ---
 templateKey: "blog-post"
-title: "Rate Limiting Algorithm에 대해"
+title: "서비스 가용성 확보에 필요한 Rate Limiting Algorithm에 대해"
 description: "Rate Limit 알고리즘(Leaky bucket, Token bucket, Fixed window counter, Sliding window log, Sliding window counter)과 주요 서비스들의 Rate Limit 정책 등에 정리한 글."
 author: "미물"
 authorURL: "https://mimul.com"
