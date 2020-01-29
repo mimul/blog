@@ -292,5 +292,11 @@
     "slug": "algorithm",
     "description": "Algorithm",
     "image": "algorithm.png"
+  },
+  {
+    "title": "Prediction",
+    "slug": "prediction",
+    "description": "Prediction",
+    "image": "predict.jpg"
   }
 ]
