@@ -93,7 +93,7 @@ const Navbar = class extends React.Component {
                 href="https://github.com/mimul"
                 target="_blank"
               >
-                <span className="icon" style={{ color: "#333" }}>
+                <span className="icon">
                   <FaGithub></FaGithub>
                 </span>
               </OutboundLink>
@@ -102,7 +102,7 @@ const Navbar = class extends React.Component {
                 href="https://twitter.com/mimul"
                 target="_blank"
               >
-                <span className="icon" style={{ color: "#55acee" }}>
+                <span className="icon">
                   <FaTwitter></FaTwitter>
                 </span>
               </OutboundLink>

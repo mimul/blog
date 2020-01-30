@@ -17,7 +17,7 @@ tags:
 
 ![dynabook](/img/blog/dynabook-kids.gif)
 
-컴퓨터 과학자 앨런 케이가 쓴 논문 ["A Personal Computer for Children of All Ages(1972년)"](http://www.vpri.org/pdf/hc_pers_comp_for_children.pdf)의 미디어(책 포함) 기능을 갖춘 Dynabook이다. 이것을 보고 엘런 케이가 미래의 컴퓨터를 예측했다고 하는데, 실제는 그렇지 않다고 생각한다.
+위 그림은 컴퓨터 과학자 앨런 케이가 쓴 논문 ["A Personal Computer for Children of All Ages(1972년)"](http://www.vpri.org/pdf/hc_pers_comp_for_children.pdf)의 미디어(책 포함) 기능을 갖춘 Dynabook이다. 이것을 보고 엘런 케이가 미래의 컴퓨터를 예측했다고 하는데, 실제는 그렇지 않다고 생각한다.
 
 ![dynabook detail](/img/blog/dynamic_book_detail.gif)
 

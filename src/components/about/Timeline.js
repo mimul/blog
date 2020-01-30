@@ -16,7 +16,7 @@ export default class Timeline extends Component {
 
           <div className="timeline is-centered mt-3">
             <header className="timeline-header">
-              <span className="tag is-medium is-primary">Now</span>
+              <span className="tag is-large">Now</span>
             </header>
             <div className="timeline-item">
               <div className="timeline-marker is-icon">
@@ -30,7 +30,7 @@ export default class Timeline extends Component {
               </div>
             </div>
             <header className="timeline-header">
-              <span className="tag is-primary">2016</span>
+              <span className="tag is-large">2016</span>
             </header>
             <div className="timeline-item">
               <div className="timeline-marker is-icon">
@@ -44,7 +44,7 @@ export default class Timeline extends Component {
               </div>
             </div>
             <header className="timeline-header">
-              <span className="tag is-primary">2010</span>
+              <span className="tag is-large">2010</span>
             </header>
             <div className="timeline-item">
               <div className="timeline-marker is-icon">
@@ -58,7 +58,7 @@ export default class Timeline extends Component {
               </div>
             </div>
             <header className="timeline-header">
-              <span className="tag is-primary">2000</span>
+              <span className="tag is-large">2000</span>
             </header>
             <div className="timeline-item">
               <div className="timeline-marker is-icon">
@@ -74,7 +74,7 @@ export default class Timeline extends Component {
               </div>
             </div>
             <div className="timeline-header">
-              <span className="tag is-medium is-primary">Start</span>
+              <span className="tag is-large">Start</span>
             </div>
           </div>
         </div>
