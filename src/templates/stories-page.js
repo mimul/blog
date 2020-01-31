@@ -1,4 +1,5 @@
 import React from "react";
+import AdSense from 'react-adsense';
 import Layout from "../components/Layout";
 import SEO from "../components/seo/SEO";
 import StoriesRoll from "../components/StoriesRoll";
@@ -14,9 +15,9 @@ export default class RecommendedStoriesIndexPage extends React.Component {
       <Layout>
         <div className="container">
           <SEO
-            title="Developer Articles"
+            title="Articles"
             description="Developer articles which Mimul recommends."
-            slug="\recommended\stories"
+            slug="\recommended\articles"
           />
           <div className="section">
             <div className="columns">
@@ -27,6 +28,15 @@ export default class RecommendedStoriesIndexPage extends React.Component {
                 <h4 className="title is-4 spanborder has-text-weight-bold">
                   <span>All Articles</span>
                 </h4>
+                <div class="blog-post">
+                  <AdSense.Google
+                    client='ca-pub-1357079034135808'
+                    slot='5864854981'
+                    style={{ display: 'block' }}
+                    format='auto'
+                    responsive='true'
+                  />
+                </div>
                 <StoriesRoll posts={stories} />
                 <Pagination
                   previousPagePath={previousPagePath}

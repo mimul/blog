@@ -1,5 +1,5 @@
 import React from "react";
-
+import AdSense from 'react-adsense';
 import Layout from "../components/Layout";
 import BlogRoll from "../components/BlogRoll";
 import SEO from "../components/seo/SEO";
@@ -9,14 +9,13 @@ import Pagination from "../components/Pagination";
 export default class BlogIndexPage extends React.Component {
   render() {
     const { pageContext, data } = this.props;
-    // console.log(pageContext);
     const posts = data.allMarkdownRemark.edges;
     const { previousPagePath, nextPagePath } = pageContext;
     return (
       <Layout>
         <SEO
-          title="mimul tech log"
-          description="mimul tech log"
+          title="Blog Posts"
+          description="Blog posts written by Mimul."
           slug="\blog"
         />
 
@@ -27,6 +26,15 @@ export default class BlogIndexPage extends React.Component {
                 <h4 className="title is-4 spanborder has-text-weight-bold">
                   <span>All Posts</span>
                 </h4>
+                <div class="blog-post">
+                  <AdSense.Google
+                    client='ca-pub-1357079034135808'
+                    slot='5864854981'
+                    style={{ display: 'block' }}
+                    format='auto'
+                    responsive='true'
+                  />
+                </div>
                 <BlogRoll posts={posts} />
                 <Pagination
                   previousPagePath={previousPagePath}
