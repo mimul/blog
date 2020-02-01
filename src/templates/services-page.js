@@ -1,4 +1,5 @@
 import React from "react";
+import AdSense from 'react-adsense';
 import { graphql } from "gatsby";
 import Layout from "../components/Layout";
 import SEO from "../components/seo/SEO";
@@ -14,7 +15,7 @@ export default class RecommendedServicesIndexPage extends React.Component {
       <Layout>
         <div className="container">
           <SEO
-            title="Recommended Services"
+            title="Services"
             description="Service/Service providers which Mimul recommends."
             slug="\recommended\services"
           />
@@ -28,6 +29,15 @@ export default class RecommendedServicesIndexPage extends React.Component {
             <div className="columns">
               <div className="column is-two-thirds">
                 <ServicesRoll services={services} />
+                <div class="blog-post mb-2">
+                  <AdSense.Google
+                    client='ca-pub-1357079034135808'
+                    slot='5864854981'
+                    style={{ display: 'block' }}
+                    format='auto'
+                    responsive='true'
+                  />
+                </div>
                 <Pagination
                   previousPagePath={previousPagePath}
                   nextPagePath={nextPagePath}

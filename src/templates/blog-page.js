@@ -24,19 +24,10 @@ export default class BlogIndexPage extends React.Component {
             <div className="columns">
               <div className="column">
                 <h4 className="title is-4 spanborder has-text-weight-bold">
-                  <span>All Posts</span>
+                  <span>Blog Posts</span>
                 </h4>
-                <div class="blog-post">
-                  <AdSense.Google
-                    client='ca-pub-1357079034135808'
-                    slot='5864854981'
-                    style={{ display: 'block' }}
-                    format='auto'
-                    responsive='true'
-                  />
-                </div>
                 <BlogRoll posts={posts} />
-                <div class="blog-post">
+                <div class="blog-post mb-2">
                   <AdSense.Google
                     client='ca-pub-1357079034135808'
                     slot='5864854981'

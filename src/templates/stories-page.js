@@ -28,17 +28,8 @@ export default class RecommendedStoriesIndexPage extends React.Component {
                 <h4 className="title is-4 spanborder has-text-weight-bold">
                   <span>Articles</span>
                 </h4>
-                <div class="blog-post">
-                  <AdSense.Google
-                    client='ca-pub-1357079034135808'
-                    slot='5864854981'
-                    style={{ display: 'block' }}
-                    format='auto'
-                    responsive='true'
-                  />
-                </div>
                 <StoriesRoll posts={stories} />
-                <div class="blog-post">
+                <div class="blog-post mb-2">
                   <AdSense.Google
                     client='ca-pub-1357079034135808'
                     slot='5864854981'
