@@ -36,6 +36,15 @@ export default class BlogIndexPage extends React.Component {
                   />
                 </div>
                 <BlogRoll posts={posts} />
+                <div class="blog-post">
+                  <AdSense.Google
+                    client='ca-pub-1357079034135808'
+                    slot='5864854981'
+                    style={{ display: 'block' }}
+                    format='auto'
+                    responsive='true'
+                  />
+                </div>
                 <Pagination
                   previousPagePath={previousPagePath}
                   nextPagePath={nextPagePath}
