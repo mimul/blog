@@ -114,7 +114,7 @@ const TopicsPage = ({
                         className="button is-link"
                         to={`/topics/${kebabCase(topic.slug)}/`}
                       >
-                        <FaBookOpen /> <span>&nbsp;{topic.totalStories} STORIES</span>
+                        <FaBookOpen /> <span>&nbsp;{topic.totalStories} ARTICLES</span>
                       </Link>
                     )}
                     {topic.totalServices > 0 && (

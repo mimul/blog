@@ -52,7 +52,7 @@ export const IndexPageTemplate = ({
           <div className="column">
             {/*}<h4 className="spanborder">
               <span className="title is-4 has-text-weight-bold">
-                Recommended Stories
+                Recommended Articles
               </span>
             </h4>*/}
             <StoriesRoll posts={stories} mode={`compact`} />
@@ -61,7 +61,7 @@ export const IndexPageTemplate = ({
                 to="/recommended/stories"
                 className="button k-button k-primary raised has-gradient is-bold"
               >
-                <span className="text">View More Stories</span>
+                <span className="text">View More Articles</span>
                 <span className="front-gradient"></span>
               </Link>
             </div>

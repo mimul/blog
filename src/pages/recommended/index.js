@@ -36,7 +36,7 @@ export default class RecommendedIndexPage extends React.Component {
                   <div className="mt-1">
                     <Link to="/recommended/stories">
                       <h2 className="title is-4 has-text-weight-bold">
-                        Developer Stories
+                        Developer Articles
                       </h2>
                     </Link>
                     <p className="content">

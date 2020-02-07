@@ -103,7 +103,7 @@ load averages에 이어 1분, 5분, 15분 단위로 숫자가 표시된다. CPU 
 ```
 - messages에서 커널과 OS의 표준 프로세스의 로그를 봄.
 ```bash
-# cat /var/log/messages |tail
+# cat /var/log/messages | egrep -i "emerg|alert|crit|error|warn|fail"
 ```
 - secure 로그를 통해 ssh 연결 실패 정보를 보고 횟수가 많은지 파악해서 패스워드 변경 주기를 앞당기는 근거로 활용함.
 ```bash

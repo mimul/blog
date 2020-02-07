@@ -298,5 +298,11 @@
     "slug": "prediction",
     "description": "Prediction",
     "image": "predict.jpg"
+  },
+  {
+    "title": "AI, Deep Learning, Machine Learning",
+    "slug": "prediction",
+    "description": "Prediction",
+    "image": "ai.jpg"
   }
 ]

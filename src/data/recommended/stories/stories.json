@@ -1,5 +1,12 @@
 [
   {
+    "title": "Deep Learning Object Detection 관련 논문들.",
+    "url": "https://github.com/hoya012/deep_learning_object_detection",
+    "description": "Computer Vision 분야 Major 학회들에서 소개되었던 Object Detection 논문들과 년도별 논문들 흐름을 이해하는데 도움됨.",
+    "date": "2020-01-06T15:01:07.000Z",
+    "tags": ["ai"]
+  },
+  {
     "title": "조직문화에 도움될만한 아티클 모음.",
     "url": "https://www.holloway.com/s/syllabus-company-culture",
     "description": "조직 구조, 리더십, 포용/충돌관리,  협업, 투명성, 커뮤니케이션, 피트백 등 다영한 분야에 대한 아티클 모음.",
