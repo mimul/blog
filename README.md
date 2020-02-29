@@ -18,3 +18,10 @@ Following are the main sections apart from my [blog](https://www.mimul.com/blog)
 ### Developer Stories
 
 I read a lot, and that's how I stay updated about what's going on around. Here I am listing out some of the stories which I find useful. Find them [here](https://www.mimul.com/recommended/stories/).
+
+### Build & Run
+
+```bash
+> npm run build
+> gatsby develop
+```

@@ -304,5 +304,11 @@
     "slug": "ai",
     "description": "AI, Deep Learning, Machine Learning",
     "image": "ai.jpg"
+  },
+  {
+    "title": "Pose Estimation",
+    "slug": "Pose Estimation",
+    "description": "Pose Estimation, Human Detection",
+    "image": "pose_estimation.jpg"
   }
 ]
