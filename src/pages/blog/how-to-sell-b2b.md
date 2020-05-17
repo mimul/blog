@@ -15,7 +15,7 @@ tags:
   - Segment
 ---
 
-이 글은 [SEGMENT](https://segment.com/)의 공동 창업자자이자 CTO인 [Calvin French-Owen](https://calv.info/)이 쓴 [How to sell a B2B product](https://calv.info/how-to-sell-b2b)라는 글을 원저자의 허락을 받아 번역한 글입니다. B2B 제품을 만들고 판로를 개척하지 못해서 힘들어하는 분들에게 도움이 되었으면 좋겠습니다. 때론 [원문](https://calv.info/how-to-sell-b2b)이 더 이해하기 쉬울 수 있으니 원문을 읽으시기 바랍니다. 그리고 원 글을 쓴 저자는 [SEGMENT](https://segment.com/)의 창업자며 [SEGMENT](https://segment.com/)는 CDP(고객 데이터 플랫폼) 관련 기업이며 데이터를 수집하고, 정제(올바른 데이터 판별), 분석(데이터를 분석하고 마케팅 효율 세그먼트를 설정), 예측/결정(고객 데이터에서 행동을 예상하고 마케팅 전략에 활용), 활용(각종 마케팅 플랫폼에 최신, 최적의 정보를 제공)할 수 있게끔 도와주는 플랫폼입니다. 이 SEGMENT 기업을 알면 아래 글의 내용을 이해하는데 도움이 될 수 있습니다.
+이 글은 [SEGMENT](https://segment.com/)의 공동 창업자이자 CTO인 [Calvin French-Owen](https://calv.info/)이 쓴 [How to sell a B2B product](https://calv.info/how-to-sell-b2b)라는 글을 원저자의 허락을 받아 번역한 글입니다. B2B 제품을 만들고 판로를 개척하지 못해서 힘들어하는 분들에게 도움이 되었으면 좋겠습니다. 때론 [원문](https://calv.info/how-to-sell-b2b)이 더 이해하기 쉬울 수 있으니 원문을 읽으시기 바랍니다. 그리고 원 글을 쓴 저자는 [SEGMENT](https://segment.com/)의 창업자며 [SEGMENT](https://segment.com/)는 CDP(고객 데이터 플랫폼) 관련 기업이며 데이터를 수집하고, 정제(올바른 데이터 판별), 분석(데이터를 분석하고 마케팅 효율 세그먼트를 설정), 예측/결정(고객 데이터에서 행동을 예상하고 마케팅 전략에 활용), 활용(각종 마케팅 플랫폼에 최신, 최적의 정보를 제공)할 수 있게끔 도와주는 플랫폼입니다. 이 SEGMENT 기업을 알면 아래 글의 내용을 이해하는데 도움이 될 수 있습니다.
 
 최근, 많은 초기 단계의 창업자들이 저에게 GTM(Go-To-Market)에 대한 조언을 요청하는 이메일을 보내오고 있다. 실제 제품을 가지고 있고 아직은 소수의 고객에게 실질적인 문제를 해결해주고 있다.
 
