@@ -5,7 +5,7 @@ description: "CTO가 해야할 역할에 대해 잘 기술한 hat does a CTO do?
 author: "미물"
 authorURL: "https://mimul.com"
 date: "2018-01-18T19:21:00.000Z"
-lastModificationTime: "2020-03-22T14:10:00.000Z"
+lastModificationTime: "2020-05-17T07:22:53.000Z"
 image: "/img/cto.jpg"
 commentId: "what-does-a-cto-2018-01-18"
 tags:
@@ -17,6 +17,7 @@ CTO에 대해서는 좋은 아티클을 추천한다면 개인적으로 [#define
 이 질문은 내가 많이 받은 질문이기도 하고, 1년 전(2012년에 Cloudera CTO가 되었을 때)만 해도 이에 대한 해답을 찾으려고 노력을 많이 했다. 그래서 온라인상에서 자료도 많이 찾았고, 많은 소프트웨어 기업의 CTO들을 찾아 논의하기도 했다.
 
 여기에서는 내가 가진 지식과 조사 결과들을 가지고 다음 네가지 물음에 대한 답변을 요약하고자 한다.
+
 - 질문 1. CTO의 미션(사명)은 무엇일까?
 - 질문 2. CTO는 구체적으로 어떻게 평가되어야 할까?
 - 질문 3. CTO는 사내 업무와 대외 업무를 어떻게 시간을 배분해야 할까?

@@ -40,6 +40,8 @@ tags:
 
 ![Flatten the Curve](/img/blog/flatten-the-curve.jpg)
 
+Flatten The Curve는 유행 곡선(curve)을 평평하게(flatten) 하자는 의미이며, 감염의 유행을 완전히 억제하는 것이 어려운게 현실이고 장기적인 관점에서 모두가 의료적 혜택을 받을 수 있는 상태를 유지하기 위해 폭발적으로 대유행시키는 것을 막으려는 뜻이 있다.
+
 ##### 여기다
 
 바이러스가 이미 당신의 도시/마을/직장/교회 등에 있다고 가정하자. 그것은 [거의 확실하게 "여기"에 테스트 부족으로 인해 아직 발견되지 않았다.](https://twitter.com/balajis/status/1234879748083503105) 또한 [6개의 국가는 1개의 실험실이 있어도 테스트를 수행할 준비가 되어 있지 않다.](https://www.npr.org/sections/health-shots/2020/03/06/812833596/coronavirus-14-deaths-now-in-u-s-new-cases-in-maryland-colorado) 이탈리아에서 추정하는 바에 따르면, 초기 발병시 실제 감염 건수는 당시 확인 가능한 것보다 4배 더 많았다. 지역 사회에서의 잠재적인 감염은 [시애틀에서는 발견될때까지 몇 주 동안 계속 진행되었다.](https://twitter.com/trvrb/status/1236096904678633472) 시애틀과 스탠포드는 자체 테스트 키트를 사용하여 속도를 올리는 놀라운 일을 하고 있다. [시애틀에서 시험의 약 5-7%가 양성이며](https://twitter.com/UWVirology/status/1236017803162873856), 누구나(의사의 지시가 있으면) 검사할 수 있다.
