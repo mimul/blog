@@ -11,4 +11,4 @@ You can find me on [Twitter](https://twitter.com/mimul), [GitHub](https://github
 
 ## BACKGROUND
 
-I started my career at [DaeWoo Telecom](http://www.mercury.co.kr/history/) where I joined as an TDX-100 R&D Team and worked there for over 1 years as a Software Engineer and then moved to [KTH(KT Hitel)](https://www.kthcorp.com/) and worked at there as a Software Engineer for 10 years and worked as a co-founder for 6 years since I founded WiseEco and now to [Bodies&Souls](https://www.fittobe.com/) where I currently work as CTO.
+I started my career at [DaeWoo Telecom](http://www.mercury.co.kr/history/) where I joined as an TDX-100 R&D Team and worked there for over 1 years as a Software Engineer and then moved to [KTH(KT Hitel)](https://www.kthcorp.com/) and worked at there as a Software Engineer for 10 years and worked as a co-founder for 6 years since I founded WiseEco and now to [Bodies&Souls](https://www.fittobe.com/home/index.html) where I currently work as CTO.
