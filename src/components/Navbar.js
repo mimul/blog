@@ -123,7 +123,7 @@ export default () => (
   <StaticQuery
     query={graphql`
       query {
-        logo: file(relativePath: { eq: "mimul-logo.gif" }) {
+        logo: file(relativePath: { eq: "/img/mimul-logo.gif" }) {
           childImageSharp {
             fluid {
               ...GatsbyImageSharpFluid_withWebp
