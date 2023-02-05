@@ -143,7 +143,7 @@ Evernote의 사무실 전체의 벽면은 일러스트나 진행중인 프로젝
 
 개발자들의 개발 환경도 구축되어 있고, 무엇보다 중요한 "긱 실력주의 사회(Geek Meritocracy)"라는 CEO의 말을 통해 좋은 개발자가 인정 받고, 보상을 제대로 받을 수 있는 시스템이 구축 되어 있다는 것을 짐작할 수 있다.
 
-![Geek Meritocracy](/img/Geek_Meritocracy.jpg.scaled1000-520x204.jpg)
+![Geek Meritocracy](/img/Geek_Meritocracy.jpg)
 
 위 그림은 Evernote의 CEO가 발표한 지금이 창업을 해야하는 이유 5가지를 설명할 때 사용하는 어구들입니다. 그만큼 개발들을 이해하고 있다는 반증이다.
 
