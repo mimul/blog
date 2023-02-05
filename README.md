@@ -22,6 +22,7 @@ I read a lot, and that's how I stay updated about what's going on around. Here I
 ### Build & Run
 
 ```bash
+> nvm use 14.15.0
 > npm run build
 > gatsby develop
 ```
