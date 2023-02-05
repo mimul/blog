@@ -52,6 +52,9 @@
     "typeface-lora": "^0.0.72",
     "uuid": "^3.3.3"
   },
+  "resolutions": {
+    "sharp": "^0.27.2"
+  },
   "keywords": [
     "gatsby"
   ],
