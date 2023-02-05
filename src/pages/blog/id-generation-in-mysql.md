@@ -1,7 +1,7 @@
 ---
 templateKey: "blog-post"
-title: "MySQL에서 ID 생성에 대한 고찰"
-description: "MySQL에서 ID 생성에 알아야할 것들을 정리하고 글로벌 기업들의 사례를 조사해 정리함."
+title: "DB 테이블의 키인 ID 생성에 대한 방법 고찰 : UUID의 진화, MySQL 사용자를 위한 방법, 글로벌 기업의 ID 생성 사례"
+description: "MySQL에서 ID 생성에 대해 알아야할 것들을 정리하고 글로벌 기업들의 사례를 조사해 정리함."
 author: "미물"
 authorURL: "https://mimul.com"
 date: "2022-03-22T19:33:45.000Z"
@@ -12,7 +12,7 @@ tags:
   - MySQL
   - ID
 ---
-MySQL의 ID를 auto_increment 사용시에 대두되는 문제점으로는 ID가 예측가능하기에 공격 등 보안에 취약하고 분산된 DB 환경에서 ID의 Uniqueness 문제가 발생하는 등의 문제점을 직면하게 된다. 그래서 이를 타개하기 위해서 UUID의 진화적 측면과 글로벌 기업들은 어떻게 ID를 생성하는지 리서치해 볼 필요가 있다. 그래서 이를 조사하고 고민한 것들에 대해 기술한다.
+MySQL의 ID를 auto_increment 사용시에 대두되는 문제점으로는 ID가 예측가능하기에 공격 등 보안에 취약하고 분산된 DB 환경에서 ID의 Uniqueness 문제가 발생하는 등의 문제점을 직면하게 된다. 그래서 이를 타개하기 위해서 UUID의 진화적 측면과 MySQL 사용자를 위한 방법 그리고 글로벌 기업들은 어떻게 ID를 생성하는지 리서치해 볼 필요가 있다. 그래서 이를 조사하고 고민한 것들에 대해 기술한다.
 
 ## UUID를 Primary Key로 사용할 때 이슈
 
