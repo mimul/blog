@@ -160,7 +160,20 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `static/img/favicon_32_32.png`
+        icon: `static/img/favicon-32x32.png`,
+        icons: [
+          {
+            src: `static/img/favicon-16x16.png`,
+            sizes: `16x16`,
+            type: `image/png`,
+          },
+          {
+            src: `static/img/favicon-32x32.png`,
+            sizes: `32x32`,
+            type: `image/png`,
+          },
+        ],
+        cache_busting_mode: `none`
       }
     },
     {
