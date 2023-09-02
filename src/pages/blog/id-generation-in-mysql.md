@@ -5,7 +5,7 @@ description: "MySQL에서 ID 생성에 대해 알아야할 것들을 정리하�
 author: "미물"
 authorURL: "https://mimul.com"
 date: "2022-03-22T19:33:45.000Z"
-lastModificationTime: "2022-03-22T19:33:45.000Z"
+lastModificationTime: "2022-03-23T19:33:45.000Z"
 image: "/img/blog/twitter_snowflake.png"
 commentId: "id-generation-in-mysql-2022-03-22"
 tags:

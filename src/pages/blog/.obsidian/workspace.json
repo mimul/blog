@@ -1,0 +1,199 @@
+{
+  "main": {
+    "id": "ba2cb01906b14d6c",
+    "type": "split",
+    "children": [
+      {
+        "id": "24a45f3aec121d0e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0d4661f9780c4c9d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "startup-developer-business.md",
+                "mode": "source",
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "942e43e1a246c9c6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "what-does-a-cto-do.md",
+                "mode": "source",
+                "source": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "21e16fecbb870cd6",
+    "type": "split",
+    "children": [
+      {
+        "id": "f7814750cb6cc5bc",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "fe3062d394a900d5",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "b105d3799f9ce071",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "405e7d6e887951e9",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          },
+          {
+            "id": "79588b2184542589",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "c241e0e222919f75",
+    "type": "split",
+    "children": [
+      {
+        "id": "9cd892fe2d469845",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "bc4ceaba4b26713c",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "startup-developer-business.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "3417395406edcbc7",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "startup-developer-business.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "38b11968a5c41e6e",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "5dc99cb0e6011e40",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "startup-developer-business.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "0d4661f9780c4c9d",
+  "lastOpenFiles": [
+    "id-generation-in-mysql.md",
+    "what-does-a-cto-do.md",
+    "startup-developer-business.md",
+    "sysvar_innodb_flush_method.md",
+    "teardown-13-ways-10-million-revenues.md",
+    "good-tech-lead-bad-tech-lead.md",
+    "the-5-hour-content-delivery-network.md",
+    "the-trello-tech-stack.md",
+    "img/blog/4colours.png.md",
+    "linux-server-operations.md",
+    "img/blog/Marketplace.png.md",
+    "network-effects.md",
+    "go-vs-java-thread.md",
+    "web-api-design-from-apigee.md",
+    "uber-realtime-push-platform.md",
+    "tumblr-architecture-and-culture.md",
+    "three-great-virtues-of-a-programmer.md",
+    "thinks-exception.md",
+    "spam-filtering-using-bayes-theorem-and-mahout.md",
+    "software-architecture-cheat-sheet.md",
+    "small-but-strong-teaming.md",
+    "sandi-metz-rules-for-developers.md",
+    "reversal-of-prediction-and-realization.md",
+    "rendering-repaint-reflowrelayout-restyle.md",
+    "realtime-multi-person-pose-estimation.md",
+    "popular_ui_javascript.md",
+    "img/blog",
+    "img"
+  ]
+}
