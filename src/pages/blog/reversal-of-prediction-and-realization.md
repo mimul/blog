@@ -11,7 +11,6 @@ commentId: "reversal-of-prediction-and-realization-2012-07-14"
 tags:
   - Alan Kay
   - Dynabook
-  - Personal Computer
 ---
 대학교 때 처음 앨런 케이(Alan Kay)를 접했고 그때는 앨런 케이(Alan Kay)가 미래의 컴퓨터를 예측다고 생각했었다. 근데 지금 생각하는 것은 예측보다는 물론 앨런 케이가 영감을 줬을순 있지만 이후의 세대들이 노력과 진화에 의해 결정된 지금의 노트북이나 패드와 비슷해서 후세의 사람들이 예측했다고 판단해버린게 아닌가 하는 생각이 자꾸 든다.
 

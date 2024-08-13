@@ -10,11 +10,8 @@ image: "/img/topics/pose_estimation.png"
 commentId: "realtime-multi-person-pose-estimation-2020-02-08"
 tags:
   - Pose Estimation
-  - Deep Learning
-  - Open Pose
-  - FMS
   - AI
-  - 헬스
+  - FMS
 ---
 
 피트니스에서 운동하고자 하는 회원의 FMS(Deep Squat, Hurdle Step, In-line Lunge, Active Straight-leg Raise, Trunk Stability Push-up, Rotary Stability, Shoulder Mobility 등 7가지 운동 동작의 움직임을 테스트 후 총 점수가 14점 이하인 경우, 신체의 문제점이 있다고 판단하여 교정 운동을 통해서 신체의 문제점을 개선해 가는) 7가지 운동 동작을 보고 코치가 평가한 FMS 점수와 Deep Learning 알고리즘 중에 하나를 선택해서 자동 측정한 점수의 유사도를 평가하는 목표를 가지고 있습니다. 그래서 이를 수행하려면 먼저 Human Pose Estimation에 대한 이해가 먼저라고 생각해 필요한 논문들을 살펴보다가 [Realtime Multi-Person 2D Pose Estimation using Part Affinity Fields 논문](https://arxiv.org/abs/1611.08050)이 도움이 될 것 같아서 논문을 먼저 이해하려고 노력했고, 그 다음으로 FMS 동작을 촬영한 동영상을 가지고 해당 논문의 오픈 소스들을 참고해 동작을 인식하고 자세를 측정하는 모델을 구현/테스트를 하게 되었습니다. 몇가지 논문을 더 살펴본 다음 현실적인 아이디어를 정리해 학습과 개선을 통해 자동 측정하는 알고리즘을 개발해 보려고 합니다.

@@ -13,19 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "startup-developer-business.md",
-                "mode": "source",
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "942e43e1a246c9c6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "what-does-a-cto-do.md",
+                "file": "mysql-explain.md",
                 "mode": "source",
                 "source": true
               }
@@ -61,7 +49,7 @@
               "type": "search",
               "state": {
                 "query": "",
-                "matchingCase": false,
+                "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
@@ -105,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "startup-developer-business.md",
+                "file": "mysql-explain.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -122,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "startup-developer-business.md",
+                "file": "mysql-explain.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -145,7 +133,19 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "startup-developer-business.md"
+                "file": "mysql-explain.md"
+              }
+            }
+          },
+          {
+            "id": "b3f22fa4159ae265",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
               }
             }
           }
@@ -167,32 +167,32 @@
   },
   "active": "0d4661f9780c4c9d",
   "lastOpenFiles": [
-    "id-generation-in-mysql.md",
-    "what-does-a-cto-do.md",
+    "learn-vim-progressively.md",
+    "mysql-explain.md",
     "startup-developer-business.md",
-    "sysvar_innodb_flush_method.md",
-    "teardown-13-ways-10-million-revenues.md",
-    "good-tech-lead-bad-tech-lead.md",
-    "the-5-hour-content-delivery-network.md",
-    "the-trello-tech-stack.md",
-    "img/blog/4colours.png.md",
-    "linux-server-operations.md",
-    "img/blog/Marketplace.png.md",
-    "network-effects.md",
-    "go-vs-java-thread.md",
-    "web-api-design-from-apigee.md",
-    "uber-realtime-push-platform.md",
-    "tumblr-architecture-and-culture.md",
-    "three-great-virtues-of-a-programmer.md",
-    "thinks-exception.md",
-    "spam-filtering-using-bayes-theorem-and-mahout.md",
-    "software-architecture-cheat-sheet.md",
-    "small-but-strong-teaming.md",
-    "sandi-metz-rules-for-developers.md",
     "reversal-of-prediction-and-realization.md",
-    "rendering-repaint-reflowrelayout-restyle.md",
     "realtime-multi-person-pose-estimation.md",
-    "popular_ui_javascript.md",
+    "how-to-sell-b2b.md",
+    "editting-make-good-use-of-database.md",
+    "git-internal.md",
+    "evernote-architecture-and-culture.md",
+    "di-constructor-injection.md",
+    "editting_design-system.md",
+    "id-generation-in-mysql.md",
+    "about-rate-limit-algorithm.md",
+    "advice-for-those-who-start-development.md",
+    "all-i-need-to-know-to-be-a-better-programmer-i-learned-in-kindergarten.md",
+    "apache_event_mpm_vs_nginx_performance.md",
+    "apache-mesos.md",
+    "api-business-models.md",
+    "authority-merit.md",
+    "avoid-password-security-issues-with-sha1-salt.md",
+    "bloom-filter.md",
+    "can-do-vs-cant-do-culture.md",
+    "cognitive-biases-in-programming.md",
+    "consistent-hashing.md",
+    "devops-noops.md",
+    "dont-be-scared-of-functional-programming.md",
     "img/blog",
     "img"
   ]

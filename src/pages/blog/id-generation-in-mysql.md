@@ -94,11 +94,11 @@ ULID (Universally Unique Lexicographically Sortable Identifier)는 UUID의 단�
 
 UUIDv4, v7, ULID 의 비교를 해보면
 
-|형식    | 정렬 가능성 | 단조 증가성(순서) | 무작위 정도   |
-| :--- | :---     | :---:          | :---       |
-| UUIDv4 | 불가능    | 없음           | 122 bits   |
-| UUIDv7 | 가능     | 있음           | 62 bits    |
-| ULID   | 가능     | 있음           | 80 bits    |
+|형식    | 정렬 가능성 | 단조 증가성(순서) | 무작위 정도   | 데이터형  |
+| :---  | :---     | :---:         | :---       | :---    |
+| UUIDv4 | 불가능    | 없음           | 122 bits   | CHAR(36)|
+| UUIDv7 | 가능     | 있음           | 62 bits    | CHAR(36)|
+| ULID   | 가능     | 있음           | 80 bits    | CHAR(26)|
 
 **3. Twitter Snowflake**
 

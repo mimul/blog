@@ -283,17 +283,7 @@ tags:
 
 ![roughViz](/img/blog/js_roughViz.gif)
 
-**6. Zeu**
-
-- 다양한 데이터를 최소한의 기술로 실시간 시각화 애니메이션으로 표시하는 고성능 JavaScript 라이브러리. 바, 디지털 시계, Heartbeat, Message Queue, Network Graph, Round Fan, Speed ​​Circle, Text Meter, Volume Meter등의 지원.
-- License : MIT 라이센스.
-- 브라우저 지원: IE 9+, Edge, Chrome, Firefox, Safari, Opera.
-- Star 수 : 1,661
-- [Zeu 링크](https://github.com/shzlw/zeu)
-
-![Zeu](/img/blog/js_zeu.gif)
-
-**7. odometer**
+**6. odometer**
 
 - 숫자를 다양한 형태의 모양과 효과를 주면서 디스플레이해주는 JavaScript 라이브러리. 대시보드용으로 활용 가능. 7가지 테마(Default, Minimal, Car, Plaza, Slot Machine, Train Station, Digital)를 선택할 수 있음.
 - License : MIT 라이센스.
