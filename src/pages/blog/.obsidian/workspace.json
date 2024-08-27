@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "mysql-explain.md",
+                "file": "cache_problem.md",
                 "mode": "source",
                 "source": true
               }
             }
+          },
+          {
+            "id": "c51ff654e8a4c45c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "cache_problem.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -93,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "mysql-explain.md",
+                "file": "cache_problem.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "mysql-explain.md",
+                "file": "cache_problem.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "mysql-explain.md"
+                "file": "cache_problem.md"
               }
             }
           },
@@ -165,10 +178,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0d4661f9780c4c9d",
+  "active": "c51ff654e8a4c45c",
   "lastOpenFiles": [
-    "learn-vim-progressively.md",
+    "bloom-filter.md",
+    "cache_problem.md",
     "mysql-explain.md",
+    "devops-noops.md",
+    "learn-vim-progressively.md",
     "startup-developer-business.md",
     "reversal-of-prediction-and-realization.md",
     "realtime-multi-person-pose-estimation.md",
@@ -187,12 +203,9 @@
     "api-business-models.md",
     "authority-merit.md",
     "avoid-password-security-issues-with-sha1-salt.md",
-    "bloom-filter.md",
     "can-do-vs-cant-do-culture.md",
     "cognitive-biases-in-programming.md",
     "consistent-hashing.md",
-    "devops-noops.md",
-    "dont-be-scared-of-functional-programming.md",
     "img/blog",
     "img"
   ]
