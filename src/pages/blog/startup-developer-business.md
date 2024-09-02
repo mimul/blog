@@ -5,7 +5,7 @@ description: "스타트업에서 개발 조직, 문화, 생산성, 개술 부채
 author: "미물"
 authorURL: "https://mimul.com"
 date: "2023-02-11T21:22:09.000Z"
-lastModificationTime: "2023-02-12T07:20:50.000Z"
+lastModificationTime: "2024-01-29T07:20:50.000Z"
 image: "/img/blog/4colours.png"
 commentId: "startup-developer-business-2023-02-11"
 tags:
