@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "cache-problem.md",
+                "file": "tech-blog.md",
                 "mode": "source",
                 "source": true
               }
@@ -141,7 +141,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "cache-problem.md",
+                "file": "tech-blog.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -158,7 +158,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "cache-problem.md",
+                "file": "tech-blog.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -181,7 +181,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "cache-problem.md"
+                "file": "tech-blog.md"
               }
             }
           },
@@ -213,8 +213,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0d4661f9780c4c9d",
+  "active": "fe3062d394a900d5",
   "lastOpenFiles": [
+    "cache-problem.md",
     "tech-blog.md",
     "what-does-a-cto-do.md",
     "startup-developer-business.md",
@@ -242,7 +243,6 @@
     "apache_event_mpm_vs_nginx_performance.md",
     "apache-mesos.md",
     "api-business-models.md",
-    "authority-merit.md",
     "img/blog",
     "img"
   ]

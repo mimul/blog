@@ -22,7 +22,7 @@ tags:
 | ![AWS](/img/blog/aws.png)               | [Amazon Science Blog](https://www.amazon.science/blog) <br/> 인공지능, 머신러닝, 컴퓨터 비전, 양자 기술 등 다양한 분야에서 Amazon 과학자들이 진행하는 최신 연구와 논문을 공유합니다.|
 | ![Netflix](/img/blog/netflix.png)       | [Netflix 기술 블로그](https://netflixtechblog.com) <br/> 넷플릭스의 세계적인 엔지니어링 노력, 회사 문화, 제품 개발 등에 대해 알아보십시오.|
 | ![Airbnb](/img/blog/airbnb.png)         | [The Airbnb Tech Blog](https://medium.com/airbnb-engineering) <br/> 엔지니어와 데이터 과학자가 소속감을 느낄 수 있는 세상을 만드는 방법에 대해 자세히 살펴보세요. |
-| ![Pinterest](/img/blog/pinterest.png)   | [Pinterest Engineering](https://netflixtechttps://medium.com/pinterest-engineering) <br/> 최초의 시각적 검색 엔진을 개발한 창의적인 엔지니어. 3000억 개의 아이디어가 생겨났고 계속 늘어나고 있습니다.|
+| ![Pinterest](/img/blog/pinterest.png)   | [Pinterest Engineering](https://medium.com/pinterest-engineering) <br/> 최초의 시각적 검색 엔진을 개발한 창의적인 엔지니어. 3000억 개의 아이디어가 생겨났고 계속 늘어나고 있습니다.|
 | ![Meta](/img/blog/meta.png)             | [Engineering at Meta Blog](https://engineering.fb.com) <br/> Meta에서 대규모 기술적 과제를 해결하는 방법에 관심이 있는 엔지니어를 위한 기술을 공유하는 곳입니다.  |
 | ![Github](/img/blog/github.png)         | [The GitHub Blog](https://github.blog) <br/> 개발자가 소프트웨어를 구축하고 설계할 수 있도록 GitHub에서 제공하는 업데이트, 아이디어 및 영감.  |
 | ![eBay](/img/blog/ebay.png)             | [eBay Tech Blog](https://innovation.ebayinc.com/tech) <br/> eBay는 회사의 엔지니어, 연구원 및 제품 관리자가 전 세계 기술 커뮤니티와 작업을 공유할 수 있는 플랫폼입니다.|
