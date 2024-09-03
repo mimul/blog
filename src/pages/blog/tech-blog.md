@@ -114,5 +114,5 @@ tags:
 | ![HackerNews](/img/blog/hacker.png)          | [Hacker News](https://news.ycombinator.com) <br/> IT 지식 관련 뉴스 그룹 서비스. |
 | ![Medium](/img/blog/medium.png)              | [Programming at Medium](https://medium.com/tag/programming) <br/> The most insightful stories about Programming.     |
 | ![DEV](/img/blog/dev.png)                    | [DEV Posts](https://dev.to/top/week) <br/> Top posts this week at DEV. |
-| ![Geeknews](/img/blog/geeknews.png)          | [Geek News](https://news.hada.io) <br/> AWS 서비스들의 신규 발표나 업데이트, AWS 서울 리전의 업데이트 및 다양한 고객, 기술 사례들을 소개하고 있습니다. |
+| ![Geeknews](/img/blog/geeknews.png)          | [Geek News](https://news.hada.io) <br/> 개발 뉴스, 기술 관련 새소식, 스타트업 정보와 노하우, 세상의 재미난 것들을 좋아하는 사람들을 위한 뉴스 사이트. |
 | ![Techblogposts](/img/blog/techblogposts.png)| [Tech Blog Posts](https://techblogposts.com/ko) <br/> IT 기술 블로그들의 최신 포스트를 한곳에서 보세요.     |
