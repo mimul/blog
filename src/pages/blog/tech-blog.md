@@ -1,7 +1,7 @@
 ---
 templateKey: "blog-post"
 title: "국내외 기술 블로그들"
-description: "국내외 기술 관련 기업 및 개인 블로그 목록을 정리함" 
+description: "국내/외 기술 관련 기업 및 개인 블로그 목록을 정리함" 
 author: "미물"
 authorURL: "https://mimul.com"
 date: "2024-01-28T09:21:19.000Z"
@@ -49,6 +49,7 @@ tags:
 | ![Udacity](/img/blog/udacity.png)       | [Udacity Eng & Data](https://engineering.udacity.com) <br/> Udacity를 구축하는 엔지니어와 데이터 과학자들로부터.|
 | ![Yelp](/img/blog/yelp.png)             | [Yelp Engineering and Product Blog](https://engineeringblog.yelp.com) <br/> Yelp의 엔지니어와 데이터 과학자들의 이야기.|
 | ![Circleci](/img/blog/circleci.png)     | [The CircleCI Blog](https://circleci.com/blog) <br/> DevOps, 지속적인 통합 및 제공, 엔지니어링 생산성의 본고장입니다.|
+| ![Doordash](/img/blog/doordash.png)     | [DoorDash Engineering Blog](https://doordash.engineering/blog) <br/> DoorDash는 인터리빙 디자인을 활용하여 실험 민감도를 높이고, 기존 A/B 테스트에 비해 더 빠르고 정확한 통찰력을 제공합니다.|
 | ![Microsoft](/img/blog/microsoft.png)   | [Microsoft 기술 블로그](https://techcommunity.microsoft.com/t5/custom/page/page-id/Blogs) <br/> Microsoft 기술과 관련된 내용을 공유합니다.  |
 
 ### 국내 기업 기술 블로그
@@ -103,13 +104,14 @@ tags:
 | ![11st](/img/blog/11st.jpeg)               | [11번가 랩스 기술 블로그](https://11st-tech.github.io) <br/> 고객으로부터 신뢰받는 최고의 커머스 플랫폼을 향한 개발 문화와 기술을 공유합니다.|
 | ![Kakaobank](/img/blog/kakaobank.jpg)      | [카카오뱅크 기술 블로그](https://tech.kakaobank.com) <br/> 기술로 은행을 엔지니어링하다.|
 | ![Upstage](/img/blog/upstage.png)          | [업스테이지 기술 블로그](https://www.content.upstage.ai/blog) <br/> 세계 최고 수준의 업스테이지 AI 솔루션을 만드는 개발자들의 실제 개발 사례를 중심으로 기술과 노하우를 생생하게 전달합니다.|
+| ![Backendai](/img/blog/backendai.png)      | [Lablup Blog](https://www.backend.ai/ko/blog)<br/> Same Resources. Better Result. |
 | ![Samsung](/img/blog/samsung.png)          | [삼성 기술 블로그](https://techblog.samsung.com/blog)<br/> 삼성전자의 개발자와 블로그로 소통해 보세요.   |
 | ![Coupang](/img/blog/coupang.png)          | [쿠팡 엔지니어링 블로그](https://medium.com/coupang-engineering/kr/home)<br/> 쿠팡 엔지니어들이 이커머스와 또 다른 비지니스들을 어떻게 바꿔나가고 있는지를 공유합니다. |
 
 
 ### 국내외 IT 뉴스 큐레이션 사이트
 
-| 기업                                          | 설명                                                                                                                                    | 
+| 사이트                                         | 설명                                                                                                                                    | 
 | :------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------- |
 | ![HackerNews](/img/blog/hacker.png)          | [Hacker News](https://news.ycombinator.com) <br/> IT 지식 관련 뉴스 그룹 서비스. |
 | ![Medium](/img/blog/medium.png)              | [Programming at Medium](https://medium.com/tag/programming) <br/> The most insightful stories about Programming.     |
