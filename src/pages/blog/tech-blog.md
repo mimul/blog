@@ -11,7 +11,9 @@ commentId: "tech-blog-2024-01-28"
 tags:
   - Tech Blog
 ---
-제가 자주 방문하여 기술 동향이나 리서치에 도움이 될만한 기술 관련 불로그에 대해 정리한 것을 공유합니다. 기업의 설명은 해당 사이트의 메타 description을 참고하여 적은 것이며 기술되어 있지 않는 경우는 제가 유추해서 기록했습니다. 앞으로 될 수 있으면 살아있는 기술 블로그를 찾아 계속 업데이트 하도록 노력하겠습니다.
+기업의 기술 블로그를 보는 이유는 앞서 나간 기업들이 겪은 시행 착오나 발전하면서 일어나는 대량의 트래픽, 쌓여져가는 데이터, 실시간 비즈니스의 대응, 운영/장애/분석 대응 등 기술적/비즈니스적 난제들을 어떻게 대처했는지에 대한 힌트들을 기술 블로그에서 찾을 수 있다. 스타트업이 이런 좋은 힌트를 캐치하고 내재화해 준비를 해 놓는다면 스타트업이 성장해 가면서 일어나는 기술적/비즈니스적 난재를 적기에 대응할 수 있는 기술력을 키울 수 있다. 
+
+동종 업계에서 사용되는 아키텍처, 비즈니스 이슈 개선 사례, 마케팅 역량 등을 간접 체험 또한, 할 수 있다. 이 포스트에서는 제가 자주 방문하여 리서치에 도움이 될 만한 기업들의 기술 블로그에 대해 정리한 것을 공유해 본다. 기업의 설명은 해당 사이트의 메타 description을 참고하여 적은 것이며, 기술되어 있지 않는 경우는 제가 유추해서 기록했습니다. 될 수 있으면 살아있는 기술 블로그를 찾아 계속 업데이트 하도록 노력하겠습니다.
 
 ### 해외 기업 기술 블로그
 
@@ -44,12 +46,21 @@ tags:
 | ![Indeed](/img/blog/indeed.png)         | [Indeed Engineering Blog](https://engineering.indeedblog.com/blog) <br/> Indeed의 기술적인 경험을 공유합니다.|
 | ![Lyft](/img/blog/lyft.png)             | [Lyft Engineering](https://eng.lyft.com) <br/> Stories from Lyft Engineering.|
 | ![Shopify](/img/blog/shopify.png)       | [Shopify Engineering](https://shopify.engineering) <br/> Shopify 엔지니어링과 관련된 스토리를 공유합니다.|
-| ![Stripe](/img/blog/stripe.png)         | [Stripe Blog](https://stripe.com/blog) <br/> 신제품 기능, 최신 기술, 결제 솔루션 및 비즈니스 이니셔티브에 대해 알아보십시오.|
+| ![Stripe](/img/blog/stripe.png)         | [Stripe Blog](https://stripe.com/blog/engineering) <br/> 신제품 기능, 최신 기술, 결제 솔루션 및 비즈니스 이니셔티브에 대해 알아보십시오.|
 | ![Vimeo](/img/blog/vimeo.png)           | [Vimeo Engineering Blog](https://medium.com/vimeo-engineering-blog) <br/> How we tinker, build, and dream up all-new things for Vimeo.|
 | ![Udacity](/img/blog/udacity.png)       | [Udacity Eng & Data](https://engineering.udacity.com) <br/> Udacity를 구축하는 엔지니어와 데이터 과학자들로부터.|
 | ![Yelp](/img/blog/yelp.png)             | [Yelp Engineering and Product Blog](https://engineeringblog.yelp.com) <br/> Yelp의 엔지니어와 데이터 과학자들의 이야기.|
 | ![Circleci](/img/blog/circleci.png)     | [The CircleCI Blog](https://circleci.com/blog) <br/> DevOps, 지속적인 통합 및 제공, 엔지니어링 생산성의 본고장입니다.|
 | ![Doordash](/img/blog/doordash.png)     | [DoorDash Engineering Blog](https://doordash.engineering/blog) <br/> DoorDash는 인터리빙 디자인을 활용하여 실험 민감도를 높이고, 기존 A/B 테스트에 비해 더 빠르고 정확한 통찰력을 제공합니다.|
+| ![Vercel](/img/blog/vercel.png)         | [Vercel Engineering Blog](https://vercel.com/blog/category/engineering) <br/> 웹 개발의 최신 소식을 알아보세요.|
+| ![Notion](/img/blog/notion.png)         | [Notion Blog](https://www.notion.so/blog) <br/> 미래의 업무에 대한 Notion의 생각을 자세히 알아보세요.|
+| ![Atlassian](/img/blog/atlassian.jpg)   | [Atlassian Engineering Blog](https://www.atlassian.com/blog/atlassian-engineering) <br/> Atlassian의 엔지니어링 팀에서 제공하는 최신 프로젝트, 과제 및 내부 정보입니다.|
+| ![Booking](/img/blog/booking.png)       | [Booking.com Blog](https://blog.booking.com) <br/> UX 디자이너와 작가, 개발자, 데이터베이스 엔지니어, 시스템 관리자로 구성된 당사 팀은 대규모로 복잡한 문제를 해결하고 있습니다.|
+| ![Artsy](/img/blog/artsy.jpg)           | [Artsy Engineering Blog](https://artsy.github.io) <br/> Artsy에서 일어니고 있는 일들을 기록합니다.|
+| ![Medium](/img/blog/medium.png)         | [Medium Engineering Blog](https://medium.engineering) <br/> Medium에서 팀 빌딩에 대한 스토리를 알아보세요.|
+| ![Percona](/img/blog/percona.png)       | [Percona Database Performance Blog](https://www.percona.com/blog) <br/> MySQL, MongoDB, PostgreSQL 및 오픈소스 데이터베이스 관리에 대한 Percona 전문가의 통찰력(데이터베이스 성능 팁, 모범 사례 및 튜토리얼)을 알아보세요.|
+| ![Asana](/img/blog/asana.png)           | [Asana Engineering Blog](https://blog.asana.com/category/eng) <br/> Asana의 엔지니어링 팀에서 일하는 것과 그들이 하는 일에 대해 더 알고 싶으신가요? Asana 엔지니어링 블로그를 읽어보세요.|
+| ![Walmart](/img/blog/walmart.png)       | [Walmart Global Tech Blog](https://medium.com/walmartglobaltech) <br/> 우리는 다음의 위대한 소매 혁신을 주도하고 있습니다. 저희에 대해 자세히 알아보세요.|
 | ![Microsoft](/img/blog/microsoft.png)   | [Microsoft 기술 블로그](https://techcommunity.microsoft.com/t5/custom/page/page-id/Blogs) <br/> Microsoft 기술과 관련된 내용을 공유합니다.  |
 
 ### 국내 기업 기술 블로그
@@ -116,5 +127,6 @@ tags:
 | ![HackerNews](/img/blog/hacker.png)          | [Hacker News](https://news.ycombinator.com) <br/> IT 지식 관련 뉴스 그룹 서비스. |
 | ![Medium](/img/blog/medium.png)              | [Programming at Medium](https://medium.com/tag/programming) <br/> The most insightful stories about Programming.     |
 | ![DEV](/img/blog/dev.png)                    | [DEV Posts](https://dev.to/top/week) <br/> Top posts this week at DEV. |
+| ![Reddit](/img/blog/reddit.jpg)              | [Programming at Reddit](https://www.reddit.com/r/programming) <br/> Programming에 관련된 글들을 많이 올라옵니다. |
 | ![Geeknews](/img/blog/geeknews.png)          | [Geek News](https://news.hada.io) <br/> 개발 뉴스, 기술 관련 새소식, 스타트업 정보와 노하우, 세상의 재미난 것들을 좋아하는 사람들을 위한 뉴스 사이트. |
 | ![Techblogposts](/img/blog/techblogposts.png)| [Tech Blog Posts](https://techblogposts.com/ko) <br/> IT 기술 블로그들의 최신 포스트를 한곳에서 보세요.     |
