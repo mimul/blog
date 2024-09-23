@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "tech-blog.md",
+                "file": "small-talk.md",
                 "mode": "source",
                 "source": true
               }
@@ -141,7 +141,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "tech-blog.md",
+                "file": "small-talk.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -158,7 +158,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "tech-blog.md",
+                "file": "small-talk.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -181,7 +181,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "tech-blog.md"
+                "file": "small-talk.md"
               }
             }
           },
@@ -215,11 +215,12 @@
   },
   "active": "fe3062d394a900d5",
   "lastOpenFiles": [
-    "cache-problem.md",
     "tech-blog.md",
+    "small-talk.md",
+    "id-generation-in-mysql.md",
+    "cache-problem.md",
     "what-does-a-cto-do.md",
     "startup-developer-business.md",
-    "id-generation-in-mysql.md",
     "go-vs-java-thread.md",
     "mysql-explain.md",
     "2024-08-29.md",
@@ -242,7 +243,6 @@
     "all-i-need-to-know-to-be-a-better-programmer-i-learned-in-kindergarten.md",
     "apache_event_mpm_vs_nginx_performance.md",
     "apache-mesos.md",
-    "api-business-models.md",
     "img/blog",
     "img"
   ]

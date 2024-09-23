@@ -59,8 +59,10 @@ tags:
 | ![Artsy](/img/blog/artsy.jpg)           | [Artsy Engineering Blog](https://artsy.github.io) <br/> Artsy에서 일어니고 있는 일들을 기록합니다.|
 | ![Medium](/img/blog/medium.png)         | [Medium Engineering Blog](https://medium.engineering) <br/> Medium에서 팀 빌딩에 대한 스토리를 알아보세요.|
 | ![Percona](/img/blog/percona.png)       | [Percona Database Performance Blog](https://www.percona.com/blog) <br/> MySQL, MongoDB, PostgreSQL 및 오픈소스 데이터베이스 관리에 대한 Percona 전문가의 통찰력(데이터베이스 성능 팁, 모범 사례 및 튜토리얼)을 알아보세요.|
+| ![Planetscale](/img/blog/planetscale.jpg)| [PlanetScale Engineering Blog](https://planetscale.com/blog/category/engineering) <br/> PlanetScale의 Engineering 포스트를 만나보세요.|
 | ![Asana](/img/blog/asana.png)           | [Asana Engineering Blog](https://blog.asana.com/category/eng) <br/> Asana의 엔지니어링 팀에서 일하는 것과 그들이 하는 일에 대해 더 알고 싶으신가요? Asana 엔지니어링 블로그를 읽어보세요.|
 | ![Walmart](/img/blog/walmart.png)       | [Walmart Global Tech Blog](https://medium.com/walmartglobaltech) <br/> 우리는 다음의 위대한 소매 혁신을 주도하고 있습니다. 저희에 대해 자세히 알아보세요.|
+| ![Grafana](/img/blog/grafana.png)       | [Grafana Engineering Blog](https://grafana.com/categories/engineering) <br/> Technical articles, how-to guides, tips, and tricks from our R&D team.|
 | ![Microsoft](/img/blog/microsoft.png)   | [Microsoft 기술 블로그](https://techcommunity.microsoft.com/t5/custom/page/page-id/Blogs) <br/> Microsoft 기술과 관련된 내용을 공유합니다.  |
 
 ### 국내 기업 기술 블로그
@@ -125,8 +127,9 @@ tags:
 | 사이트                                         | 설명                                                                                                                                    | 
 | :------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------- |
 | ![HackerNews](/img/blog/hacker.png)          | [Hacker News](https://news.ycombinator.com) <br/> IT 지식 관련 뉴스 그룹 서비스. |
-| ![Medium](/img/blog/medium.png)              | [Programming at Medium](https://medium.com/tag/programming) <br/> The most insightful stories about Programming.     |
+| ![Medium](/img/blog/medium.png)              | [Programming at Medium](https://medium.com/tag/programming) <br/> The most insightful stories about Programming. |
 | ![DEV](/img/blog/dev.png)                    | [DEV Posts](https://dev.to/top/week) <br/> Top posts this week at DEV. |
-| ![Reddit](/img/blog/reddit.jpg)              | [Programming at Reddit](https://www.reddit.com/r/programming) <br/> Programming에 관련된 글들을 많이 올라옵니다. |
+| ![Reddit](/img/blog/reddit.jpg)              | [Programming at Reddit](https://www.reddit.com/r/programming) <br/> Programming에 관련된 글들을 많이 올라 옵니다. |
+| ![Lobsters](/img/blog/lobste.jpg)            | [Programming at Lobsters](https://lobste.rs) <br/> Programming에 관련된 글들을 많이 올라 옵니다. |
 | ![Geeknews](/img/blog/geeknews.png)          | [Geek News](https://news.hada.io) <br/> 개발 뉴스, 기술 관련 새소식, 스타트업 정보와 노하우, 세상의 재미난 것들을 좋아하는 사람들을 위한 뉴스 사이트. |
 | ![Techblogposts](/img/blog/techblogposts.png)| [Tech Blog Posts](https://techblogposts.com/ko) <br/> IT 기술 블로그들의 최신 포스트를 한곳에서 보세요.     |
