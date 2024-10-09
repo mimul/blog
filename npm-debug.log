@@ -27,7 +27,7 @@
 14 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:226:5)
 15 verbose pkgid mimul@2.0.0
 16 verbose cwd /Users/mimul/Project/2019/blog
-17 error Darwin 23.6.0
+17 error Darwin 24.0.0
 18 error argv "/Users/mimul/.nvm/versions/node/v7.7.4/bin/node" "/Users/mimul/.nvm/versions/node/v7.7.4/bin/npm" "run" "build"
 19 error node v7.7.4
 20 error npm  v4.1.2

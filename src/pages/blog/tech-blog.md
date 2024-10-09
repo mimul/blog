@@ -63,6 +63,8 @@ tags:
 | ![Asana](/img/blog/asana.png)           | [Asana Engineering Blog](https://blog.asana.com/category/eng) <br/> Asana의 엔지니어링 팀에서 일하는 것과 그들이 하는 일에 대해 더 알고 싶으신가요? Asana 엔지니어링 블로그를 읽어보세요.|
 | ![Walmart](/img/blog/walmart.png)       | [Walmart Global Tech Blog](https://medium.com/walmartglobaltech) <br/> 우리는 다음의 위대한 소매 혁신을 주도하고 있습니다. 저희에 대해 자세히 알아보세요.|
 | ![Grafana](/img/blog/grafana.png)       | [Grafana Engineering Blog](https://grafana.com/categories/engineering) <br/> Technical articles, how-to guides, tips, and tricks from our R&D team.|
+| ![Discord](/img/blog/discord.jpg)       | [Discord Engineering Blog](https://discord.com/category/engineering) <br/> Resources and news for engineers and Discord app developers.|
+| ![Datadog](/img/blog/datadoghq.png)     | [Datadog Engineering Blog](https://www.datadoghq.com/blog/engineering) <br/> Check out the Datadog Engineering blog to discover posts written by Datadog’s very own engineers.|
 | ![Microsoft](/img/blog/microsoft.png)   | [Microsoft 기술 블로그](https://techcommunity.microsoft.com/t5/custom/page/page-id/Blogs) <br/> Microsoft 기술과 관련된 내용을 공유합니다.  |
 
 ### 국내 기업 기술 블로그

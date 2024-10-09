@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "small-talk.md",
+                "file": "why-discord-is-switching-from-go-to-rust.md",
                 "mode": "source",
                 "source": true
               }
@@ -141,7 +141,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "small-talk.md",
+                "file": "why-discord-is-switching-from-go-to-rust.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -158,7 +158,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "small-talk.md",
+                "file": "why-discord-is-switching-from-go-to-rust.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -181,7 +181,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "small-talk.md"
+                "file": "why-discord-is-switching-from-go-to-rust.md"
               }
             }
           },
@@ -213,36 +213,36 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "fe3062d394a900d5",
+  "active": "0d4661f9780c4c9d",
   "lastOpenFiles": [
-    "tech-blog.md",
-    "small-talk.md",
-    "id-generation-in-mysql.md",
-    "cache-problem.md",
-    "what-does-a-cto-do.md",
-    "startup-developer-business.md",
-    "go-vs-java-thread.md",
-    "mysql-explain.md",
-    "2024-08-29.md",
-    "Untitled.canvas",
-    "Untitled",
-    "cache_problem.md",
-    "bloom-filter.md",
-    "devops-noops.md",
-    "learn-vim-progressively.md",
+    "what-is-software-design.md",
+    "why-discord-is-switching-from-go-to-rust.md",
     "reversal-of-prediction-and-realization.md",
+    "rendering-repaint-reflowrelayout-restyle.md",
     "realtime-multi-person-pose-estimation.md",
+    "popular_ui_javascript.md",
+    "oop-alternative-to-utility-classes.md",
+    "new-programming-jargon.md",
+    "network-effects.md",
+    "mysql-explain.md",
+    "mindset_diff_business_it.md",
+    "malloc-in-multi-thread.md",
+    "linux-server-operations.md",
+    "learn-vim-progressively.md",
+    "javascript-promises.md",
+    "io-scheduler.md",
+    "io-multiplexing.md",
+    "integration-jenkins-gitlab-nexus-ldap.md",
+    "id-generation-in-mysql.md",
+    "how-twitter-handles-3000-images-per-second.md",
     "how-to-sell-b2b.md",
-    "editting-make-good-use-of-database.md",
+    "gui-free-tips-git-command.md",
+    "good-tech-lead-bad-tech-lead.md",
+    "go-vs-java-thread.md",
     "git-internal.md",
     "evernote-architecture-and-culture.md",
-    "di-constructor-injection.md",
-    "editting_design-system.md",
-    "about-rate-limit-algorithm.md",
-    "advice-for-those-who-start-development.md",
-    "all-i-need-to-know-to-be-a-better-programmer-i-learned-in-kindergarten.md",
-    "apache_event_mpm_vs_nginx_performance.md",
-    "apache-mesos.md",
+    "Untitled.canvas",
+    "Untitled",
     "img/blog",
     "img"
   ]

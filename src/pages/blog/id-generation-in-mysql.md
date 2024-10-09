@@ -14,7 +14,7 @@ tags:
 ---
 MySQL의 ID를 auto_increment 사용시에 대두되는 문제점으로는 ID가 예측가능하기에 공격 등 보안에 취약하고 분산된 DB 환경에서 ID의 Uniqueness 문제가 발생하는 등의 문제점을 직면하게 된다. 그래서 이를 타개하기 위해서 UUID의 진화적 측면과 MySQL 사용자를 위한 방법 그리고 글로벌 기업들은 어떻게 ID를 생성하는지 리서치해 볼 필요가 있다. 그래서 이를 조사하고 고민한 것들에 대해 기술한다.
 
-## UUID를 Primary Key로 사용할 때 이슈
+#### UUID를 Primary Key로 사용할 때 이슈
 
 MySQL InnoDB의 테이블은 인덱스는 트리 구조(B+Tree)를 가지며, 기본 키(Primary Key)는 리프 페이지에 테이블의 값을 가지는 클러스터 인덱스 구조를 가진다.
 
@@ -27,7 +27,7 @@ MySQL InnoDB의 테이블은 인덱스는 트리 구조(B+Tree)를 가지며, �
 구조적으로 기본 키의 오름차순 또는 내림차순으로 INSERT 하는 경우의 효율이 가장 높고 리프 페이지가 양단에 순차적으로 추가된다. 도중에 데이터가 삽입되지 않는 경우의 각 리프 페이지의 사용 상황은 항상 15/16이 된다. 위 그림과 같이 인덱스는 데이터가 정렬된 상태로 되어 있다. 그래서 해당 구조에 임의 값(UUID처럼 순서를 보장하지 않는)을 등록하려면 이미 있는 레코드 사이에 데이터를 삽입해야 한다.
 레코드를 등록하고 싶은 리프 페이지에 빈 공간이 있으면 그대로 저장할 수 있지만, 빈 공간이 없으면 하나의 리프 페이지를 분할하여 두 부분으로 나누게 되는 작업이 추가된다. 오름차순/내림차순 기본 키는 리프 페이지 분할이 발생하지 않기 때문에 한 리프 페이지에 10개의 레코드를 유지할 수 있는 것에 비해 랜덤값의 경우 평균 7.5 레코드로 저장 효율이 25% 떨어질 수 있다. InnoDB에서 랜덤 값을 기본 키로 했을 때의 INSERT의 퍼포먼스에 대해서는 다양한 검증에 대한 [글들](https://kccoder.com/mysql/uuid-vs-int-insert-performance/)이 있다. 순차적인 Primary Key와의 비교에서는, 대략 레코드 수가 적을때는 비슷한 성능을 내지만 레코드가 증가하면 랜덤치의 성능이 떨어지게 되어 결과적으로 10~20배 이상의 차이가 날 수 있다. 그래서 UUID를 Primary Key로 하려면 순차적으로 ID를 생성할 수 있도록 하는게 성능상으로 좋아진다.
 
-## 순서가 보장되는 ID 생성 방법 조사
+#### 순서가 보장되는 ID 생성 방법 조사
 
 **1. MySQL8의 uuid_to_bin에서 스왑 기능 사용**
 
@@ -175,7 +175,7 @@ UUID v6, v7, v8은 타임 스탬프로 정렬할 수 있는 새로운 [UUID 초�
 - UUID Version v7: Unix Time Stamp 기반
 - UUID Version v8: 고유 사양(실험적 또는 공급업체별 요구사항에서 사용)
 
-## 참조 사이트
+#### 참조 사이트
 
 - [ULIDs and Primary Keys](https://blog.daveallie.com/ulid-primary-keys)
 - [7 Famous Approaches to Generate Distributed ID with Comparison Table](https://blog.devgenius.io/7-famous-approaches-to-generate-distributed-id-with-comparison-table-af89afe4601f)

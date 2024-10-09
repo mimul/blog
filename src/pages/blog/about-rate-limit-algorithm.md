@@ -18,14 +18,14 @@ tags:
 ---
 서비스를 운영하다보면 의도적이든 의도적이지 않던간에 서비스의 가용성(API레벨, 네트워크 레벨, 컨테이너 레벨, CPU 레벨이든)을 유지하기 위해서 클라이언트의 과도한 사용에 대해 스스로를 보호해야 합니다. 간과하기 쉽지만, 서비스의 가용성을 유지하기 위한 노력은 클라이언트 측(앱/웹))에도 같이 설계를 해주는 것이 바람직합니다. 서비스를 보호해주는 수단으로 Rate Limit 알고리즘 적용하는데, 이를 효과적으로 적용하기 위해서는 알고리즘에 대한 이해도를 높일 필요가 있고 또, 서비스의 트래픽 특성도 파악해 둘 필요가 있습니다. 여기에서는 Rate Limit 알고리즘 정리하는 것을 목표로 하고 간단한 알고리즘을 구현함으로써 이해도를 높이도록 하겠습니다.
 
-## 왜 Rate Limit 알고리즘이 필요한가?
+#### 왜 Rate Limit 알고리즘이 필요한가?
 
 - 과도한 트래픽으로부터 서비스를 보호.
 - Resource 사용에 대한 공정성과 합리성 유도.
 - 트래픽 비용이 서비스 예산을 넘는 것을 방지.
 - Rate에 대해 과금을 부과하는 Business Model로 활용.
 
-## Rate Limit 알고리즘 종류
+#### Rate Limit 알고리즘 종류
 
 아래의 5가지 알고리즘을 잘 알고, 자신의 트래픽 패턴도 파악해 자사 서비스의 가용성에 문제가 되기전에 적절한 알고리즘을 선택해서 트래픽 제어를 할 필요가 있습니다. 알고리즘과 관련된 소스는 [Github](https://github.com/mimul/java-algorithm/tree/master/src/main/java/com/mimul/ratelimit)에 올려놨고 기본 window 단위는 초 기반으로 되어있으니 참고하세요.
 
@@ -285,7 +285,7 @@ public class SlidingWindow extends RateLimiter {
 
 - [RateLimitJ](https://github.com/mokies/ratelimitj)
 
-## 주요 서비스들의 Rate Limit 정보
+#### 주요 서비스들의 Rate Limit 정보
 
 Rate Limit이 적용하려면 [RFC 6585](http://tools.ietf.org/html/rfc6585)에 [429 Too Many Request](http://tools.ietf.org/html/rfc6585#section-4) HTTP 상태 코드가 제시되어 있고 [RateLimit Header Fields for HTTP](https://tools.ietf.org/id/draft-polli-ratelimit-headers-00.html) RFC 초안에도 나와 있듯이 RateLimit-Limit(허용되는 요청의 최대수), RateLimit-Remaining(남은 요청 수), RateLimit-Reset(요청 최대값이 재설정될 때까지의 시간) 정보를 Header에 같이 보내주면 좋다.
 
@@ -297,13 +297,13 @@ Rate Limit이 적용하려면 [RFC 6585](http://tools.ietf.org/html/rfc6585)에 
 | ![Facebook](/img/blog/icon-facebook.png)| Applications은 시간당 유저수 * 200 | 403 Forbidden | call_count, total_cputime, total_time | [Facebook Rate Limits](https://developers.facebook.com/docs/graph-api/overview/rate-limiting/) |
 | ![Shopify](/img/blog/icon-shopify.png)| 40 Bucket size는 초당 2건, 80 Bucket size는 초당 4건 | 429 Too Many Requests | X-Shopify-Shop-Api-Call-Limit: 40/40, Retry-After: 2.0 | [Shopify Rate Limits](https://help.shopify.com/en/api/reference/rest-admin-api-rate-limits)|
 
-## Rate Limit 모범 사례
+#### Rate Limit 모범 사례
 
 - Rate Limit 알고리즘은 트래픽 패턴을 잘 분석한 다음 적합한 알고리즘을 선택해야 한다. 유료 서비스가 트래픽 체증에 민감해하지 않다면(관대한) Token Bucket 알고리즘을 선택하고 그 외에는 Fixed Wondow나 Sliding Window 알고리즘을 선택한다.
 - 기본적으로 서비스 인프라 트래픽을 수용할 수 없는 시점에 도달했을 때 Rate Limit을 적용해야하며, 외부 서비스에 영향을 최소화하는 노력(Common한 API는 Rate Limit에 걸리지 않을 정도로 상한값을 높게 잡음 등)을 한 다음 Rate Limit을 적용하는게 좋다.
 - 외부 개발자들에게 Rate Limit 정보를 명확하게 알려야하고, API 응답에도 요청 정보와 남은 정보 등 트래픽이 초과했을때 오류값 등을 명확히 정의해야 한다.
 
-## Rate Limit 알고리즘 구현체(오픈 소스)
+#### Rate Limit 알고리즘 구현체(오픈 소스)
 
 - [Bucket4j](https://github.com/vladimir-bukhtoyarov/bucket4j)
 - [Resilience4j](https://github.com/resilience4j/resilience4j/tree/master/resilience4j-ratelimiter)
@@ -316,7 +316,7 @@ Rate Limit이 적용하려면 [RFC 6585](http://tools.ietf.org/html/rfc6585)에 
 - [Flask-Limiter](https://github.com/alisaifee/flask-limiter)
 - [Smyte RateLimit](https://github.com/smyte/ratelimit)
 
-## 참조 사이트
+#### 참조 사이트
 
 - [RateLimit Header Fields for HTTP](https://tools.ietf.org/html/draft-polli-ratelimit-headers-01)
 - [Leaky bucket](https://en.wikipedia.org/wiki/Leaky_bucket)

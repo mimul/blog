@@ -6,7 +6,7 @@ author: "미물"
 authorURL: "https://mimul.com"
 date: "2021-10-08T22:11:46.000Z"
 lastModificationTime: "2021-10-08T22:11:46.000Z"
-image: "/img/blog/uber-arch.png"
+image: "/img/blog/uber_noti.jpg"
 commentId: "uber-push-platform-2021-10-08"
 tags:
   - Uber

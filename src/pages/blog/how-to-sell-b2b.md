@@ -6,7 +6,7 @@ author: "미물"
 authorURL: "https://mimul.com"
 date: "2020-05-17T06:31:09.000Z"
 lastModificationTime: "2020-05-17T06:31:09.000Z"
-image: "/img/blog/b2b.jpg"
+image: "/img/blog/b2b.png"
 commentId: "how-to-sell-b2b-2020-05-17"
 tags:
   - B2B
