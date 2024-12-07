@@ -13,12 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "mbo.md",
+                "file": "axum-rust.md",
                 "mode": "source",
+                "backlinks": false,
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "mbo"
+              "title": "axum-rust"
             }
           },
           {
@@ -159,7 +160,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "mbo.md",
+                "file": "axum-rust.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -169,7 +170,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for mbo"
+              "title": "Backlinks for axum-rust"
             }
           },
           {
@@ -243,11 +244,15 @@
   },
   "active": "fe3062d394a900d5",
   "lastOpenFiles": [
-    "tech-blog.md",
+    "bloom-filter.md",
+    "axum-rust.md",
+    "avoid-password-security-issues-with-sha1-salt.md",
+    "authority-merit.md",
+    "startup-developer-business.md",
     "mbo.md",
+    "tech-blog.md",
     "io-multiplexing.md",
     "io-scheduler.md",
-    "bloom-filter.md",
     "mysql-explain.md",
     "malloc-in-multi-thread.md",
     "why-discord-is-switching-from-go-to-rust.md",
@@ -265,10 +270,6 @@
     "javascript-promises.md",
     "integration-jenkins-gitlab-nexus-ldap.md",
     "id-generation-in-mysql.md",
-    "how-twitter-handles-3000-images-per-second.md",
-    "how-to-sell-b2b.md",
-    "gui-free-tips-git-command.md",
-    "good-tech-lead-bad-tech-lead.md",
     "Untitled.canvas",
     "Untitled",
     "img/blog",

@@ -1,7 +1,7 @@
 ---
 templateKey: "blog-post"
 title: "SHA1 + salt로 패스워드 보안 이슈 회피가 가능한가?"
-description: "SHA1 + salt로 패스워드 보안 문제점을 짚고 더 강화하기 위한 방법들에 대해서 정리함."
+description: "SHA1 + salt로 패스워드 보안 문제점을 짚고 더 강화하기 위한 방법들에 대해서 정리함"
 author: "미물"
 authorURL: "https://mimul.com"
 date: "2011-06-09T23:03:31.000Z"
