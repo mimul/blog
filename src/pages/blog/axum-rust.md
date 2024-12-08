@@ -258,3 +258,41 @@ impl Modules {
     }
 }
 ```
+
+### API 문서화
+
+Rust로 구현한 API용 문서를 쉽게 만들려면 [utoipa](https://github.com/juhaku/utoipa)라는 크레이트가 유용하다. actix-web, axum, warp, tide, rocket 등 다양한 웹 프레임워크도 지원하고 있다.
+
+실제 API를 문서화하기 위해서는 먼저 TodoApi의 문서를 정의(paths와 components의 schemas를 추가)하고 Router에 TodoApi를 merge해 준다. 
+
+```
+let mut openapi = OpenApiBuilder::default()  
+    .info(Info::new("axum-rusty API", "1.0.0"))  
+    .build();  
+openapi.merge(TodoOpenApi::openapi());
+...
+let app = Router::new()
+.merge(SwaggerUi::new("/swagger-ui").url("/swagger.json", openapi))
+...
+
+#[derive(utoipa::OpenApi)]  
+#[openapi(  
+    paths(get_todo, find_todo, create_todo, update_todo, upsert_todo),    components(schemas(JsonCreateTodo, TodoQuery, JsonUpdateTodoContents, JsonUpsertTodoContents, ApiResponse<Value>)),    tags((name = "Todo")))]
+```
+
+각 API별로 utoipa::path를 지정해 주면 된다. 요청 Json이나 응답 Json 구조체일 경우는 ToSchema를 지정해 주고 Query라고 하는 형태에 URL 쿼리 파라미터를 지정하는 경우는 IntoParams을 지정해 주면 된다.
+
+```
+#[utoipa::path(  
+    get,    
+    path = "/v1/todos/{id}",    
+    operation_id = stringify!(get_todo),    
+    responses(        
+    (status = OK, description = "Get one todo successfully", body = ApiResponse<Value>)),    
+    tag = "Todo",)]
+pub async fn get_todo(  
+    _: ApiVersion,  
+    Path((_v, id)): Path<(ApiVersion, String)>,  
+    modules: State<Arc<Modules>>,  
+) -> Result<(StatusCode, Json<ApiResponse<Value>>), AppError> {
+```
