@@ -13,7 +13,7 @@ tags:
   - Axum
 ---
 
-Rust를 현업에 적용해보기 위해 API를 만들면서 필요한 기능들을 하나씩 준비해가고 있다. 1차적으로 한 꼭지를 매듭짓고 싶어서 블로그에서 그 동안 한 내용을 정리해 본다. 관련 소스들은 Github에 [axum-rusty](https://github.com/mimul/axum-rusty)라는 이름으로 공유했으니 참고하실 분들은 참고하세요.
+여러 책을 통해 Rust 문법을  대충 한번 훑어보고, 이해가 되지 않는 부분은 실제 Rust 예제를 만들어 보기 시작했고, 이런 저런 예제들을 만들다가 실제 서비스에서 필요한 기능들을 하면 좋겠다고 생각해 하나하나 기능을 합쳐서 하나의 프로젝트를 만들었다. 새벽까지 코딩하면서 이렇게 열정적이었던 때가 언제였던가 하는 생각을 하게 만드는 언어가 바로 Rust인 것 같다. 비즈니스와 관련없이 순수하게 개인적으로 호기심이 많이 같던 언어는 없었던 것 같다. 프로젝트 관련 내용들은 Github에 [axum-rusty](https://github.com/mimul/axum-rusty)라는 이름으로 공유했으니 참고하실 분들은 참고하세요. 피드백도 환영합니다. 해당 프로젝트는 Clean Architecture 기반으로 로그인, Todo(할일) 등록 등 API를 구현한 기본적인 프로젝트입니다. 아래는 그 관련된 사항들을 정리했습니다.
 
 ### Rust의 구현 포인트
 
@@ -147,14 +147,15 @@ SQL을 파일에 저장해 분리하여 관리할 수 있는 ```query_file!```" 
 
 - FOR 루프나 패턴 매칭보다 filter나 map 등 어댑터를 사용한다. 이것을 이용하면, 변수의 스코프를 좁힐 수 있게 되어, Rust 특유의 소유권이나 라이프 타임 문제를 일으키지 않고 코딩하기 쉬워진다.
 
-- tracing을 사용하여 추적한다. 그냥 로그를 찍기 위한 경우는 ```env_logger```를 사용할 수 있으나 이에는 단점이 있다. ERROR 로그에 Request 정보가 없기 때문에 여러 Request를 받고 있을 때 어떤 Request가 에러가 되었는지 판단할 수 없게 되고 async fn에 의해 비동기적으로 실행되기 때문에, 로그 내용이 순서가 뒤섞여 표시되어 추적 관찰하기 쉽지 않게 된다. 그래서 이를 해결하기 위해서는 tracing을 사용해야 한다. tracing을 사용하면, 프로세스 내부의 처리 과정을 추적 관찰할 수 있어서 유용하다. tracing을 사용할려면, 먼저 tracing_subscriber를 초기화를 해야하고 각 함수별로 tracing::info!()tracing::error!()를 기술하면 된다. 
+- tracing을 사용하여 추적한다. 그냥 로그를 찍기 위한 경우는 ```env_logger```를 사용할 수 있으나 이에는 단점이 있다. ERROR 로그에 Request 정보가 없기 때문에 여러 Request를 받고 있을 때 어떤 Request가 에러가 되었는지 판단할 수 없게 되고 async fn에 의해 비동기적으로 실행되기 때문에, 로그 내용이 순서가 뒤섞여 표시되어 추적 관찰하기 쉽지 않게 된다. 그래서 이를 해결하기 위해서는 tracing을 사용해야 한다. tracing을 사용하면, 프로세스 내부의 처리 과정을 추적 관찰할 수 있어서 유용하다. tracing을 사용할려면, 먼저 ```
+tracing_subscriber```를 초기화를 해야하고 각 함수별로 tracing::info!(), tracing::error!()를 쓰면 된다. 
 
 ### 아키텍처
 
 **1. 레이어별 담당 기능**
 
 - controller는 주로 라우터와 서버 구동 부분을 구현한다. 요청/응답 전처리, 에러 모델 정의, JSON의 직렬화 및 역직렬화를 처리한다.
-- usecase는 어플리케이션을 처리하기 위해 필요한 비즈니스 로직을 구현한다 .
+- usecase는 어플리케이션을 처리하기 위해 필요한 비즈니스 로직을 구현한다.
 - domain은 도메인 모델의 생성이나, 각종 지표의 산출 로직 등을 구현한다.
 - infra는 외부 서비스와의 연계 레이어. DB 접속이나 쿼리 로직을 구현한다.
 
@@ -239,7 +240,7 @@ impl TodoRepository for DatabaseRepositoryImpl<Todo> {
 }
 ```
 
-**4. 모듈**
+**5. 모듈**
 
 모듈(Modules)이라는 구조체를 만들어서 그것을 실제 DI 컨테이너로 만들었다. 이렇게함으로써 의존 관계를 이해할 수 있게 된다. DI를 다루는 방법은 Axum에는 DI를 구현할려면 Extension과 State를 사용하는 두가지 방식이 존재한다. State는 type safe 하지만, Extension은 그렇지 않다는 것을 알아두면 좋겠다.
 
@@ -256,6 +257,78 @@ impl Modules {
             todo_use_case,
         }
     }
+}
+```
+
+**6. Auth Resolver**
+
+API를 호출할 때마다 사용자는 누구인지 더 나아가 API 권한 레벨까지 확장할 수 있도록 JWT Token 기반으로 Auth Resolver를 구현 되어있다. 
+
+```
+pub async fn auth(  
+    modules: State<Arc<Modules>>,  
+    mut req: Request,  
+    next: Next,  
+) -> Result<impl IntoResponse, AppError> {  
+    let auth_header = req  
+        .headers()  
+        .get(http::header::AUTHORIZATION)  
+        .and_then(|header| header.to_str().ok())  
+        .and_then(|header| {  
+            if header.starts_with("Bearer ") {  
+                header.strip_prefix("Bearer ")  
+            } else {  
+                error!("auth_header not found");  
+                None  
+            }  
+        });  
+    let auth_header = match auth_header {  
+        Some(header) => header,  
+        None => return Err(InvalidJwt("auth_header not found".to_string())),  
+    };  
+  
+    match authorize_current_user(auth_header, &modules).await {  
+        Ok(current_user) => {  
+            req.extensions_mut().insert(current_user);  
+            return Ok(next.run(req).await);  
+        }  
+        Err(err) => {  
+            error!("error authorizing user: {:?}", err);  
+            return Err(InvalidJwt(err.to_string()));  
+        }  
+    }  
+  
+    async fn authorize_current_user(  
+        auth_token: &str,  
+        modules: &Modules,  
+    ) -> Result<UserView, AppError> {  
+        let claims = decode::<TokenClaims>(  
+            auth_token,  
+            &jsonwebtoken::DecodingKey::from_secret(modules.constants.jwt_key.as_ref()),  
+            &jsonwebtoken::Validation::default(),  
+        );  
+  
+        match claims {  
+            Ok(claims) => {  
+                let user_id = claims.claims.sub;  
+                let user_view = modules.user_use_case().get_user(user_id).await;  
+                match user_view {  
+                    Ok(user_view) => match user_view {  
+                        Some(uv) => Ok(uv.into()),  
+                        None => Err(InvalidJwt("user not found".to_string())),  
+                    },  
+                    Err(err) => {  
+                        error!("Unexpected error: {:?}", err);  
+                        Err(InvalidJwt(err.to_string()))  
+                    }  
+                }  
+            }  
+            Err(err) => {  
+                error!("Error decoding token: {:?}", err);  
+                Err(InvalidJwt(err.to_string()))  
+            }  
+        }  
+    }  
 }
 ```
 
