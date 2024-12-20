@@ -74,7 +74,7 @@ pub struct JsonTodo {
 > sqlx migrate run
 ```
 
-- DB Pool은 Arc방식을 시용한다. 병렬처리에서도 안전하게 해준다. Arc(Atomic Reference Counted)는 참조 카운팅을 위해 atomic 연산을 사용한다. atomic 연산은 멀티스레드 환경에서도 안전하게 작동하게 된다는 의미이다.
+- DB Pool은 Arc방식을 사용한다. 병렬처리에서도 안전하게 해준다. Arc(Atomic Reference Counted)는 참조 카운팅을 위해 atomic 연산을 사용한다. atomic 연산은 멀티스레드 환경에서도 안전하게 작동하게 된다는 의미이다.
 
 
 ```
@@ -95,7 +95,7 @@ impl Db {
 }
 ```
 
-- 쿼리 구현 부분에서 sqlx를 사용하고 있다. SELECT 형태는 ```query_as!```, 갱신(INSERT, UPDATE, DELETE)의 경우는 ```query!```를 사용한다.
+- 쿼리 구현 부분에서 sqlx를 사용하고 있다. SELECT는 ```query_as!```, 갱신(INSERT, UPDATE, DELETE)의 경우는 ```query!```를 사용한다.
 
 
 ```
