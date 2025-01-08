@@ -325,7 +325,7 @@ File croppedPng = convertImage(croppedBitmap, ImageFormat.PNG);
 showImage(croppedPng);
 ```
 
-**3.4 내부 구조 개선**
+**3.4 로직 개선**
 
 알고리즘은 코드의 성능과 코드의 지적 호기심 충족 등 두가지를 만족할 수 있다. 성능 병목 현상이 되는 알고리즘을 보다 효율적인 알고리즘으로 대체하고, 계산 결과 캐시와 같은 최적화를 통해 불필요한 재계산을 줄여 성능을 향상시키고 리소스를 절약할 수 있다.
 
@@ -333,85 +333,92 @@ _3.4.1 효율적인 알고리즘 개선_
 
 정렬되지 않은 목록에서 특정 값을 선형 검색한다고 가정했을때 아래 코드는 일반적인 코드이다. 계산량은 O(n)이다.
 ```
-def find_number(numbers, target):
-    for number in numbers:
-        if number == target:
-            return True
-    return False
-
-numbers = [5, 3, 8, 4, 2, 7, 1, 6]
-print(find_number(numbers, 4))
+public boolean findNumber(int[] arr, int target) {
+	for (int num : arr) {
+		if (num == target) {
+			return true;
+		}
+	}
+	return false;
+}
 ```
 목록을 미리 정렬하고 이진 검색 알고리즘을 사용하여 검색 효율성을 높였다. 계산량은 O(n)에서 O(log n)으로 개선되었다.
 ```
-def find_number(numbers, target):
-    # 정렬
-    numbers.sort()
-    
-    # 이진 탐색
-    left = 0
-    right = len(numbers) - 1
-    while left <= right:
-        mid = (left + right) // 2
-        if numbers[mid] == target:
-            return True
-        elif numbers[mid] < target:
-            left = mid + 1
-        else:
-            right = mid - 1
-    return False
+public boolean findNumber(int[] arr, int target) {
+	Arrays.sort(arr);// 정렬
 
-numbers = [5, 3, 8, 4, 2, 7, 1, 6]
-print(find_number(numbers, 4))
+    int left = 0;
+    int right = arr.length - 1;
+
+    int mid;
+    while(left <= right) { // 종료조건
+        mid = left + ((right - left) / 2);
+
+        if(arr[mid] == target) {
+            return true;
+        }
+
+        if(arr[mid] < target) {
+            left = mid + 1;
+        } else {
+            right = mid - 1;
+        }
+    }
+    return false;
+}
 ```
 
 _3.4.2 불필요한 계산 감소_
 
 피보나치 수열의 값을 재귀적으로 계산하지만 동일한 계산을 여러 번 반복한다. 계산량은 O(2^n)아다.
 ```
-def fibonacci(n):
-    if n <= 1:
-        return n
-    else:
-        return fibonacci(n - 1) + fibonacci(n - 2)
-
-print(fibonacci(35))
+public long fibonacci(int n) {
+if (n <= 1)
+  return n;
+else
+  return fibonacci(n - 1) + fibonacci(n - 2);
+}
 ```
 메모화(캐시)를 사용하여 이미 계산된 값을 재사용하면 계산량을 O(n)으로 개선할 수 있다.
 ```
-def fibonacci(n, memo={}):
-    if n in memo:
-        return memo[n]
-    if n <= 1:
-        memo[n] = n
-    else:
-        memo[n] = fibonacci(n - 1, memo) + fibonacci(n - 2, memo)
-    return memo[n]
-
-print(fibonacci(35))
+static long[] memo;
+public static long fibonacci(int n) {
+	if (memo[n] != 0)
+		return memo[n];
+    if (n <= 1)
+        memo[n] = n;
+    else
+        memo[n] = fibonacci(n - 1) + fibonacci(n - 2);
+	return memo[n];
+}
 ```
 
 _3.4.3 적절한 데이터 구조 사용_
 
 목록에서 중복여부를 확인하는 함수를 만든다면 아래는 계산량이 O(n^2)이 된다.
 ```
-def has_duplicate(elements):
-    for i in range(len(elements)):
-        for j in range(i + 1, len(elements)):
-            if elements[i] == elements[j]:
-                return True
-    return False
-
-elements = [1, 2, 3, 4, 5, 2]
-print(has_duplicate(elements))
+public boolean checkDuplicate(int[] array) {  
+    for (int i = 0; i < array.length; i++) {  
+        for (int j = i + 1; j < array.length; j++) {  
+            if (array[i] == array[j]) {  
+                return true; 
+            }  
+        }  
+    }
+}
 ```
-set를 사용하여 중복을 효율적으로 감지할 수 있다. 계산량은 O(n)으로 개선되었다.
+HashSet을 사용하여 중복을 효율적으로 감지할 수 있다. 계산량은 O(n)으로 개선되었다.
 ```
-def has_duplicate(elements):
-    return len(elements) != len(set(elements))
-
-elements = [1, 2, 3, 4, 5, 2]
-print(has_duplicate(elements))
+public boolean checkDuplicate(int[] array) {
+    Set<Integer> set = new HashSet<>();
+    for (int num : array) {
+        if (set.contains(num)) {
+            return true;
+        }
+        set.add(num);
+    }
+    return false;
+}
 ```
 
 ##### 4. 코드의 최적화

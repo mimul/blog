@@ -8,32 +8,17 @@
         "type": "tabs",
         "children": [
           {
-            "id": "0d4661f9780c4c9d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "axum-rust.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": true
-              },
-              "icon": "lucide-file",
-              "title": "axum-rust"
-            }
-          },
-          {
             "id": "9708d02c66cecf5e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "startup-developer-business.md",
+                "file": "function-color-problem.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "startup-developer-business"
+              "title": "function-color-problem"
             }
           },
           {
@@ -160,7 +145,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "axum-rust.md",
+                "file": "function-color-problem.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -170,7 +155,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for axum-rust"
+              "title": "Backlinks for function-color-problem"
             }
           },
           {
@@ -242,15 +227,19 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0d4661f9780c4c9d",
+  "active": "fe3062d394a900d5",
   "lastOpenFiles": [
-    "code-readability.md",
     "startup-developer-business.md",
+    "function-coloring-problem.md",
+    "function-color-problem.md",
+    "bloom-filter.md",
+    "from-browser-to-db.md",
+    "about-https.md",
+    "code-readability.md",
     "axum-rust.md",
     "how-to-sell-b2b.md",
     "why-we-argue-style.md",
     "readable-code.md",
-    "bloom-filter.md",
     "avoid-password-security-issues-with-sha1-salt.md",
     "authority-merit.md",
     "mbo.md",
@@ -266,10 +255,6 @@
     "realtime-multi-person-pose-estimation.md",
     "popular_ui_javascript.md",
     "oop-alternative-to-utility-classes.md",
-    "new-programming-jargon.md",
-    "network-effects.md",
-    "mindset_diff_business_it.md",
-    "linux-server-operations.md",
     "Untitled.canvas",
     "Untitled",
     "img/blog",
