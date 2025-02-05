@@ -5,7 +5,7 @@ description: "국내/외 기술 관련 기업 및 개인 블로그 목록을 정
 author: "미물"
 authorURL: "https://mimul.com"
 date: "2024-01-28T09:21:19.000Z"
-lastModificationTime: "2024-01-28T22:35:11.000Z"
+lastModificationTime: "2024-08-08T21:51:30.000Z"
 image: "/img/blog/tech_blog.png"
 commentId: "tech-blog-2024-01-28"
 tags:

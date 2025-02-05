@@ -198,7 +198,7 @@ public double calculateTotalFee(long price) {
 }
 ```
 
-- 변수명에 구체성을 부여한다,
+- 변수명에 구체성을 부여한다.
 
 ```
 a = 10;
@@ -235,7 +235,7 @@ public int calculateTotalPrice(int tabacoPrice, int fee) {
 }
 ```
 
-_3.3.2 if의 조건식에 이름을 붙이자_
+_3.3.2 조건식에 이름을 붙여 정보를 제공한다._
 
 ```
 if(aaa == bbb && aaa == 1 && bbb == 2) {
@@ -308,7 +308,7 @@ public String getGrade(int score) {
 }
 ```
 
-_3.3.5 익명 함수나 실인수, 리시버, 콜 백 체인 등을 이름이 있는 로컬 변수나 프라이빗 함수로 옮겨놓은 프로그래밍 스타일을 지향한다._
+_3.3.5 익명 함수나 실인수, 리시버, 콜 백 체인 등을 이름이 있는 로컬 변수나 프라이빗 함수로 옮겨놓은 프로그래밍 스타일을 지향한다.(Javascript 등)_
 
 아래 코드는 이미지를 원형으로 자르고 PNG로 변환하고 표시하는 코드인데, 이 코드는 두가지 문제가 있다. 한줄로 코드는 깔끔할지 모르나 전체 내용을 자세히 들여다봐야하고 함수별로 특정 값을 검사하거나 변경할 때 전체를 파악해야 한다.
 
@@ -325,13 +325,39 @@ File croppedPng = convertImage(croppedBitmap, ImageFormat.PNG);
 showImage(croppedPng);
 ```
 
+다음으로 고층 함수(map, filter 등)의 호출에서도 가독성이 떨어질 수 있는데, 이는 How가 은폐 되었음에도 불구하고 What의 의미를 나타내주지 않기 때문에 가독성이 떨어진다는 이야기들이 있다. 이때도 조건 경계에 있는 것들을 로컬 변수화하거나 함수화하면 가독성이 올라간다.
+
+```
+const result = products.filter(product => {
+  return product.price >= 5000 && product.stockStatus === 'Enough' && product.releaseDate >= sub(today, {months: 2});
+}).map(product => {
+  const discountPrice = 
+    product.price > 10000  ? product.price * 0.8 : product.price > 8000 ? product.price * 0.9 : product.price * 0.95;
+ return {...product, price: discountPrice};
+});
+```
+
+개선된 코드는 아래와 같다.
+
+```
+const canDiscount = (product: Product) =>
+  product.price >= 5000 && product.stockStatus === 'Enough' && product.releaseDate >= sub(today, {months: 2});
+
+const discount = (product: Product) => {
+  const discountPrice = product.price > 10000  ? product.price * 0.8 : product.price > 8000 ? product.price * 0.9 : product.price * 0.95;
+  return {...product, price: discountPrice};
+}
+
+const result = products.filter(canDiscount).map(discount);
+```
+
 **3.4 로직 개선**
 
-알고리즘은 코드의 성능과 코드의 지적 호기심 충족 등 두가지를 만족할 수 있다. 성능 병목 현상이 되는 알고리즘을 보다 효율적인 알고리즘으로 대체하고, 계산 결과 캐시와 같은 최적화를 통해 불필요한 재계산을 줄여 성능을 향상시키고 리소스를 절약할 수 있다.
+알고리즘은 시스템의 성능을, AOP는 관심사 분리를 통해 가독성을, DI는 코드의 확장성, 유지보수 용이성 등을  만족시킬 수 있다. 로직 개선은 지속적으로 개발하면서 관심을 가져야 하는 부분이기도 하다.
 
 _3.4.1 효율적인 알고리즘 개선_
 
-정렬되지 않은 목록에서 특정 값을 선형 검색한다고 가정했을때 아래 코드는 일반적인 코드이다. 계산량은 O(n)이다.
+정렬되지 않은 목록에서 특정 값을 선형 검색한다고 가정 했을때 아래 코드는 일반적인 코드이다. 계산량은 O(n)이다.
 ```
 public boolean findNumber(int[] arr, int target) {
 	for (int num : arr) {
@@ -418,6 +444,68 @@ public boolean checkDuplicate(int[] array) {
         set.add(num);
     }
     return false;
+}
+```
+
+_3.4.4 횡단적 관심사는 AOP로_
+
+로그인 사용자 정보 추출이나 권한체크, 로그, 트랜잭션 등은 함수나 클래스 안에 들어가면 관심사에 대한 노이즈가 증가해 가독성을 저해한다. 처리언어에 따라 호출 방법이 달라지지만, Java는 어노테이션, C#에서는 애트리뷰트, JavaScript는 Decorator를 사용하여 관심사를 분리시켜 본질적인 처리에 집중할 수 있도록 해준다.
+
+```
+@GetMapping("/{userNo}")
+public ResponseEntity<HttpStatus> getUser(@RequestParam long userNo) {
+    boolean isLoginUser = loginService.isLoginUser();
+
+    if(!isLoginUser) {
+        throw new HttpStatusCodeException(HttpStatus.UNAUTHORIZED, "user is not authorized") {};
+    }
+    
+    Member member = memberService.getUser(userNo);
+    if(member == null) {
+        return RESPONSE_ENTITY_MEMBER_NULL;
+    }
+    return RESPONSE_ENTITY_OK;
+}
+```
+AOP를 적용하여 관심사를 분리시킨다.
+```
+@CheckLoginStatus(auth = UserLevel.USER)
+@GetMapping("/{userNo}")
+public ResponseEntity<HttpStatus> getUser(@RequestParam long userNo) {
+    Member member = memberService.getUser(userNo);
+
+    if(member == null) {
+        return RESPONSE_ENTITY_MEMBER_NULL;
+    }
+    return RESPONSE_ENTITY_OK;
+}
+```
+
+_3.4.5 DI(Dependency Injection)_
+
+종속 주입을 도입하기 위해 인터페이스를 통한 설계는 객체 간의 관계를 느슨하게 결합시켜 유지 보수 용이성을 향상시킨다. DI는 느슨하게 결합하는 방법 중에 하나이다. 즉, 느슨하게 결합하는 것의 구체적인 이점은 확장 가능성, 유지 보수성, 테스트 용이성 등이 좋아진다.
+
+```
+public class UserService {
+    public void register(User user) {
+      UserRepository userRepository = new UserRepository();
+      userRepository.save(user);
+    }
+}
+
+```
+DI 적용된 코드는 아래와 같다.
+```
+public class UserService {
+    private UserRepository userRepository;
+
+    public UserService(UserRepository userRepository) {
+        this.userRepository = userRepository;
+    }
+
+    public void register(User user) {
+        userRepository.save(user);
+    }
 }
 ```
 

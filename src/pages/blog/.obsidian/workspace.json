@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "function-color-problem.md",
+                "file": "axum-rust.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "function-color-problem"
+              "title": "axum-rust"
             }
           },
           {
@@ -82,7 +82,8 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "alphabetical",
+                "autoReveal": false
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -145,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "function-color-problem.md",
+                "file": "axum-rust.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -155,7 +156,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for function-color-problem"
+              "title": "Backlinks for axum-rust"
             }
           },
           {
@@ -227,23 +228,24 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "fe3062d394a900d5",
+  "active": "9708d02c66cecf5e",
   "lastOpenFiles": [
+    "code-readability.md",
+    "what-does-a-cto-do.md",
+    "tech-blog.md",
+    "axum-rust.md",
+    "function-color-problem.md",
     "startup-developer-business.md",
     "function-coloring-problem.md",
-    "function-color-problem.md",
     "bloom-filter.md",
     "from-browser-to-db.md",
     "about-https.md",
-    "code-readability.md",
-    "axum-rust.md",
     "how-to-sell-b2b.md",
     "why-we-argue-style.md",
     "readable-code.md",
     "avoid-password-security-issues-with-sha1-salt.md",
     "authority-merit.md",
     "mbo.md",
-    "tech-blog.md",
     "io-multiplexing.md",
     "io-scheduler.md",
     "mysql-explain.md",
@@ -254,7 +256,6 @@
     "rendering-repaint-reflowrelayout-restyle.md",
     "realtime-multi-person-pose-estimation.md",
     "popular_ui_javascript.md",
-    "oop-alternative-to-utility-classes.md",
     "Untitled.canvas",
     "Untitled",
     "img/blog",

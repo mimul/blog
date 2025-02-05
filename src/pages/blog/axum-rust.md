@@ -260,9 +260,9 @@ impl Modules {
 }
 ```
 
-**6. Auth Resolver**
+**6. Auth AOP**
 
-API를 호출할 때마다 사용자는 누구인지 더 나아가 API 권한 레벨까지 확장할 수 있도록 JWT Token 기반으로 Auth Resolver를 구현 되어있다. 
+API를 호출할 때마다 사용자는 누구인지 더 나아가 API 권한 레벨까지 확장할 수 있도록 JWT Token 기반으로 Auth AOP를 구현 되어있다. 
 
 ```
 pub async fn auth(  
@@ -331,6 +331,20 @@ pub async fn auth(
     }  
 }
 ```
+
+### DB 트랜젝션
+
+sqlx에서 Pool과 Transaction을 모두 받을 수 있다. sqlx::Acquire 라는 트레이트를 아래와 같이 구현한다.
+
+```
+pub trait PostgresAcquire<'c>: Acquire<'c, Database = Postgres> + Send {}  
+impl<'c, T> PostgresAcquire<'c> for T  
+where  
+    T: Acquire<'c, Database = Postgres> + Send,  
+{}
+```
+
+이것을 레포지토리의 함수에 ``` executor: impl PostgresAcquire<'_> ``` 파라미터 추가하면 usecase 레이어 레벨에서 데이터 베이스 트랜젝션 제어가 가능하게 되었다.
 
 ### API 문서화
 

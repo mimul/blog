@@ -5,11 +5,11 @@ description: "Function color problem가 어떤 것이며, 프로그래밍 언어
 author: "미물"
 authorURL: "https://mimul.com"
 date: "2015-07-02T23:45:44.000Z"
-lastModificationTime: "2015-07-02T23:45:44.000Z"
+lastModificationTime: "2024-07-18T09:45:01.000Z"
 image: "/img/topics/programming-icon.png"
 commentId: "function-color-problem-2015-07-02"
 tags:
-  - BloomFilter
+  - Programming
 ---
 프로그래밍 언어를 선택하거나 사용할 때 그 언어의 설계 사상이나 포인트 등을 알면(고려하면) 더 좋은 코드를 작성할 수 있다고 생각한다. 이번 글에는 Function color problem에 대해 정리하고자 한다.
 
