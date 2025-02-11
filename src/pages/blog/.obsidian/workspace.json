@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "axum-rust.md",
+                "file": "what-happens-when-you-type-url-into-your-browser.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "axum-rust"
+              "title": "what-happens-when-you-type-url-into-your-browser"
             }
           },
           {
@@ -146,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "axum-rust.md",
+                "file": "what-happens-when-you-type-url-into-your-browser.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -156,7 +156,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for axum-rust"
+              "title": "Backlinks for what-happens-when-you-type-url-into-your-browser"
             }
           },
           {
@@ -230,9 +230,16 @@
   },
   "active": "9708d02c66cecf5e",
   "lastOpenFiles": [
-    "code-readability.md",
-    "what-does-a-cto-do.md",
+    "tumblr-architecture-and-culture.md",
+    "realtime-multi-person-pose-estimation.md",
+    "small-but-strong-teaming.md",
+    "teardown-13-ways-10-million-revenues.md",
+    "sysvar_innodb_flush_method.md",
+    "thinks-exception.md",
     "tech-blog.md",
+    "what-happens-when-you-type-url-into-your-browser.md",
+    "what-does-a-cto-do.md",
+    "code-readability.md",
     "axum-rust.md",
     "function-color-problem.md",
     "startup-developer-business.md",
@@ -249,13 +256,6 @@
     "io-multiplexing.md",
     "io-scheduler.md",
     "mysql-explain.md",
-    "malloc-in-multi-thread.md",
-    "why-discord-is-switching-from-go-to-rust.md",
-    "what-is-software-design.md",
-    "reversal-of-prediction-and-realization.md",
-    "rendering-repaint-reflowrelayout-restyle.md",
-    "realtime-multi-person-pose-estimation.md",
-    "popular_ui_javascript.md",
     "Untitled.canvas",
     "Untitled",
     "img/blog",

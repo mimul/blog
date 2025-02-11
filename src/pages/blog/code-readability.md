@@ -239,7 +239,7 @@ _3.3.2 조건식에 이름을 붙여 정보를 제공한다._
 
 ```
 if(aaa == bbb && aaa == 1 && bbb == 2) {
-
+	...
 }
 
 ```
@@ -325,7 +325,7 @@ File croppedPng = convertImage(croppedBitmap, ImageFormat.PNG);
 showImage(croppedPng);
 ```
 
-다음으로 고층 함수(map, filter 등)의 호출에서도 가독성이 떨어질 수 있는데, 이는 How가 은폐 되었음에도 불구하고 What의 의미를 나타내주지 않기 때문에 가독성이 떨어진다는 이야기들이 있다. 이때도 조건 경계에 있는 것들을 로컬 변수화하거나 함수화하면 가독성이 올라간다.
+다음으로 고차 함수(map, filter 등)의 호출에서도 가독성이 떨어질 수 있는데, 이는 How가 은폐 되었음에도 불구하고 What의 의미를 나타내주지 않기 때문에 가독성이 떨어질 수 있다. 이 때에도 조건 경계에 있는 것들을 로컬 변수화하거나 함수화하면 가독성이 올라간다.
 
 ```
 const result = products.filter(product => {
