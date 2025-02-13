@@ -5,7 +5,7 @@ description: "CTO가 해야할 역할에 대해 잘 기술한 hat does a CTO do?
 author: "미물"
 authorURL: "https://mimul.com"
 date: "2018-01-18T19:21:00.000Z"
-lastModificationTime: "2024-08-30T07:22:53.000Z"
+lastModificationTime: "2025-02-11T19:11:12.000Z"
 image: "/img/cto.jpg"
 commentId: "what-does-a-cto-2018-01-18"
 tags:

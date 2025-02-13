@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "what-happens-when-you-type-url-into-your-browser.md",
+                "file": "samaltman-ai-prediction.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "what-happens-when-you-type-url-into-your-browser"
+              "title": "samaltman-ai-prediction"
             }
           },
           {
@@ -146,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "what-happens-when-you-type-url-into-your-browser.md",
+                "file": "samaltman-ai-prediction.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -156,7 +156,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for what-happens-when-you-type-url-into-your-browser"
+              "title": "Backlinks for samaltman-ai-prediction"
             }
           },
           {
@@ -230,15 +230,19 @@
   },
   "active": "9708d02c66cecf5e",
   "lastOpenFiles": [
+    "what-does-a-cto-do.md",
+    "samaltman-ai-prediction.md",
+    "network-effects.md",
+    "small-talk.md",
+    "small-but-strong-teaming.md",
+    "sandi-metz-rules-for-developers.md",
+    "what-happens-when-you-type-url-into-your-browser.md",
     "tumblr-architecture-and-culture.md",
     "realtime-multi-person-pose-estimation.md",
-    "small-but-strong-teaming.md",
     "teardown-13-ways-10-million-revenues.md",
     "sysvar_innodb_flush_method.md",
     "thinks-exception.md",
     "tech-blog.md",
-    "what-happens-when-you-type-url-into-your-browser.md",
-    "what-does-a-cto-do.md",
     "code-readability.md",
     "axum-rust.md",
     "function-color-problem.md",
@@ -252,10 +256,6 @@
     "readable-code.md",
     "avoid-password-security-issues-with-sha1-salt.md",
     "authority-merit.md",
-    "mbo.md",
-    "io-multiplexing.md",
-    "io-scheduler.md",
-    "mysql-explain.md",
     "Untitled.canvas",
     "Untitled",
     "img/blog",
