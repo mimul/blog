@@ -91,7 +91,7 @@ export const BlogPostTemplate = ({
                   ) : null}
                 </p>
                 <div className="divider"></div>
-                <h1 className="title is-2 is-light is-semibold is-spaced main-title">
+                <h1 className="title is-21 is-light is-semibold is-spaced main-title">
                   {title}
                 </h1>
 

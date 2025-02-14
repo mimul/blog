@@ -117,7 +117,7 @@
   }
   //Semibold modifier
   &.is-semibold {
-    font-weight: 600;
+    font-weight: 500;
   }
   //Thin modifier
   &.is-thin {
@@ -225,7 +225,7 @@ a[target="_blank"]::after {
 }
 
 article {
-  font-size: 20px;
+  font-size: 15px;
   line-height: 1.86;
   font-family: Lora;
 }
