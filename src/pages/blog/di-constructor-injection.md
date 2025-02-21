@@ -6,11 +6,11 @@ author: "미물"
 authorURL: "https://mimul.com"
 date: "2017-11-15T18:26:51.000Z"
 lastModificationTime: "2017-11-15T18:26:51.000Z"
-image: "/img/topics/spring-java.png"
+image: "/img/topics/di.png"
 commentId: "di-constructor-injection-2017-11-15"
 tags:
   - Spring
-  - DI
+  - Dependency Injection
 ---
 
 #### 왜 DI(의존성 주입)가 필요한가?

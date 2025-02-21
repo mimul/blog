@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "samaltman-ai-prediction.md",
+                "file": "rust-di.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "samaltman-ai-prediction"
+              "title": "rust-di"
             }
           },
           {
@@ -146,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "samaltman-ai-prediction.md",
+                "file": "rust-di.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -156,7 +156,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for samaltman-ai-prediction"
+              "title": "Backlinks for rust-di"
             }
           },
           {
@@ -230,8 +230,11 @@
   },
   "active": "9708d02c66cecf5e",
   "lastOpenFiles": [
-    "what-does-a-cto-do.md",
+    "di-constructor-injection.md",
+    "rust-di.md",
+    "axum-rust.md",
     "samaltman-ai-prediction.md",
+    "what-does-a-cto-do.md",
     "network-effects.md",
     "small-talk.md",
     "small-but-strong-teaming.md",
@@ -244,7 +247,6 @@
     "thinks-exception.md",
     "tech-blog.md",
     "code-readability.md",
-    "axum-rust.md",
     "function-color-problem.md",
     "startup-developer-business.md",
     "function-coloring-problem.md",
@@ -254,8 +256,6 @@
     "how-to-sell-b2b.md",
     "why-we-argue-style.md",
     "readable-code.md",
-    "avoid-password-security-issues-with-sha1-salt.md",
-    "authority-merit.md",
     "Untitled.canvas",
     "Untitled",
     "img/blog",
