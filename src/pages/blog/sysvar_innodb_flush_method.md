@@ -1,13 +1,13 @@
 ---
-templateKey: "blog-post"
-title: "MySQL innodb_flush_method 튜닝 포인트"
-description: "MySQL InnoDB 스토리지 엔진을 사용하면 매개 변수 innodb_flush_method가 있는데 이 설정 값의 의미와 테스트를 통해 튜닝 포인트를 검토."
-author: "미물"
-authorURL: "https://mimul.com"
-date: "2010-05-15T21:20:46.000Z"
-lastModificationTime: "2010-05-15T21:20:46.000Z"
-image: "/img/topics/mysql.png"
-commentId: "sysvar_innodb_flush_method-2010-05-15"
+templateKey: blog-post
+title: MySQL innodb_flush_method 튜닝 포인트
+description: MySQL InnoDB 스토리지 엔진을 사용하면 매개 변수 innodb_flush_method가 있는데 이 설정 값의 의미와 테스트를 통해 튜닝 포인트를 검토.
+author: 미물
+authorURL: https://mimul.com
+date: 2010-05-15T21:20:46.000Z
+lastModificationTime: 2010-05-15T21:20:46.000Z
+image: /img/mysql_explain.png
+commentId: sysvar_innodb_flush_method-2010-05-15
 tags:
   - MySQL
   - MariaDB

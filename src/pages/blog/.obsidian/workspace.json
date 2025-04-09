@@ -22,6 +22,20 @@
             }
           },
           {
+            "id": "7d044c8af054645e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "tech_radar.md",
+                "mode": "source",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "tech_radar"
+            }
+          },
+          {
             "id": "3e6e6c2e2caea48c",
             "type": "leaf",
             "state": {
@@ -63,7 +77,8 @@
               "title": "what-does-a-cto-do"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -96,7 +111,7 @@
               "type": "search",
               "state": {
                 "query": "",
-                "matchingCase": false,
+                "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
@@ -146,7 +161,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "rust-di.md",
+                "file": "tech_radar.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -156,7 +171,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for rust-di"
+              "title": "Backlinks for tech_radar"
             }
           },
           {
@@ -228,8 +243,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "9708d02c66cecf5e",
+  "active": "7d044c8af054645e",
   "lastOpenFiles": [
+    "tech-blog.md",
+    "sysvar_innodb_flush_method.md",
+    "mysql-explain.md",
     "di-constructor-injection.md",
     "rust-di.md",
     "axum-rust.md",
@@ -243,9 +261,7 @@
     "tumblr-architecture-and-culture.md",
     "realtime-multi-person-pose-estimation.md",
     "teardown-13-ways-10-million-revenues.md",
-    "sysvar_innodb_flush_method.md",
     "thinks-exception.md",
-    "tech-blog.md",
     "code-readability.md",
     "function-color-problem.md",
     "startup-developer-business.md",
@@ -255,7 +271,6 @@
     "about-https.md",
     "how-to-sell-b2b.md",
     "why-we-argue-style.md",
-    "readable-code.md",
     "Untitled.canvas",
     "Untitled",
     "img/blog",
