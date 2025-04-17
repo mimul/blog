@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "tech_radar.md",
+                "file": "mcp.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "tech_radar"
+              "title": "mcp"
             }
           },
           {
@@ -161,7 +161,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "tech_radar.md",
+                "file": "mcp.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -171,7 +171,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for tech_radar"
+              "title": "Backlinks for mcp"
             }
           },
           {
@@ -243,16 +243,20 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "7d044c8af054645e",
+  "active": "fe3062d394a900d5",
   "lastOpenFiles": [
+    "tech_radar.md",
+    "mcp.md",
+    "rust-di.md",
+    "what-does-a-cto-do.md",
+    "code-readability.md",
     "tech-blog.md",
+    "samaltman-ai-prediction.md",
+    "mbo.md",
     "sysvar_innodb_flush_method.md",
     "mysql-explain.md",
     "di-constructor-injection.md",
-    "rust-di.md",
     "axum-rust.md",
-    "samaltman-ai-prediction.md",
-    "what-does-a-cto-do.md",
     "network-effects.md",
     "small-talk.md",
     "small-but-strong-teaming.md",
@@ -262,15 +266,11 @@
     "realtime-multi-person-pose-estimation.md",
     "teardown-13-ways-10-million-revenues.md",
     "thinks-exception.md",
-    "code-readability.md",
     "function-color-problem.md",
     "startup-developer-business.md",
     "function-coloring-problem.md",
     "bloom-filter.md",
     "from-browser-to-db.md",
-    "about-https.md",
-    "how-to-sell-b2b.md",
-    "why-we-argue-style.md",
     "Untitled.canvas",
     "Untitled",
     "img/blog",

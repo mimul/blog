@@ -5,7 +5,7 @@ description: "코드의 가독성을 올릴 수 있는 방법들에 대해 고�
 author: "미물"
 authorURL: "https://mimul.com"
 date: "2023-07-14T23:49:21.000Z"
-lastModificationTime: "2024-01-14T06:40:58.000Z"
+lastModificationTime: "2025-03-14T06:40:58.000Z"
 image: "/img/coding-style.jpg"
 commentId: "code-readability-2023-07-14"
 tags:
