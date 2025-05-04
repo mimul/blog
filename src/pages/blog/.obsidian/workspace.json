@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "mcp.md",
+                "file": "langchain-fundamental.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "mcp"
+              "title": "langchain-fundamental"
             }
           },
           {
@@ -161,7 +161,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "mcp.md",
+                "file": "langchain-fundamental.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -171,7 +171,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for mcp"
+              "title": "Backlinks for langchain-fundamental"
             }
           },
           {
@@ -245,8 +245,9 @@
   },
   "active": "fe3062d394a900d5",
   "lastOpenFiles": [
-    "tech_radar.md",
     "mcp.md",
+    "langchain-fundamental.md",
+    "tech_radar.md",
     "rust-di.md",
     "what-does-a-cto-do.md",
     "code-readability.md",
@@ -270,7 +271,6 @@
     "startup-developer-business.md",
     "function-coloring-problem.md",
     "bloom-filter.md",
-    "from-browser-to-db.md",
     "Untitled.canvas",
     "Untitled",
     "img/blog",

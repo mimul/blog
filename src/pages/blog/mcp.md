@@ -67,6 +67,17 @@ MCP는 호스트(Host), 클라이언트(Client), 서버(Server)의 세 가지 �
 - Resources: 파일, 로그, API로부터의 응답과 같은 LLM이 응답을 생성할 때 참조할 수 있는 구조화된 데이터를 제공한다. 리소스는 도구와 달리 외부 처리는 일어나지 않는다. 대신 모델의 컨텍스트 내에서 부드럽게 통합되는 정보를 제공하여 최신의 일관된 정보에 쉽게 액세스할 수 있다. 예를 들어 재무 보고서, 시스템 로그 등을 리소스로 제공하면 모델의 응답 내용에 자연스럽게 영향을 줄 수 있다.
 - Prompts: 외부 작업을 일으키지 않고 미리 결정된 템플릿으로 대화를 구조화하는 역할을 한다. '빈칸 채우기' 템플릿과 같은 메커니즘으로 특정 작업에서 일관성을 유지하는 프레임 워크를 제공한다. 예를 들어 요약의 프롬프트에는 미리 정해진 지시가 있어 그 안에 유저의 입력이 들어가는 구조이다. 또한 챗봇의 성격, 말하기, 행동을 동적으로 지정할 수 있어 외부 시스템을 변경하지 않고도 모델의 응답 방향을 조정할 수 있다.
 
+Client와 Server 기본 요소인 Roots, Sampling, Tools, Resources, Prompts에 대해 LLM앱이 얼마나 지원하고 있는지 살펴보면 아래와 같다.
+
+| LLM App             | Resources | Prompts    | Tools     | Sampling  | Roots     |
+| :-----------------  | :-------: | :--------: | :-------: | :-------: | :-------: |
+| Roo Code            | O         | X          | O         | X         | X         |
+| Cursor              | X         | X          | O         | X         | X         |  
+| Zed                 | X         | O          | X         | X         | X         |
+| Claude Desktop      | O         | O          | O         | X         | X         |
+| Cline               | O         | X          | O         | X         | X         |
+| Windsurf            | X         | X          | O         | X         | X         |
+
 #### MCP 동작 순서
 
 MCP의 처리 프로세스는 아래와 같지만, MCP는 개발자가 세부 사항을 신경 쓰지 않아도 되도록 추상화하고 있다. 개발자는 단순히 MCP 사양에 따라 서버를 구현(또는 기존 서버를 사용)하고 해당 클라이언트를 갖춘 AI 앱을 준비 하기만 하면 된다. Anthropic은 개발을 단순화하기 위해 [Python](https://github.com/modelcontextprotocol/python-sdk), [TypeScript](https://github.com/modelcontextprotocol/typescript-sdk), [Java](https://github.com/modelcontextprotocol/java-sdk), [Kotlin](https://github.com/modelcontextprotocol/kotlin-sdk), [C#](https://github.com/modelcontextprotocol/csharp-sdk) 등 다국어 SDK를 제공한다.
