@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "langchain-fundamental.md",
+                "file": "langchain-lcel.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "langchain-fundamental"
+              "title": "langchain-lcel"
             }
           },
           {
@@ -161,7 +161,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "langchain-fundamental.md",
+                "file": "langchain-lcel.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -171,7 +171,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for langchain-fundamental"
+              "title": "Backlinks for langchain-lcel"
             }
           },
           {
@@ -245,8 +245,9 @@
   },
   "active": "fe3062d394a900d5",
   "lastOpenFiles": [
-    "mcp.md",
     "langchain-fundamental.md",
+    "langchain-lcel.md",
+    "mcp.md",
     "tech_radar.md",
     "rust-di.md",
     "what-does-a-cto-do.md",
@@ -270,7 +271,6 @@
     "function-color-problem.md",
     "startup-developer-business.md",
     "function-coloring-problem.md",
-    "bloom-filter.md",
     "Untitled.canvas",
     "Untitled",
     "img/blog",

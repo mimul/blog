@@ -43,6 +43,8 @@ Colab에서 아래 명령어를 실행한다. 다음 단계를 진행하기 위�
 
 대표적인 것이 "시스템 프롬프트"와 "사용자 프롬프트"이다. 시스템 프롬프트는 LLM에게 전체 상호 작용에서 역할, 행동 규칙, 어조, 제약 등을 지시하는 메시지이다. 기본적으로 이 프롬프트는 사용자에게 공개하지 않는다. 사용자 프롬프트는 사용자가 LLM에 대해 구체적으로 묻고 싶은 것 또는 실행하고 싶은 지시를 전하는 메시지이다. 브라우저에서 chatGPT 등을 이용할 때에 여러분이 입력하고 있는 텍스트가 해당된다.
 
+여기서 사용하는 코드는 [langchain_fundamental.ipynb](https://github.com/mimul/colab-ai/blob/master/langchain_fundamental.ipynb) 파일의 1 ~ 3셀에 해당한다.
+
 ```
 # prompt 1
 message1 = [
@@ -85,6 +87,8 @@ Prompt를 만드는 방법은 두가지 방법이 있는데 이미지나 PDF등�
 ### 모델을 정의하는 방법
 
 앞에서 작성한 프롬프트를 사용하여 LLM을 호출하는 실제 모델을 LangChain에서 정의하는 방법을 설명한다. 여기서는 Google의 LLM인 Gemini 모델을 예로 ChatGoogleGenerativeAI클래스를 이용한 기본적인 설정 방법을 살펴본다.
+
+여기서 사용하는 코드는 [langchain_fundamental.ipynb](https://github.com/mimul/colab-ai/blob/master/langchain_fundamental.ipynb) 파일의 4 ~ 5셀에 해당한다.
 
 ```
 model = ChatGoogleGenerativeAI(
@@ -174,6 +178,8 @@ LangChain을 이용함으로써 이러한 다양한 LLM을 비교적 통일된 �
 | astream       | 모델의 비동기식 실행, 스트림 출력 가능        |
 | batch         | 모델의 동기식 실행, 여러 입력을 동시에 처리    |
 | abatch        | 모델의 비동기식 실행, 여러 입력을 동시에 처리  |
+
+여기서 사용하는 코드는 [langchain_fundamental.ipynb](https://github.com/mimul/colab-ai/blob/master/langchain_fundamental.ipynb) 파일의 7 ~ 8셀에 해당한다.
 
 다음으로 프롬프트와 모델을 실행하는 방법을 코드를 통해 알아본다. 먼저 프롬프트 실행 방법은 아래와 같다.
 
