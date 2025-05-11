@@ -1,6 +1,6 @@
 ---
 templateKey: "blog-post"
-title: "LangChain을 활용한 LLM 어플리케이션의 기본적인 개발 흐름"
+title: "LangChain 기반 LLM 어플리케이션 개발 기초"
 description: "LangChain을 활용하기 위한 기본적인 내용인 Prompt를 만드는 방법, 모델을 정의하는 방법, 프롬프트와 모델을 실행하는 방법에 대해서 기술함" 
 author: "미물"
 authorURL: "https://mimul.com"
@@ -13,9 +13,15 @@ tags:
   - LLM
   - AI
 ---
-LangChain과 LangGraph를 이용하여 Deep Research와 같은 LLM 애플리케이션을 만드는 방법에 대해서 앞으로 기술할 예정인데, 이 글에서는 그중에서 가장 기초 단계이면서 먼저 알아야할 기본적인 내용들을 다룬다. LangChain이나 LLM에 대한 이해도가 초보인 사람들을 대상으로 기술하니 중급 이상의 분들은 그냥 패스하기 바랍니다.
+LangChain과 LangGraph를 이용하여 Deep Research와 같은 LLM 애플리케이션을 만드는 방법에 대한 첫째 글로 "LangChain 기반 LLM 어플리케이션 개발 기초"에 대한 내용을 기술합니다. 이 글을 완독하신 분은 아래 링크에서 두번째, 세번째 글을 읽기를 권장합니다.
 
-LangChain을 활용한 LLM 어플리케이션의 개발을 위해 기본적으로  알아야할 것들이 Prompt를 만드는 방법, 모델을 정의하는 방법, 프롬프트와 모델을 실행하는 방법이다. 
+- [LangChain 기반 LLM 어플리케이션 개발 기초](https://www.mimul.com/blog/langchain-fundamental/)
+- [LCEL(LangChain Expression Language) 기반 LLM 어플리케이션 개발 기초](https://www.mimul.com/blog/langchain-lcel/)
+- [LLM 어플리케이션의 개발 기초](https://www.mimul.com/blog/llm-fundamental/)
+
+LangChain이나 LLM에 대한 이해도가 초보인 사람들을 대상으로 기술하니 중급 이상의 분들은 그냥 패스하기 바랍니다.
+
+이 포스트에서는 LangChain을 활용한 LLM 어플리케이션의 개발을 위해 기본적으로  알아야할 것들이 Prompt를 만드는 방법, 모델을 정의하는 방법, 프롬프트와 모델을 실행하는 방법이다. 
 
 ### 사전 준비
 

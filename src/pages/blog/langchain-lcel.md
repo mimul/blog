@@ -1,7 +1,7 @@
 ---
 templateKey: "blog-post"
-title: "LCEL(LangChain Expression Language) 기반 LLM 애플리케이션 개발 기초"
-description: "LCEL(LangChain Expression Language), Chain 연결, 복수의 Chain 연결, LLM의 아웃풋 품질 향상 방법 등을 살펴봄" 
+title: "LCEL(LangChain Expression Language) 기반 LLM 어플리케이션 개발 기초"
+description: "LCEL(LangChain Expression Language), Chain 연결, 복수의 Chain 연결, LLM의 아웃풋 품질 향상 방법 등을 기술함" 
 author: "미물"
 authorURL: "https://mimul.com"
 date: "2024-06-01T19:18:01.000Z"
@@ -13,8 +13,15 @@ tags:
   - LLM
   - AI
 ---
-  단일의 Chain 뿐만이 아니라, **복수의 Chain을 연계시켜 보다 복잡한 처리 플로우를 실현하는 방법**으로서, LangChain Expression Language (LCEL)이 가지고 있는 강력한 기능이다. LCEL의 다양한 요소 기술(`Chain`, `RunnableParallel`, `RunnableLambda`, `RunnableBranch`, `with_structured_output`등)의 기본적인 내용과 조합 방법들을 알아보고 LCEL을 기반으로 LLM 애플리케이션 개발에 필요한 사항들을 다룬다. 파이프("|")와 Sequential Chain은 유연성이 부족하기 때문에 좀 더 유연한 RunnableParallel, RunnableLambda, RunnableBranch 등을 활용해 유연하고 가독성있게 대처하는 방법들도 기억하면서 이 글을 보면 도움이 될 것이다.
+LangChain과 LangGraph를 이용하여 Deep Research와 같은 LLM 애플리케이션을 만드는 방법에 대한 두째 글로 LCEL(LangChain Expression Language) 기반 LLM 어플리케이션 개발 기초에 대한 내용을 기술합니다. 이 글을 완독하신 분은 아래 링크에서 세번째 글을 한번 읽기를 권장합니다.
 
+- [LangChain 기반 LLM 어플리케이션 개발 기초](https://www.mimul.com/blog/langchain-fundamental/)
+- [LCEL(LangChain Expression Language) 기반 LLM 어플리케이션 개발 기초](https://www.mimul.com/blog/langchain-lcel/)
+- [LLM 어플리케이션의 개발 기초](https://www.mimul.com/blog/llm-fundamental/)
+
+LangChain이나 LCEL, LLM에 대한 이해도가 초보인 사람들을 대상으로 기술하니 중급 이상의 분들은 그냥 패스하기 바랍니다.
+
+단일의 Chain 뿐만이 아니라, **복수의 Chain을 연계시켜 보다 복잡한 처리 플로우를 실현하는 방법**으로서, LangChain Expression Language (LCEL)이 가지고 있는 강력한 기능이다. LCEL의 다양한 요소 기술(`Chain`, `RunnableParallel`, `RunnableLambda`, `RunnableBranch`, `with_structured_output`등)의 기본적인 내용과 조합 방법들을 알아보고 LCEL을 기반으로 LLM 애플리케이션 개발에 필요한 사항들을 다룬다. 파이프("|")와 Sequential Chain은 유연성이 부족하기 때문에 좀 더 유연한 RunnableParallel, RunnableLambda, RunnableBranch 등을 활용해 유연하고 가독성있게 대처하는 방법들도 기억하면서 이 글을 보면 도움이 될 것이다.
 
 ### LCEL(LangChain Expression Language)에 대해
 
@@ -22,7 +29,7 @@ tags:
 
 프롬프트 템플릿에 구체적인 값을 포함할 때도 (```prompt.invoke(...)```), LLM 모델에 그 프롬프트를 입력하여 응답을 얻을 때도 (```model.invoke(...)```), 같은 invoke 메소드를 사용했다. LangChain에서는 프롬프트와 모델과 같은 다양한 구성 요소가 공통 방식(Runnable)으로 처리 할 수 있도록 설계되어 있다. 
 
-Runnable은 LangChain의 다양한 구성 요소(예 : ChatPromptTemplate, ChatGoogleGenerativeAI 등)가 상속하는 추상 기본 클래스이다. LangChain에서는 다양한 클래스가 이 Runnable클래스를 상속하여 구현된다. Runnable 클래스를 상속한 오브젝트는 이전 글에서 [LangChain을 활용한 LLM 어플리케이션의 기본적인 개발 흐름](https://www.mimul.com/blog/langchain-fundamental/)에서 설명한 invoke, ainvoke, stream, astream, batch, abatch와 같은 공통의 메소드를 가진다.
+Runnable은 LangChain의 다양한 구성 요소(예 : ChatPromptTemplate, ChatGoogleGenerativeAI 등)가 상속하는 추상 기본 클래스이다. LangChain에서는 다양한 클래스가 이 Runnable클래스를 상속하여 구현된다. Runnable 클래스를 상속한 오브젝트는 이전 글에서 [LangChain 기반 LLM 어플리케이션 개발 기초](https://www.mimul.com/blog/langchain-fundamental/)에서 설명한 invoke, ainvoke, stream, astream, batch, abatch와 같은 공통의 메소드를 가진다.
 
 Runnable 클래스를 상속해 구현되고 있는 LangChain의 주요 컴퍼넌트를 보면 아래와 같다.
 
@@ -50,7 +57,7 @@ chain.invoke({"user_input": "한국에서 가장 높은 산에 대해 자세히 
 
 ### Chain 연결
 
-이전 글 [LangChain을 활용한 LLM 어플리케이션의 기본적인 개발 흐름](https://www.mimul.com/blog/langchain-fundamental/)에서 LangChain의 기본 구성 요소인 프롬프트 템플릿과 모델 객체를 각각 정의하고 invoke 메소드를 사용하여 개별적으로 실행하는 방법을 기술했는데, 실제 LLM 애플리케이션에서는 프롬프트 준비, 모델 호출 및 모델 출력 후처리와 같은 여러 단계를 연속적으로 실행하는 것이 일반적이다. 그래서 이 단락에서는 이러한 복수의 처리 스텝을 하나로 정리해 보다 세련된 형태로 실행하기 위한 Chain이라고 하는 개념을 소개한다.
+이전 글 [LangChain 기반 LLM 어플리케이션 개발 기초](https://www.mimul.com/blog/langchain-fundamental/)에서 LangChain의 기본 구성 요소인 프롬프트 템플릿과 모델 객체를 각각 정의하고 invoke 메소드를 사용하여 개별적으로 실행하는 방법을 기술했는데, 실제 LLM 애플리케이션에서는 프롬프트 준비, 모델 호출 및 모델 출력 후처리와 같은 여러 단계를 연속적으로 실행하는 것이 일반적이다. 그래서 이 단락에서는 이러한 복수의 처리 스텝을 하나로 정리해 보다 세련된 형태로 실행하기 위한 Chain이라고 하는 개념을 소개한다.
 
 여기서 사용하는 코드는 [langchain_chain.ipynb](https://github.com/mimul/colab-ai/blob/main/langchain_chain.ipynb)의 2 ~ 5셀에 해당한다.
 
