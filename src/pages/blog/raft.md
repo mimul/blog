@@ -36,7 +36,7 @@ Raft는 교육 목적과 구현의 기초로서 Paxos 및 기타 합의 알고�
 
 복제 상태 머신(Replicated state machines)은 분산 시스템에서 다양한 내결함성 문제를 해결하는데 사용된다. 예를 들어 GFS, HDFS, RAMCloud와 같은 단일 클러스터 리더가 있는 대규모 시스템은 일반적으로 리더 선출을 관리하고 리더 충돌후에도 지속되어야 하는 구성 정보를 저장하기 위해 다른 복제 상태 시스템을 사용한다. 복제 상태 머신의 예로는 [Chubby](https://research.google/pubs/the-chubby-lock-service-for-loosely-coupled-distributed-systems/)와 [ZooKeeper](https://dl.acm.org/doi/10.5555/1855840.1855851)가 있다.
 
-![Replicated state machines](/img/blogreplicated-state-machine.png)
+![Replicated state machines](/img/blog/replicated-state-machine.png)
 
 복제 상태 머신은 복제된 로그를 사용하여 구현된다. 각 서버는 상태 머신이 순서대로 실행하는 일련의 명령을 포함하는 로그를 저장한다. 각 로그에는 동일한 명령이 동일한 순서로 포함되므로 각 상태 머신은 동일한 명령 시퀀스를 처리한다. 상태 머신은 결정론적이기 때문에 각각이 동일한 상태와 함께 출력 시퀀스를 계산한다.
 

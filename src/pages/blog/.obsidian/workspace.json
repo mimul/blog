@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "raft.md",
+                "file": "apache-mesos.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "raft"
+              "title": "apache-mesos"
             }
           }
         ]
@@ -104,7 +104,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "raft.md",
+                "file": "apache-mesos.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +114,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for raft"
+              "title": "Backlinks for apache-mesos"
             }
           },
           {
@@ -189,10 +189,11 @@
   },
   "active": "fe3062d394a900d5",
   "lastOpenFiles": [
+    "raft.md",
+    "network-effects.md",
     "bloom-filter.md",
     "about-rate-limit-algorithm.md",
     "ring-buffer.md",
-    "raft.md",
     "what-does-a-cto-do.md",
     "can-do-vs-cant-do-culture.md",
     "cache-problem.md",
@@ -212,7 +213,6 @@
     "mysql-explain.md",
     "di-constructor-injection.md",
     "axum-rust.md",
-    "network-effects.md",
     "small-talk.md",
     "small-but-strong-teaming.md",
     "Untitled.canvas",
