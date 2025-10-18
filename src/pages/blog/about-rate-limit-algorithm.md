@@ -27,7 +27,7 @@ tags:
 
 #### Rate Limit 알고리즘 종류
 
-아래의 5가지 알고리즘을 잘 알고, 자신의 트래픽 패턴도 파악해 자사 서비스의 가용성에 문제가 되기전에 적절한 알고리즘을 선택해서 트래픽 제어를 할 필요가 있습니다. 알고리즘과 관련된 소스는 [Github](https://github.com/mimul/java-algorithm/tree/master/src/main/java/com/mimul/ratelimit)에 올려놨고 기본 window 단위는 초 기반으로 되어있으니 참고하세요.
+아래의 5가지 알고리즘을 잘 알고, 자신의 트래픽 패턴도 파악해 자사 서비스의 가용성에 문제가 되기전에 적절한 알고리즘을 선택해서 트래픽 제어를 할 필요가 있습니다. 알고리즘과 관련된 소스는 [Github](https://github.com/mimul/algorithm/tree/master/java/src/main/java/com/mimul/ratelimit)에 올려놨고 기본 window 단위는 초 기반으로 되어있으니 참고하세요.
 
 ##### 1. Leaky Bucket
 
@@ -157,6 +157,7 @@ public class TokenBucket extends RateLimiter {
 
 - AWS : [API Gateway](https://aws.amazon.com/ko/blogs/aws/new-usage-plans-for-amazon-api-gateway/), [EC2](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/throttling.html#throttling-limits), [EBS](https://aws.amazon.com/ko/blogs/aws/new-ssd-backed-elastic-block-storage/), CPU Credit
 - [Spring Cloud Netflix Zuul](https://github.com/marcosbarbero/spring-cloud-zuul-ratelimit)
+- [Twitch](https://dev.twitch.tv/docs/api/guide#twitch-rate-limits)
 - [Bucket4j](https://github.com/vladimir-bukhtoyarov/bucket4j)
 
 ##### 3. Fixed Window Counter

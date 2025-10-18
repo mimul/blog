@@ -92,6 +92,51 @@ Space와 Time을 적절하게 배합하고 고른 분포도를 가지며 Collisi
 
 10,000단어의 사전에서 0.1%의 에러율을 희망할 경우 18KB의 메모리가 필요하게 된다. 그렇게 나쁘진 않죠?
 
+#### 구현 예
+
+다음은 Google Guava의 [BloomFilter](https://guava.dev/releases/snapshot-jre/api/docs/com/google/common/hash/BloomFilter.html) 클래스를 사용한 예이다. 소스는 [여기](https://github.com/mimul/algorithm/blob/master/java/src/main/java/com/mimul/bloomfilter/GuavaBloomFilterDemo.java)에 있다.
+
+```java
+public class GuavaBloomFilterDemo {  
+   public static void main(String[] args) {  
+      final int maxInt = 500;  
+      final Funnel<Integer> funnel = (Integer x, PrimitiveSink into) -> into.putInt(x);  
+      final BloomFilter<Integer> bloomFilter = BloomFilter.create(funnel, maxInt);  
+  
+      // 0에서 998까지의 짝수를 Bloom Filter 에 추가  
+      for (int i = 0; i < maxInt * 2; i += 2) {  
+         bloomFilter.put(i);  
+      }  
+  
+      // 998까지 모든 짝수가 positive 임  
+      for (int i = 0; i < maxInt * 2; i += 2) {  
+         if (!bloomFilter.mightContain(i)) {  
+            System.out.printf("%d should be contained.\n", i);  
+         }  
+      }  
+  
+      // 1에서 999까지의 홀수로 false positive가 되는 값 추출  
+      final Set<Integer> falsePositives = new HashSet<>();  
+      for (int i = 1; i < maxInt * 2; i += 2) {  
+         if (bloomFilter.mightContain(i)) {  
+            falsePositives.add(i);  
+         }  
+      }  
+  
+      System.out.printf("예상 false positive 확률: %f\n", bloomFilter.expectedFpp());  
+      System.out.printf("실제 false positive 확률: %f\n", (double) falsePositives.size() / maxInt);  
+      System.out.printf("false-positive 값: %s", falsePositives);  
+   }  
+}
+```
+실행 결과로부터 false negative는 발생하지 않고 2.2%의 확률로 false positive가 발생하고 있는 것을 알 수 있다.
+
+```
+예상 false positive 확률: 0.026961
+실제 false positive 확률: 0.022000
+false-positive 값: [609, 131, 197, 405, 951, 41, 169, 649, 877, 175, 255]
+```
+
 ####  활용되는 곳
 
 - 스펠링체크, 사전, 웹 검색, IP Filtering, Router 등에 활용되고 Squid Web, Venti Storage System, SPIN model checker, Google Chrome Browser 등에도 활용되고 있다.

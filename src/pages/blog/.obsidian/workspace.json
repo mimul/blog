@@ -8,59 +8,17 @@
         "type": "tabs",
         "children": [
           {
-            "id": "9708d02c66cecf5e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "llm-fundamental.md",
-                "mode": "source",
-                "source": true
-              },
-              "icon": "lucide-file",
-              "title": "llm-fundamental"
-            }
-          },
-          {
-            "id": "3e6e6c2e2caea48c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "id-generation-in-mysql.md",
-                "mode": "source",
-                "source": true
-              },
-              "icon": "lucide-file",
-              "title": "id-generation-in-mysql"
-            }
-          },
-          {
             "id": "291b7330f08a935e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "go-vs-java-thread.md",
+                "file": "raft.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "go-vs-java-thread"
-            }
-          },
-          {
-            "id": "8dafbee02a44035a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "what-does-a-cto-do.md",
-                "mode": "source",
-                "source": true
-              },
-              "icon": "lucide-file",
-              "title": "what-does-a-cto-do"
+              "title": "raft"
             }
           }
         ]
@@ -112,8 +70,8 @@
             "state": {
               "type": "starred",
               "state": {},
-              "icon": "lucide-file",
-              "title": "Plugin no longer active"
+              "icon": "lucide-ghost",
+              "title": "starred"
             }
           },
           {
@@ -146,7 +104,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "llm-fundamental.md",
+                "file": "raft.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -156,7 +114,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for llm-fundamental"
+              "title": "Backlinks for raft"
             }
           },
           {
@@ -220,6 +178,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:Create new base": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -230,15 +189,22 @@
   },
   "active": "fe3062d394a900d5",
   "lastOpenFiles": [
+    "bloom-filter.md",
+    "about-rate-limit-algorithm.md",
+    "ring-buffer.md",
+    "raft.md",
+    "what-does-a-cto-do.md",
+    "can-do-vs-cant-do-culture.md",
+    "cache-problem.md",
+    "realtime-multi-person-pose-estimation.md",
+    "code-readability.md",
+    "llm-fundamental.md",
     "langchain-fundamental.md",
     "langchain-lcel.md",
-    "llm-fundamental.md",
     "linux-server-operations.md",
     "rust-di.md",
     "mcp.md",
     "tech_radar.md",
-    "what-does-a-cto-do.md",
-    "code-readability.md",
     "tech-blog.md",
     "samaltman-ai-prediction.md",
     "mbo.md",
@@ -249,13 +215,6 @@
     "network-effects.md",
     "small-talk.md",
     "small-but-strong-teaming.md",
-    "sandi-metz-rules-for-developers.md",
-    "what-happens-when-you-type-url-into-your-browser.md",
-    "tumblr-architecture-and-culture.md",
-    "realtime-multi-person-pose-estimation.md",
-    "teardown-13-ways-10-million-revenues.md",
-    "thinks-exception.md",
-    "function-color-problem.md",
     "Untitled.canvas",
     "Untitled",
     "img/blog",
