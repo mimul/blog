@@ -2,7 +2,7 @@
   publish = "public"
   command = "npm run build"
 [build.environment]
-  YARN_VERSION = "3.2.3"
+  YARN_VERSION = "1.22.19"
   PYTHON_VERSION="3.10.11"
   YARN_FLAGS = "--no-ignore-optional"
   SHARP_IGNORE_GLOBAL_LIBVIPS="true"
